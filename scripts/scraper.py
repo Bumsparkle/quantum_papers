@@ -20,6 +20,7 @@ import arxiv
 import json
 import logging
 import sys
+import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -43,6 +44,7 @@ CONFIG_FILE = ROOT_DIR / 'config.ini'
 DATA_DIR = ROOT_DIR / 'data'
 TODAY_MD_FILE = DATA_DIR / 'papers_today.md'
 ARCHIVE_JSON_FILE = DATA_DIR / 'archive.json'
+README_FILE = ROOT_DIR / 'README.md'
 
 # Ensure the data directory exists
 DATA_DIR.mkdir(exist_ok=True)
@@ -211,6 +213,60 @@ def write_daily_markdown(new_papers):
     except IOError as e:
         logging.error(f"Failed to write to {TODAY_MD_FILE}: {e}")
 
+def update_readme():
+    """
+    Updates the README.md with the content from papers_today.md.
+    """
+    logging.info("Attempting to update README.md...")
+    
+    # 1. Read the new content from the daily markdown file
+    try:
+        with open(TODAY_MD_FILE, 'r', encoding='utf-8') as f:
+            papers_content = f.read()
+    except IOError as e:
+        logging.error(f"Could not read {TODAY_MD_FILE} to update README: {e}")
+        return
+
+    # 2. Read the current README content
+    try:
+        with open(README_FILE, 'r', encoding='utf-8') as f:
+            readme_content = f.read()
+    except IOError as e:
+        logging.error(f"Could not read {README_FILE} to update it: {e}")
+        return
+
+    # 3. Define the placeholder tags
+    start_tag = "<!-- LATEST_PAPERS_START -->"
+    end_tag = "<!-- LATEST_PAPERS_END -->"
+    
+    # 4. Use regex to find and replace content
+    # re.DOTALL makes '.' match newline characters, which is crucial
+    pattern = re.compile(f"{re.escape(start_tag)}.*{re.escape(end_tag)}", re.DOTALL)
+    
+    # 5. *** THE FIX ***
+    # We must escape all backslashes in the paper content.
+    # Otherwise, re.subn will try to parse them as back-references (e.g., \g, \1)
+    # and fail if the abstract contains scientific notation.
+    safe_papers_content = papers_content.replace('\\', '\\\\')
+    
+    # We add newlines for nice formatting in the markdown
+    replacement_text = f"{start_tag}\n\n{safe_papers_content}\n{end_tag}"
+    
+    # 6. Substitute the content
+    new_readme_content, sub_count = re.subn(pattern, replacement_text, readme_content)
+    
+    if sub_count == 0:
+        logging.warning(f"Could not find placeholder tags in {README_FILE}. Skipping README update.")
+        return
+
+    # 7. Write the updated content back to the README
+    try:
+        with open(README_FILE, 'w', encoding='utf-8') as f:
+            f.write(new_readme_content)
+        logging.info("Successfully updated README.md.")
+    except IOError as e:
+        logging.error(f"Could not write updated content to {README_FILE}: {e}")
+
 def update_archive(new_papers):
     """Appends new papers to the data/archive.json file."""
     if not new_papers:
@@ -274,6 +330,9 @@ def main():
         
         # 7. Update the JSON archive
         update_archive(new_papers)
+
+        # 8. Update the README.md
+        update_readme()
         
         logging.info("--- Scraper script finished successfully ---")
 

@@ -1,44 +1,66 @@
+# This is the name of the GitHub Actions workflow.
 name: Daily arXiv Paper Fetch
 
+# These are the triggers for the workflow.
 on:
-  schedule:
-    # Runs every day at 08:00 UTC
-    - cron: '0 8 * * *'
-  # Allows you to run it manually too
+  # 1. Allows you to run this workflow manually from the Actions tab.
   workflow_dispatch:
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+  # 2. Runs on a schedule (cron job).
+  schedule:
+    # This is set to run every day at 08:00 UTC.
+    # You can change the time as you like.
+    - cron: '0 8 * * *'
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+# This section defines the actual "job" that will run.
+jobs:
+  fetch-and-commit:
+    # The job will run on a standard, fresh Ubuntu virtual machine.
+    runs-on: ubuntu-latest
+
+    # These are the sequential steps the job will perform.
+    steps:
+      # Step 1: Check out your repository's code
+      # This downloads a copy of your repo onto the virtual machine.
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up the Python environment
+      # We specify version 3.10, but this can be any modern version.
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
+      # Step 3: Install the required Python libraries
+      # This reads your 'requirements.txt' file and installs 'arxiv' etc.
       - name: Install dependencies
-        run: pip install arxiv configparser
+        run: pip install -r requirements.txt
 
-      - name: Run the scraper script
+      # Step 4: Run your scraper script!
+      # This is the main event. It will create/update the .md and .json files.
+      - name: Run scraper to fetch papers
         run: python scripts/scraper.py
 
+      # Step 5: Commit the changes back to your repository
       - name: Commit and push changes
         run: |
+          # Configure Git with a bot username and email
           git config --global user.name 'GitHub Actions Bot'
-          git config --global user.email 'actions@github.com'
-          git add data/
-          # Check if there are changes to commit
+          git config --global user.email 'actions-bot@github.com'
+          
+          # Add all the files that the script might have changed
+          # This includes the daily paper, the archive, and the README
+          git add data/papers_today.md data/archive.json README.md
+          
+          # Check if there are actually any changes to commit
+          # The "if ! git diff..." command means "If the staged changes are NOT empty..."
           if ! git diff --staged --quiet; then
-            # The commit message is key for backtracking!
+            # If there are changes, create a commit with today's date
             COMMIT_MSG="[Auto-Update] Found new papers for $(date +'%Y-%m-%d')"
             git commit -m "$COMMIT_MSG"
             git push
           else
+            # If there are no changes, just log it to the console
             echo "No new papers found, nothing to commit."
-            # OPTIONAL: You can make an empty commit to show the script ran
-            git commit --allow-empty -m "[Auto-Update] No new papers found for $(date +'%Y-%m-%d')"
-            git push
           fi
