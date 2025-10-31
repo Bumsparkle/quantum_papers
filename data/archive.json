@@ -1,0 +1,254 @@
+[
+  {
+    "id": "http://arxiv.org/abs/2510.26688v1",
+    "title": "FlowQ-Net: A Generative Framework for Automated Quantum Circuit Design",
+    "authors": [
+      "Jun Dai",
+      "Michael Rizvi-Martel",
+      "Guillaume Rabusseau"
+    ],
+    "summary": "Designing efficient quantum circuits is a central bottleneck to exploring the\npotential of quantum computing, particularly for noisy intermediate-scale\nquantum (NISQ) devices, where circuit efficiency and resilience to errors are\nparamount. The search space of gate sequences grows combinatorially, and\nhandcrafted templates often waste scarce qubit and depth budgets. We introduce\n\\textsc{FlowQ-Net} (Flow-based Quantum design Network), a generative framework\nfor automated quantum circuit synthesis based on Generative Flow Networks\n(GFlowNets). This framework learns a stochastic policy to construct circuits\nsequentially, sampling them in proportion to a flexible, user-defined reward\nfunction that can encode multiple design objectives such as performance, depth,\nand gate count. This approach uniquely enables the generation of a diverse\nensemble of high-quality circuits, moving beyond single-solution optimization.\nWe demonstrate the efficacy of \\textsc{FlowQ-Net} through an extensive set of\nsimulations. We apply our method to Variational Quantum Algorithm (VQA) ansatz\ndesign for molecular ground state estimation, Max-Cut, and image\nclassification, key challenges in near-term quantum computing. Circuits\ndesigned by \\textsc{FlowQ-Net} achieve significant improvements, yielding\ncircuits that are 10$\\times$-30$\\times$ more compact in terms of parameters,\ngates, and depth compared to commonly used unitary baselines, without\ncompromising accuracy. This trend holds even when subjected to error profiles\nfrom real-world quantum devices. Our results underline the potential of\ngenerative models as a general-purpose methodology for automated quantum\ncircuit design, offering a promising path towards more efficient quantum\nalgorithms and accelerating scientific discovery in the quantum domain.",
+    "published": "2025-10-30T16:57:13+00:00",
+    "updated": "2025-10-30T16:57:13+00:00",
+    "link": "http://arxiv.org/abs/2510.26688v1",
+    "pdf_link": "http://arxiv.org/pdf/2510.26688v1",
+    "categories": [
+      "quant-ph",
+      "cs.LG"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2510.26300v1",
+    "title": "Fermionic dynamics on a trapped-ion quantum computer beyond exact classical simulation",
+    "authors": [
+      "Faisal Alam",
+      "Jan Lukas Bosse",
+      "Ieva Čepaitė",
+      "Adrian Chapman",
+      "Laura Clinton",
+      "Marcos Crichigno",
+      "Elizabeth Crosson",
+      "Toby Cubitt",
+      "Charles Derby",
+      "Oliver Dowinton",
+      "Paul K. Faehrmann",
+      "Steve Flammia",
+      "Brian Flynn",
+      "Filippo Maria Gambetta",
+      "Raúl García-Patrón",
+      "Max Hunter-Gordon",
+      "Glenn Jones",
+      "Abhishek Khedkar",
+      "Joel Klassen",
+      "Michael Kreshchuk",
+      "Edward Harry McMullan",
+      "Lana Mineh",
+      "Ashley Montanaro",
+      "Caterina Mora",
+      "John J. L. Morton",
+      "Dhrumil Patel",
+      "Pete Rolph",
+      "Raul A. Santos",
+      "James R. Seddon",
+      "Evan Sheridan",
+      "Wilfrid Somogyi",
+      "Marika Svensson",
+      "Niam Vaishnav",
+      "Sabrina Yue Wang",
+      "Gethin Wright"
+    ],
+    "summary": "Simulation of the time-dynamics of fermionic many-body systems has long been\npredicted to be one of the key applications of quantum computers. Such\nsimulations -- for which classical methods are often inaccurate -- are critical\nto advancing our knowledge and understanding of quantum chemistry and\nmaterials, underpinning a wide range of fields, from biochemistry to\nclean-energy technologies and chemical synthesis. However, the performance of\nall previous digital quantum simulations has been matched by classical methods,\nand it has thus far remained unclear whether near-term, intermediate-scale\nquantum hardware could offer any computational advantage in this area. Here, we\nimplement an efficient quantum simulation algorithm on Quantinuum's System\nModel H2 trapped-ion quantum computer for the time dynamics of a 56-qubit\nsystem that is too complex for exact classical simulation. We focus on the\nperiodic spinful 2D Fermi-Hubbard model and present evidence of spin-charge\nseparation, where the elementary electron's charge and spin decouple. In the\nlimited cases where ground truth is available through exact classical\nsimulation, we find that it agrees with the results we obtain from the quantum\ndevice. Employing long-range Wilson operators to study deconfinement of the\neffective gauge field between spinons and the effective potential between\ncharge carriers, we find behaviour that differs from predictions made by\nclassical tensor network methods. Our results herald the use of quantum\ncomputing for simulating strongly correlated electronic systems beyond the\ncapacity of classical computing.",
+    "published": "2025-10-30T09:39:02+00:00",
+    "updated": "2025-10-30T09:39:02+00:00",
+    "link": "http://arxiv.org/abs/2510.26300v1",
+    "pdf_link": "http://arxiv.org/pdf/2510.26300v1",
+    "categories": [
+      "quant-ph",
+      "cond-mat.mtrl-sci"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2510.26116v1",
+    "title": "Stesso: A reconfigurable decomposition of $n$-bit Toffoli gates using symmetrical logical structures and adjustable support qubits",
+    "authors": [
+      "Shanyan Chen",
+      "Ali Al-Bayaty",
+      "Xiaoyu Song",
+      "Marek Perkowski"
+    ],
+    "summary": "An $(n+1)$-bit Toffoli gate is mainly utilized to construct other quantum\ngates and operators, such as Fredkin gates, arithmetical adders, and logical\ncomparators, where $n \\geq 2$. Several researchers introduced different methods\nto decompose $(n+1)$-bit Toffoli gates in a quantum circuit into a set of\nstandard 3-bit Toffoli gates or a set of elementary quantum gates, such as\nsingle-qubit and two-qubit gates. However, these methods are not effectively\nreconfigurable for linearly connected symmetrical structures (layouts) of\ncontemporary quantum computers, usually utilizing more ancilla qubits. This\npaper introduces a new structural design method to effectively decompose\n$(n+1)$-bit Toffoli gates by utilizing configurable ancilla qubits, which we\nnamed the ``support qubits\". Collectively, we call our decomposition method for\nsymmetrical structures using support qubits the ``step-decreasing structures\nshaped operators (Stesso)\". The main advantage of Stesso is to configurable\nconstruct different decomposed operators of various polarities and intermediate\nsub-circuits, such as Positive Polarity-Stesso, Mixed Polarity-Stesso, and\nGeneralized-Stesso. With Stesso, it has been experimentally proven that\n$(n+1)$-bit Toffoli gates always have lower quantum costs than using\nconventional composition methods.",
+    "published": "2025-10-30T03:58:02+00:00",
+    "updated": "2025-10-30T03:58:02+00:00",
+    "link": "http://arxiv.org/abs/2510.26116v1",
+    "pdf_link": "http://arxiv.org/pdf/2510.26116v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2510.25203v2",
+    "title": "Low-Gap Hf-HfOx-Hf Josephson Junctions for meV-Scale Particle Detection",
+    "authors": [
+      "Y. Balaji",
+      "M. Surendran",
+      "X. Li",
+      "A. Kemelbay",
+      "A. Gashi",
+      "C. Salemi",
+      "A. Suzuki",
+      "S. Aloni",
+      "A. Tynes Hammack",
+      "A. Schwartzberg"
+    ],
+    "summary": "Superconducting qubits have motivated the exploration of Josephson-junction\ntechnologies beyond quantum computing, with emerging applications in low-energy\nphoton and phonon detection for astrophysics and dark matter searches.\nAchieving sensitivity at the THz (meV) scale requires materials with smaller\nsuperconducting gaps than those of conventional aluminum or niobium-based\ndevices. Here, we report the fabrication and characterization of hafnium\n(Hf)-based Josephson junctions (Hf-HfOx-Hf), demonstrating Hf as a promising\nlow-Tc material platform for ultra-low threshold single THz photon and\nsingle-phonon detection. Structural and chemical analyses reveal crystalline\nfilms and well-defined oxide barriers, while electrical transport measurements\nat both room and cryogenic temperatures exhibit clear Josephson behavior,\nenabling extraction of key junction parameters such as critical current,\nsuperconducting gap and normal-state resistance. This work presents the first\ncomprehensive study of Hf-based junctions and their potential for\nnext-generation superconducting detectors and qubit architectures leveraging\nlow superconducting gap energies.",
+    "published": "2025-10-29T06:15:35+00:00",
+    "updated": "2025-10-30T03:08:04+00:00",
+    "link": "http://arxiv.org/abs/2510.25203v2",
+    "pdf_link": "http://arxiv.org/pdf/2510.25203v2",
+    "categories": [
+      "cond-mat.supr-con",
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2510.26078v1",
+    "title": "The Fast for the Curious: How to accelerate fault-tolerant quantum applications",
+    "authors": [
+      "Sam McArdle",
+      "Alexander M. Dalzell",
+      "Aleksander Kubica",
+      "Fernando G. S. L. Brandão"
+    ],
+    "summary": "We evaluate strategies for reducing the run time of fault-tolerant quantum\ncomputations, targeting practical utility in scientific or industrial\nworkflows. Delivering a technology with broad impact requires scaling devices,\nwhile also maintaining acceptable run times for computations. Optimizing\nlogical clock speed may require moving beyond current strategies, and adopting\nmethods that trade faster run time for increased qubit counts or engineering\ncomplexity. We discuss how the co-design of hardware, fault tolerance, and\nalgorithmic subroutines can reduce run times. We illustrate a selection of\nthese topics with resource estimates for simulating the Fermi-Hubbard model.",
+    "published": "2025-10-30T02:27:55+00:00",
+    "updated": "2025-10-30T02:27:55+00:00",
+    "link": "http://arxiv.org/abs/2510.26078v1",
+    "pdf_link": "http://arxiv.org/pdf/2510.26078v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2510.25996v1",
+    "title": "Overcoming disorder in superconducting globally-driven quantum computing",
+    "authors": [
+      "Riccardo Aiudi",
+      "Julien Despres",
+      "Roberto Menta",
+      "Ashkan Abedi",
+      "Guido Menichetti",
+      "Vittorio Giovannetti",
+      "Marco Polini",
+      "Francesco Caravelli"
+    ],
+    "summary": "We study the impact of static disorder on a globally-controlled\nsuperconducting quantum computing architecture based on a quasi-two-dimensional\nladder geometry [R. Menta et al., Phys. Rev. Research 7, L012065 (2025)].\nSpecifically, we examine how fabrication-induced inhomogeneities in qubit\nresonant frequencies and coupling strengths affect quantum state propagation\nand the fidelity of fundamental quantum operations. Using numerical\nsimulations, we quantify the degradation in performance due to disorder and\nidentify single-qubit rotations, two-qubit entangling gates, and quantum\ninformation transport as particularly susceptible. To address this challenge,\nwe rely on pulse optimization schemes, and, in particular, on the GRAPE\n(Gradient Ascent Pulse Engineering) algorithm. Our results demonstrate that,\neven for realistic levels of disorder, optimized pulse sequences can achieve\nhigh-fidelity operations, exceeding 99.9% for the three quantum operations,\nrestoring reliable universal quantum logic and robust information flow. These\nfindings highlight pulse optimization as a powerful strategy to enhance the\nresilience to disorder of solid-state globally-driven quantum computing\nplatforms.",
+    "published": "2025-10-29T22:13:11+00:00",
+    "updated": "2025-10-29T22:13:11+00:00",
+    "link": "http://arxiv.org/abs/2510.25996v1",
+    "pdf_link": "http://arxiv.org/pdf/2510.25996v1",
+    "categories": [
+      "quant-ph",
+      "cond-mat.supr-con"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2510.25982v1",
+    "title": "Enabling Fast and Accurate Neutral Atom Readout through Image Denoising",
+    "authors": [
+      "Chaithanya Naik Mude",
+      "Linipun Phuttitarn",
+      "Satvik Maurya",
+      "Kunal Sinha",
+      "Mark Saffman",
+      "Swamit Tannu"
+    ],
+    "summary": "Neutral atom quantum computers hold promise for scaling up to hundreds of\nthousands of qubits, but their progress is constrained by slow qubit readout.\nMeasuring qubits currently takes milliseconds-much longer than the underlying\nquantum gate operations-making readout the primary bottleneck in deploying\nquantum error correction. Because each round of QEC depends on measurement,\nlong readout times increase cycle duration and slow down program execution.\nReducing the readout duration speeds up cycles and reduces decoherence errors\nthat accumulate while qubits idle, but it also lowers the number of collected\nphotons, making measurements noisier and more error-prone. This tradeoff leaves\nneutral atom systems stuck between slow but accurate readout and fast but\nunreliable readout.\n  We show that image denoising can resolve this tension. Our framework,\nGANDALF, uses explicit denoising using image translation to reconstruct clear\nsignals from short, low-photon measurements, enabling reliable classification\nat up to 1.6x shorter readout times. Combined with lightweight classifiers and\na pipelined readout design, our approach both reduces logical error rate by up\nto 35x and overall QEC cycle time up to 1.77x compared to state-of-the-art\nCNN-based readout for Cesium (Cs) Neutral Atom arrays.",
+    "published": "2025-10-29T21:30:30+00:00",
+    "updated": "2025-10-29T21:30:30+00:00",
+    "link": "http://arxiv.org/abs/2510.25982v1",
+    "pdf_link": "http://arxiv.org/pdf/2510.25982v1",
+    "categories": [
+      "quant-ph",
+      "cs.LG"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2510.25854v1",
+    "title": "GHZ-Preserving Gates and Optimized Distillation Circuits",
+    "authors": [
+      "Mingyuan Wang",
+      "Guus Avis",
+      "Stefan Krastanov"
+    ],
+    "summary": "Greenberger-Horne-Zeilinger (GHZ) states play a central role in quantum\ncomputing and communication protocols, as a typical multipartite entanglement\nresource. This work introduces an efficient enumeration and simulation method\nfor circuits that preserve and distill noisy GHZ states, significantly reducing\nthe simulation complexity of a gate on $n$ qubits, from exponential $O(2^n)$\nfor standard state-vector methods or $O(n)$ for Clifford circuits, to a\nconstant $O(1)$ for the method presented here. This method has profound\nimplications for the design of quantum networks, where preservation and\npurification of entanglement with minimal resource overhead is critical. In\nparticular, we demonstrate the use of the new method in an optimization\nprocedure enabled by the fast simulation, that discovers GHZ distillation\ncircuits far outperforming the state of the art. Fine-tuning to arbitrary noise\nmodels is possible as well. We also show that the method naturally extends to\ngraph states that are local Clifford equivalent to GHZ states.",
+    "published": "2025-10-29T18:01:15+00:00",
+    "updated": "2025-10-29T18:01:15+00:00",
+    "link": "http://arxiv.org/abs/2510.25854v1",
+    "pdf_link": "http://arxiv.org/pdf/2510.25854v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2510.25675v1",
+    "title": "Quantum simulation of actinide chemistry: towards scalable algorithms on trapped ion quantum computers",
+    "authors": [
+      "Kesha Sorathia",
+      "Cono Di Paola",
+      "Gabriel Greene-Diniz",
+      "Carlo A. Gaggioli",
+      "David Zsolt Manrique",
+      "Joe Gibbs",
+      "Sean Harding",
+      "Thomas M. Soini",
+      "Neil Gaspar",
+      "Robert Harker",
+      "Mark Storr",
+      "David Munoz Ramo"
+    ],
+    "summary": "Due to the wide range of technical applications of actinide elements, a\nthorough understanding of their electronic structure could complement\ntechnological improvements in many different areas. Quantum computing could\ngreatly aid in this understanding, as it can potentially provide exponential\nspeedups over classical approaches, thereby offering insights into the complex\nelectronic structure of actinide compounds. As a first foray into quantum\ncomputational chemistry of actinides, this paper compares the method of quantum\ncomputed moments (QCM) as a noisy intermediate-scale quantum algorithm with a\nsingle-ancilla version of quantum phase estimation (QPE), a quantum algorithm\nexpected to run on fault-tolerant quantum computers. We employ these algorithms\nto study the reaction energetics of plutonium oxides and hydrides. In order to\nenable quantum hardware experiments, we use several techniques to reduce\nresource requirements: screening individual Hamiltonian Pauli terms to reduce\nthe measurement requirements of QCM and variational compilation to reduce the\ndepth of QPE circuits. Finally, we derive electronic structure descriptions\nfrom a series of representative chemical models and compute the energetics from\nquantum experiments on Quantinuum's H-series ion trap devices using up to 19\nqubits. We find our experiments to be in excellent agreement with results from\nclassical electronic structure calculations and state vector simulations.",
+    "published": "2025-10-29T16:42:24+00:00",
+    "updated": "2025-10-29T16:42:24+00:00",
+    "link": "http://arxiv.org/abs/2510.25675v1",
+    "pdf_link": "http://arxiv.org/pdf/2510.25675v1",
+    "categories": [
+      "quant-ph",
+      "physics.chem-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2510.25661v1",
+    "title": "Accurate Leakage Speculation for Quantum Error Correction",
+    "authors": [
+      "Chaithanya Naik Mude",
+      "Swamit Tannu"
+    ],
+    "summary": "Quantum Error Correction (QEC) protects qubits against bit- and phase-flip\nerrors in the |0> or |1> subspace, but physical qubits can also leak into\nhigher energy levels (e.g., |2>). Leakage is especially harmful, as it corrupts\nall subsequent syndrome measurements and can spread to neighboring qubits.\nDetecting leakage on data qubits is particularly challenging, since they are\nnever measured directly during QEC cycles. Prior work, such as eraser,\naddresses this by inferring leakage from syndrome patterns using a fixed\nheuristic. However, this approach often misclassifies benign syndromes,\ntriggering excessive leakage-reduction circuits (LRCs). Because LRCs are\nthemselves noisy and slow, these false triggers lengthen QEC cycles and inflate\nlogical error rates.\n  We propose gladiator, a general and adaptable leakage speculation framework\nthat works across surface code, color code, and qLDPC codes. Offline, gladiator\nbuilds a code-aware error-propagation graph calibrated to device data. Online,\nit classifies each syndrome in a few nanoseconds and schedules LRC only when\nthe observed pattern is provably leakage-dominated. This precise speculation\neliminates up to 3x (and on average 2x) unnecessary LRCs, shortens QEC cycles,\nand suppresses false positives at their source. Evaluated on standard\nfault-tolerant benchmarks, gladiator delivers 1.7x-3.9x speedups and 16%\nreduction in logical error rate, advancing the efficiency of fault-tolerant\nquantum computing.",
+    "published": "2025-10-29T16:23:27+00:00",
+    "updated": "2025-10-29T16:23:27+00:00",
+    "link": "http://arxiv.org/abs/2510.25661v1",
+    "pdf_link": "http://arxiv.org/pdf/2510.25661v1",
+    "categories": [
+      "quant-ph",
+      "cs.AR"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2510.25561v1",
+    "title": "Transition-Aware Decomposition of Single-Qudit Gates",
+    "authors": [
+      "Denis A. Drozhzhin",
+      "Evgeniy O. Kiktenko",
+      "Aleksey K. Fedorov",
+      "Anastasiia S. Nikolaeva"
+    ],
+    "summary": "Quantum computation with $d$-level quantum systems, also known as qudits,\nbenefits from the possibility to use a richer computational space compared to\nqubits. However, for arbitrary qudit-based hardware platform the issue is that\na generic qudit operation has to be decomposed into the sequence of native\noperations $-$ pulses that are adjusted to the transitions between two levels\nin a qudit. Typically, not all levels in a qudit are simply connected to each\nother due to specific selection rules. Moreover, the number of pulses plays a\nsignificant role, since each pulse takes a certain execution time and may\nintroduce error. In this paper, we propose a resource-efficient algorithm to\ndecompose single-qudit operations into the sequence of pulses that are allowed\nby qudit selection rules. Using the developed algorithm, the number of pulses\nis at most $d(d{-}1)/2$ for an arbitrary single-qudit operation. For specific\noperations the algorithm could produce even fewer pulses. We provide a\ncomparison of qudit decompositions for several types of trapped ions,\nspecifically $^{171}\\text{Yb}^+$, $^{137}\\text{Ba}^+$, $^{40}\\text{Ca}^+$,\n$^{86}\\text{Rb}^+$ with different selection rules, and also decomposition for\nsuperconducting qudits.",
+    "published": "2025-10-29T14:25:30+00:00",
+    "updated": "2025-10-29T14:25:30+00:00",
+    "link": "http://arxiv.org/abs/2510.25561v1",
+    "pdf_link": "http://arxiv.org/pdf/2510.25561v1",
+    "categories": [
+      "quant-ph"
+    ]
+  }
+]
