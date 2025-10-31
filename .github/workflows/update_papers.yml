@@ -1,0 +1,44 @@
+name: Daily arXiv Paper Fetch
+
+on:
+  schedule:
+    # Runs every day at 08:00 UTC
+    - cron: '0 8 * * *'
+  # Allows you to run it manually too
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install arxiv configparser
+
+      - name: Run the scraper script
+        run: python scripts/scraper.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@github.com'
+          git add data/
+          # Check if there are changes to commit
+          if ! git diff --staged --quiet; then
+            # The commit message is key for backtracking!
+            COMMIT_MSG="[Auto-Update] Found new papers for $(date +'%Y-%m-%d')"
+            git commit -m "$COMMIT_MSG"
+            git push
+          else
+            echo "No new papers found, nothing to commit."
+            # OPTIONAL: You can make an empty commit to show the script ran
+            git commit --allow-empty -m "[Auto-Update] No new papers found for $(date +'%Y-%m-%d')"
+            git push
+          fi
