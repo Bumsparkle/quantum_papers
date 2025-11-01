@@ -18,6 +18,10 @@ jobs:
     # The job will run on a standard, fresh Ubuntu virtual machine.
     runs-on: ubuntu-latest
 
+    # Grant the job write permissions to the repository's contents.
+    permissions:
+      contents: write
+
     # These are the sequential steps the job will perform.
     steps:
       # Step 1: Check out your repository's code
