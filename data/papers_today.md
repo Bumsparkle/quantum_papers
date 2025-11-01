@@ -1,8 +1,3 @@
-# Papers Found on: 2025-10-30
+# Papers Found on: 2025-11-01
 
-### 📄 No Papers
-* **Authors:** *Dr. First Author et al.*
-* **Link:** *https://arxiv.org/abs/xxxx.xxxxx*
-* **Abstract:** *This is a simulated abstract.*
-
-
+No new papers matching your keywords were found in the last 48 hours.
