@@ -8,9 +8,9 @@ on:
 
   # 2. Runs on a schedule (cron job).
   schedule:
-    # This is set to run every day at 08:00 UTC.
+    # This is set to run every day at 22:00 UTC.
     # You can change the time as you like.
-    - cron: '0 8 * * *'
+    - cron: '0 22 * * *'
 
 # This section defines the actual "job" that will run.
 jobs:
