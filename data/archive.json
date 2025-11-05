@@ -250,5 +250,383 @@
     "categories": [
       "quant-ph"
     ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2511.02785v1",
+    "title": "Enhancing Federated Learning Privacy with QUBO",
+    "authors": [
+      "Andras Ferenczi",
+      "Sutapa Samanta",
+      "Dagen Wang",
+      "Todd Hodges"
+    ],
+    "summary": "Federated learning (FL) is a widely used method for training machine learning\n(ML) models in a scalable way while preserving privacy (i.e., without\ncentralizing raw data). Prior research shows that the risk of exposing\nsensitive data increases cumulatively as the number of iterations where a\nclient's updates are included in the aggregated model increase. Attackers can\nlaunch membership inference attacks (MIA; deciding whether a sample or client\nparticipated), property inference attacks (PIA; inferring attributes of a\nclient's data), and model inversion attacks (MI; reconstructing inputs),\nthereby inferring client-specific attributes and, in some cases, reconstructing\ninputs. In this paper, we mitigate risk by substantially reducing per client\nexposure using a quantum computing-inspired quadratic unconstrained binary\noptimization (QUBO) formulation that selects a small subset of client updates\nmost relevant for each training round. In this work, we focus on two threat\nvectors: (i) information leakage by clients during training and (ii)\nadversaries who can query or obtain the global model. We assume a trusted\ncentral server and do not model server compromise. This method also assumes\nthat the server has access to a validation/test set with global data\ndistribution. Experiments on the MNIST dataset with 300 clients in 20 rounds\nshowed a 95.2% per-round and 49% cumulative privacy exposure reduction, with\n147 clients' updates never being used during training while maintaining in\ngeneral the full-aggregation accuracy or even better. The method proved to be\nefficient at lower scale and more complex model as well. A CINIC-10\ndataset-based experiment with 30 clients resulted in 82% per-round privacy\nimprovement and 33% cumulative privacy.",
+    "published": "2025-11-04T18:06:30+00:00",
+    "updated": "2025-11-04T18:06:30+00:00",
+    "link": "http://arxiv.org/abs/2511.02785v1",
+    "pdf_link": "http://arxiv.org/pdf/2511.02785v1",
+    "categories": [
+      "cs.LG"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2510.12628v2",
+    "title": "Quantum Network-Based Prediction of Cancer Driver Genes",
+    "authors": [
+      "Patricia Marques",
+      "Andreas Wichert",
+      "Duarte Magano",
+      "Bruno Coutinho"
+    ],
+    "summary": "Identification of cancer driver genes is fundamental for the development of\ntargeted therapeutic interventions. The integration of mutational profiles with\nprotein-protein interaction (PPI) networks offers a promising avenue for their\ndetection [ 1, 2], but scaling to large network datasets is computationally\ndemanding. Quantum computing offers compact representations and potential\ncomplexity reductions. Motivated by the classical method of Gumpinger et al.\n[3], in this work we introduce a supervised quantum framework that combines\nmutation scores with network topology via a novel state preparation scheme,\nQuantum Multi-order Moment Embedding (QMME). QMME encodes low-order statistical\nmoments over the mutation scores of a node's immediate and second-order\nneighbors, and encodes this information into quantum states. These are used as\ninputs to a kernel-based quantum binary classifier that discriminates known\ndriver genes from others. Simulations on an empirical PPI network demonstrate\ncompetitive performance, with a 12.6% recall gain over a classical baseline.\nThe pipeline performs explicit quantum state preparation and requires no\nclassical training, enabling an efficient, nearly end-to-end quantum workflow.\nA brief complexity analysis suggests the approach could achieve a quantum\nspeedup in network-based cancer gene prediction. This work underscores the\npotential of supervised quantum graph learning frameworks to advance biological\ndiscovery.",
+    "published": "2025-10-14T15:25:30+00:00",
+    "updated": "2025-11-04T16:54:30+00:00",
+    "link": "http://arxiv.org/abs/2510.12628v2",
+    "pdf_link": "http://arxiv.org/pdf/2510.12628v2",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2510.19928v2",
+    "title": "Mind the gaps: The fraught road to quantum advantage",
+    "authors": [
+      "Jens Eisert",
+      "John Preskill"
+    ],
+    "summary": "Quantum computing is advancing rapidly, yet substantial gaps separate today's\nnoisy intermediate-scale quantum (NISQ) devices from tomorrow's fault-tolerant\napplication-scale quantum (FASQ) machines. We identify four related hurdles\nalong the road ahead: (i) from error mitigation to active error detection and\ncorrection, (ii) from rudimentary error correction to scalable fault tolerance,\n(iii) from early heuristics to mature, verifiable algorithms, and (iv) from\nexploratory simulators to credible advantage in quantum simulation. Targeting\nthese transitions will accelerate progress toward broadly useful quantum\ncomputing.",
+    "published": "2025-10-22T18:00:19+00:00",
+    "updated": "2025-11-04T16:40:57+00:00",
+    "link": "http://arxiv.org/abs/2510.19928v2",
+    "pdf_link": "http://arxiv.org/pdf/2510.19928v2",
+    "categories": [
+      "quant-ph",
+      "cond-mat.other"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2509.25093v2",
+    "title": "Distributed Quantum Error Correction with Permutation-Invariant Approximate Codes",
+    "authors": [
+      "Connor Clayton",
+      "Bruno Avritzer"
+    ],
+    "summary": "Modular quantum computing architectures require error correction schemes that\nremain effective in the presense of noisy inter-processor operations. We\nintroduce a distributed quantum error correction framework based on approximate\ncodes to address this challenge. Our approach enables concatenation of distinct\nlocal codes across modules while allowing logical operations composed primarily\nof processor-local gates. We derive a lower bound and present corresponding\nsimulations which indicate that this nontraditional approach can provide marked\nadvantage over existing approaches in the highly non-uniform error landscape of\na distributed quantum computer. As a concrete realization, we present encoding\nand decoding circuits for the permutation-invariant W- state code and propose\nefficient methods for its preparation. These results highlight the potential of\napproximate distributed error correction strategies for scalable, modular,\nfault-tolerant quantum computation.",
+    "published": "2025-09-29T17:28:39+00:00",
+    "updated": "2025-11-04T16:06:23+00:00",
+    "link": "http://arxiv.org/abs/2509.25093v2",
+    "pdf_link": "http://arxiv.org/pdf/2509.25093v2",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2509.21804v2",
+    "title": "Towards reconstructing quantum structured light on a quantum computer",
+    "authors": [
+      "Mwezi Koni",
+      "Shawal Kassim",
+      "Paola C. Obando",
+      "Neelan Gounden",
+      "Isaac Nape"
+    ],
+    "summary": "We introduce a variational quantum computing approach for reconstructing\nquantum states from measurement data. By mapping the reconstruction cost\nfunction onto an Ising model, the problem can be solved using a variational\neigensolver on present-day quantum hardware. As a proof of concept, we\ndemonstrate the method on quantum structured light, in particular, entangled\nphotons carrying orbital angular momentum and show that the reconstruction\nprocedure can yield reliable performance even on noisy devices. Our results\nhighlight the potential of variational algorithms for efficient quantum state\ntomography, particularly for high-dimensional structured light, where classical\napproaches can face bottlenecks.",
+    "published": "2025-09-26T03:04:23+00:00",
+    "updated": "2025-11-04T15:29:33+00:00",
+    "link": "http://arxiv.org/abs/2509.21804v2",
+    "pdf_link": "http://arxiv.org/pdf/2509.21804v2",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2511.02527v1",
+    "title": "Photonic implementation of quantum hidden subgroup database compression",
+    "authors": [
+      "Qianyi Wang",
+      "Feiyang Liu",
+      "Teng Hu",
+      "Kwok Ho Wan",
+      "Jie Xie",
+      "M. S. Kim",
+      "Huangqiuchen Wang",
+      "Lijian Zhang",
+      "Oscar Dahlsten"
+    ],
+    "summary": "We experimentally demonstrate quantum data compression exploiting hidden\nsubgroup symmetries using a photonic quantum processor. Classical databases\ncontaining generalized periodicities-symmetries that are in the worst cases\ninefficient for known classical algorithms to be detect-can efficiently\ncompressed by quantum hidden subgroup algorithms. We implement a variational\nquantum autoencoder that autonomously learns both the symmetry type (e.g.,\n$\\mathbb{Z}_2 \\times \\mathbb{Z}_2$ vs. $\\mathbb{Z}_4$) and the generalized\nperiod from structured data. The system uses single photons encoded in path,\npolarization, and time-bin degrees of freedom, with electronically controlled\nwaveplates enabling tunable quantum gates. Training via gradient descent\nsuccessfully identifies the hidden symmetry structure, achieving compression by\neliminating redundant database entries. We demonstrate two circuit ansatzes: a\nparametrized generalized Fourier transform and a less-restricted architecture\nfor Simon's symmetry. Both converge successfully, with the cost function\napproaching zero as training proceeds. These results provide experimental\nproof-of-principle that photonic quantum computers can compress classical\ndatabases by learning symmetries inaccessible to known efficient classical\nmethods, opening pathways for quantum-enhanced information processing.",
+    "published": "2025-11-04T12:26:50+00:00",
+    "updated": "2025-11-04T12:26:50+00:00",
+    "link": "http://arxiv.org/abs/2511.02527v1",
+    "pdf_link": "http://arxiv.org/pdf/2511.02527v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2408.04312v2",
+    "title": "Qonductor: A Cloud Orchestrator for Quantum Computing",
+    "authors": [
+      "Emmanouil Giortamis",
+      "Francisco Romão",
+      "Nathaniel Tornow",
+      "Dmitry Lugovoy",
+      "Pramod Bhatotia"
+    ],
+    "summary": "We describe Qonductor, a cloud orchestrator for hybrid quantum-classical\napplications that run on heterogeneous hybrid resources. Qonductor abstracts\naway the complexity of hybrid programming and resource management by exposing\nthe Qonductor API, a high-level and hardware-agnostic API. The resource\nestimator strategically balances quantum and classical resources to mitigate\nresource contention and the effects of hardware noise. The hybrid scheduler\nautomates job scheduling on hybrid resources and balances the tradeoff between\nusers' objectives of QoS and the cloud operator's objective of resource\nefficiency.\n  We implement an open-source prototype and evaluate Qonductor using more than\n7000 real quantum runs on the IBM quantum cloud to simulate real cloud\nworkloads. Qonductor achieves up to 54% lower job completion times (JCTs) while\nsacrificing 3% execution quality, balances the load across QPU, which increases\nquantum resource utilization by up to 66%, and scales with growing system sizes\nand loads.",
+    "published": "2024-08-08T08:46:55+00:00",
+    "updated": "2025-11-04T11:49:33+00:00",
+    "link": "http://arxiv.org/abs/2408.04312v2",
+    "pdf_link": "http://arxiv.org/pdf/2408.04312v2",
+    "categories": [
+      "quant-ph",
+      "cs.DC"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2511.02413v1",
+    "title": "Quantum Circuit Implementation of Two Matrix Product Operations and Elementary Column Transformations",
+    "authors": [
+      "Yu-Hang Liu",
+      "Yuan-Hong Tao",
+      "Jing-Run Lan",
+      "Shao-Ming Fei"
+    ],
+    "summary": "This paper focuses on quantum algorithms for three key matrix operations:\nHadamard (Schur) product, Kronecker (tensor) product, and elementary column\ntransformations each. By designing specific unitary transformations and\nauxiliary quantum measurement, efficient quantum schemes with circuit diagrams\nare proposed. Their computational depths are: O(1) for Kronecker product;\nO(max(m,n)) for Hadamard product (linked to matrix dimensions); and O(m) for\nelementary column transformations of (2^n X 2^m) matrices (dependent only on\ncolumn count).Notably, compared to traditional column transformation via matrix\ntransposition and row transformations, this scheme reduces computation steps\nand quantum gate usage, lowering quantum computing energy costs.",
+    "published": "2025-11-04T09:43:19+00:00",
+    "updated": "2025-11-04T09:43:19+00:00",
+    "link": "http://arxiv.org/abs/2511.02413v1",
+    "pdf_link": "http://arxiv.org/pdf/2511.02413v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2501.02884v2",
+    "title": "QSCL-EWIL: Quantum Stochastic Contrast Learning for Enhanced WiFi-Based Indoor Localization",
+    "authors": [
+      "Muhammad Bilal Akram Dastagir",
+      "Omer Tariq",
+      "Dongsoo Han",
+      "Saif Al-Kuwari",
+      "Shahid Mumtaz",
+      "Ahmed Farouk"
+    ],
+    "summary": "WiFi-based indoor localization is essential for asset tracking, healthcare\nmonitoring, and smart buildings. However, existing systems face challenges such\nas data variability, environmental noise, and difficulty detecting floor and\nbuilding levels, compounded by limited labeled data and high received signal\nstrength (RSS) collection costs. This paper introduces quantum stochastic\ncontrast learning (QSCL), a novel framework grounded in rigorous theoretical\nfoundations. We present four theorems and one lemma that establish the\nprobabilistic augmentation, diversity enhancement, relationship preservation,\nand resilience of QSCL under quantum noise, supported by formal proofs.\nLeveraging these foundations, QSCL utilizes quantum computing (QC) to generate\nstrong data augmentations with stochastic perturbations, enhancing data\ndiversity, while classical weak augmentations provide subtle variations for\nrobust feature learning. We propose a spatial temporal adaptive attention\n(STAA) encoder that integrates convolutional layers with adaptive attention\nmechanisms to capture spatial and temporal dependencies in sequential data.\nFurthermore, a bidirectional contrastive loss function is introduced to capture\nforward and reverse relationships between augmented views, ensuring robust\nrepresentations. Comprehensive evaluations on the UJIIndoorLoc and UTSIndoorLoc\ndatasets validate QSCL, demonstrating superior performance with reduced labeled\ndata and resilience to quantum noise such as bit-flip, dephasing, and\nmeasurement noise. The proposed framework significantly improves localization\naccuracy, floor and building detection, and generalizability in challenging\nindoor environments.",
+    "published": "2025-01-06T09:54:16+00:00",
+    "updated": "2025-11-04T09:21:32+00:00",
+    "link": "http://arxiv.org/abs/2501.02884v2",
+    "pdf_link": "http://arxiv.org/pdf/2501.02884v2",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2509.11110v2",
+    "title": "A Collaborative Framework for Quantum Optimisation and Quantum Neural Networks: Credit Feature Selection and Image Classification",
+    "authors": [
+      "JiaNing Long",
+      "Xuechen Liang"
+    ],
+    "summary": "This paper investigates the efficacy of quantum computing in two distinct\nmachine learning tasks: feature selection for credit risk assessment and image\nclassification for handwritten digit recognition. For the first task, we\naddress the feature selection challenge of the German Credit Dataset by\nformulating it as a Quadratic Unconstrained Binary Optimization (QUBO) problem,\nwhich is solved using quantum annealing to identify the optimal feature subset.\nExperimental results show that the resulting credit scoring model maintains\nhigh classification precision despite using a minimal number of features. For\nthe second task, we focus on classifying handwritten digits 3 and 6 in the\nMNIST dataset using Quantum Neural Networks (QNNs). Through meticulous data\npreprocessing (downsampling, binarization), quantum encoding (FRQI and\ncompressed FRQI), and the design of QNN architectures (CRADL and CRAML), we\ndemonstrate that QNNs can effectively handle high-dimensional image data. Our\nfindings highlight the potential of quantum computing in solving practical\nmachine learning problems while emphasizing the need to balance resource\nexpenditure and model efficacy.",
+    "published": "2025-09-14T05:58:14+00:00",
+    "updated": "2025-11-04T08:37:45+00:00",
+    "link": "http://arxiv.org/abs/2509.11110v2",
+    "pdf_link": "http://arxiv.org/pdf/2509.11110v2",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2502.14252v2",
+    "title": "Towards efficient quantum algorithms for diffusion probabilistic models",
+    "authors": [
+      "Yunfei Wang",
+      "Ruoxi Jiang",
+      "Yingda Fan",
+      "Xiaowei Jia",
+      "Jens Eisert",
+      "Junyu Liu",
+      "Jin-Peng Liu"
+    ],
+    "summary": "A diffusion probabilistic model (DPM) is a generative model renowned for its\nability to produce high-quality outputs in tasks such as image and audio\ngeneration. However, training DPMs on large, high-dimensional datasets such as\nhigh-resolution images or audio incurs significant computational, energy, and\nhardware costs. In this work, we introduce efficient quantum algorithms for\nimplementing DPMs through various quantum ODE solvers. These algorithms\nhighlight the potential of quantum Carleman linearization for diverse\nmathematical structures, leveraging state-of-the-art quantum linear system\nsolvers (QLSS) or linear combination of Hamiltonian simulations (LCHS).\nSpecifically, we focus on two approaches: DPM-solver-$k$ which employs exact\n$k$-th order derivatives to compute a polynomial approximation of\n$\\epsilon_\\theta(x_\\lambda,\\lambda)$; and UniPC which uses finite difference of\n$\\epsilon_\\theta(x_\\lambda,\\lambda)$ at different points $(x_{s_m},\n\\lambda_{s_m})$ to approximate higher-order derivatives. As such, this work\nrepresents one of the most direct and pragmatic applications of quantum\nalgorithms to large-scale machine learning models, presumably taking\nsubstantial steps towards demonstrating the practical utility of quantum\ncomputing.",
+    "published": "2025-02-20T04:39:09+00:00",
+    "updated": "2025-11-04T05:44:11+00:00",
+    "link": "http://arxiv.org/abs/2502.14252v2",
+    "pdf_link": "http://arxiv.org/pdf/2502.14252v2",
+    "categories": [
+      "quant-ph",
+      "cs.LG"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2511.02134v1",
+    "title": "Software for Creating Scalable Benchmarks from Quantum Algorithms",
+    "authors": [
+      "Noah Siekierski",
+      "Stefan Seritan",
+      "Neer Patel",
+      "Siyuan Niu",
+      "Thomas Lubinski",
+      "Timothy Proctor"
+    ],
+    "summary": "Creating scalable, reliable, and well-motivated benchmarks for quantum\ncomputers is challenging: straightforward approaches to benchmarking suffer\nfrom exponential scaling, are insensitive to important errors, or use\npoorly-motivated performance metrics. Furthermore, curated benchmarking suites\ncannot include every interesting quantum circuit or algorithm, which\nnecessitates a tool that enables the easy creation of new benchmarks. In this\nwork, we introduce a software tool for creating scalable and reliable\nbenchmarks that measure a well-motivated performance metric (process fidelity)\nfrom user-chosen quantum circuits and algorithms. Our software, called\n$\\texttt{scarab}$, enables the creation of efficient and robust benchmarks even\nfrom circuits containing thousands or millions of qubits, by employing\nefficient fidelity estimation techniques, including mirror circuit fidelity\nestimation and subcircuit volumetric benchmarking. $\\texttt{scarab}$ provides a\nsimple interface that enables the creation of reliable benchmarks by users who\nare not experts in the theory of quantum computer benchmarking or noise. We\ndemonstrate the flexibility and power of $\\texttt{scarab}$ by using it to turn\nexisting inefficient benchmarks into efficient benchmarks, to create benchmarks\nthat interrogate hardware and algorithmic trade-offs in Hamiltonian simulation,\nto quantify the in-situ efficacy of approximate circuit compilation, and to\ncreate benchmarks that use subcircuits to measure progress towards executing a\ncircuit of interest.",
+    "published": "2025-11-03T23:53:42+00:00",
+    "updated": "2025-11-03T23:53:42+00:00",
+    "link": "http://arxiv.org/abs/2511.02134v1",
+    "pdf_link": "http://arxiv.org/pdf/2511.02134v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2511.02125v1",
+    "title": "Superconducting pairing correlations on a trapped-ion quantum computer",
+    "authors": [
+      "Etienne Granet",
+      "Sheng-Hsuan Lin",
+      "Kevin Hémery",
+      "Reza Hagshenas",
+      "Pablo Andres-Martinez",
+      "David T. Stephen",
+      "Anthony Ransford",
+      "Jake Arkinstall",
+      "M. S. Allman",
+      "Pete Campora",
+      "Samuel F. Cooper",
+      "Robert D. Delaney",
+      "Joan M. Dreiling",
+      "Brian Estey",
+      "Caroline Figgatt",
+      "Cameron Foltz",
+      "John P. Gaebler",
+      "Alex Hall",
+      "Ali Husain",
+      "Akhil Isanaka",
+      "Colin J. Kennedy",
+      "Nikhil Kotibhaskar",
+      "Michael Mills",
+      "Alistair R. Milne",
+      "Annie J. Park",
+      "Adam P. Reed",
+      "Brian Neyenhuis",
+      "Justin G. Bohnet",
+      "Michael Foss-Feig",
+      "Andrew C. Potter",
+      "Ramil Nigmatullin",
+      "Mohsin Iqbal",
+      "Henrik Dreyer"
+    ],
+    "summary": "The Fermi-Hubbard model is the starting point for the simulation of many\nstrongly correlated materials, including high-temperature superconductors,\nwhose modelling is a key motivation for the construction of quantum simulation\nand computing devices. However, the detection of superconducting pairing\ncorrelations has so far remained out of reach, both because of their\noff-diagonal character-which makes them inaccessible to local density\nmeasurements-and because of the difficulty of preparing superconducting states.\nHere, we report measurement of significant pairing correlations in three\ndifferent regimes of Fermi-Hubbard models simulated on Quantinuum\\'s Helios\ntrapped-ion quantum computer. Specifically, we measure non-equilibrium pairing\ninduced by an electromagnetic field in the half-filled square lattice model,\nd-wave pairing in an approximate ground state of the checkerboard Hubbard model\nat $1/6$-doping, and s-wave pairing in a bilayer model relevant to nickelate\nsuperconductors. These results show that a quantum computer can reliably create\nand probe physically relevant states with superconducting pairing correlations,\nopening a path to the exploration of superconductivity with quantum computers.",
+    "published": "2025-11-03T23:30:10+00:00",
+    "updated": "2025-11-03T23:30:10+00:00",
+    "link": "http://arxiv.org/abs/2511.02125v1",
+    "pdf_link": "http://arxiv.org/pdf/2511.02125v1",
+    "categories": [
+      "quant-ph",
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2511.02085v1",
+    "title": "Current Cross-Correlation Spectroscopy of Majorana Bound States",
+    "authors": [
+      "Michael Ridley",
+      "Eliahu Cohen",
+      "Christian Flindt",
+      "Riku Tuovinen"
+    ],
+    "summary": "The clock speed of topological quantum computers based on Majorana zero mode\n(MZM)-supporting nanoscale devices is determined by the time taken for\nelectrons to traverse the device. We employ the time-dependent\nLandauer-B{\\\"u}ttiker transport theory for current cross-lead correlations in a\nsuperconducting nanowire junction hosting MZMs. From the time-dependent quantum\nnoise, we are able to extract traversal times for electrons crossing the\nsystem. After demonstrating a linear scaling of traversal times with nanowire\nlength, we present a heuristic formula for the traversal times which accurately\ncaptures their behaviour. We then connect our framework to a proposed\nexperimental verification of this discriminant between spurious and genuine\nMZMs utilizing time-resolved transport measurements.",
+    "published": "2025-11-03T21:51:13+00:00",
+    "updated": "2025-11-03T21:51:13+00:00",
+    "link": "http://arxiv.org/abs/2511.02085v1",
+    "pdf_link": "http://arxiv.org/pdf/2511.02085v1",
+    "categories": [
+      "cond-mat.mes-hall",
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2506.21015v2",
+    "title": "MediQ-GAN: Quantum-Inspired GAN for High Resolution Medical Image Generation",
+    "authors": [
+      "Qingyue Jiao",
+      "Yongcan Tang",
+      "Jun Zhuang",
+      "Jason Cong",
+      "Yiyu Shi"
+    ],
+    "summary": "Machine learning-assisted diagnosis shows promise, yet medical imaging\ndatasets are often scarce, imbalanced, and constrained by privacy, making data\naugmentation essential. Classical generative models typically demand extensive\ncomputational and sample resources. Quantum computing offers a promising\nalternative, but existing quantum-based image generation methods remain limited\nin scale and often face barren plateaus. We present MediQ-GAN, a\nquantum-inspired GAN with prototype-guided skip connections and a dual-stream\ngenerator that fuses classical and quantum-inspired branches. Its variational\nquantum circuits inherently preserve full-rank mappings, avoid rank collapse,\nand are theory-guided to balance expressivity with trainability. Beyond\ngeneration quality, we provide the first latent-geometry and rank-based\nanalysis of quantum-inspired GANs, offering theoretical insight into their\nperformance. Across three medical imaging datasets, MediQ-GAN outperforms\nstate-of-the-art GANs and diffusion models. While validated on IBM hardware for\nrobustness, our contribution is hardware-agnostic, offering a scalable and\ndata-efficient framework for medical image generation and augmentation.",
+    "published": "2025-06-26T05:14:45+00:00",
+    "updated": "2025-11-03T21:45:49+00:00",
+    "link": "http://arxiv.org/abs/2506.21015v2",
+    "pdf_link": "http://arxiv.org/pdf/2506.21015v2",
+    "categories": [
+      "cs.CV",
+      "cs.LG",
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2511.02051v1",
+    "title": "Towards Continuous-variable Quantum Neural Networks for Biomedical Imaging",
+    "authors": [
+      "Daniel Alejandro Lopez",
+      "Oscar Montiel",
+      "Oscar Castillo",
+      "Miguel Lopez-Montiel"
+    ],
+    "summary": "Continuous-variable (CV) quantum computing offers a promising framework for\nscalable quantum machine learning, leveraging optical systems with\ninfinite-dimensional Hilbert spaces. While discrete-variable (DV) quantum\nneural networks have shown remarkable progress in various computer vision\ntasks, CV quantum models remain comparatively underexplored. In this work, we\npresent a feasibility study of continuous-variable quantum neural networks\n(CV-QCNNs) applied to biomedical image classification. Utilizing photonic\ncircuit simulation frameworks, we construct CV quantum circuits composed of\nGaussian gates, such as displacement, squeezing, rotation, and beamsplitters to\nemulate convolutional behavior. Our experiments are conducted on the MedMNIST\ndataset collection, a set of annotated medical image benchmarks for multiple\ndiagnostic tasks. We evaluate CV-QCNN's performance in terms of classification\naccuracy, model expressiveness, and resilience to Gaussian noise, comparing\nagainst classical CNNs and equivalent DV quantum circuits. This study aims to\nidentify trade-offs between DV and CV paradigms for quantum-enhanced medical\nimaging. Our results highlight the potential of continuous-variable models and\ntheir viability for future computer-aided diagnosis systems.",
+    "published": "2025-11-03T20:35:47+00:00",
+    "updated": "2025-11-03T20:35:47+00:00",
+    "link": "http://arxiv.org/abs/2511.02051v1",
+    "pdf_link": "http://arxiv.org/pdf/2511.02051v1",
+    "categories": [
+      "quant-ph",
+      "cs.ET",
+      "physics.med-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2508.05738v3",
+    "title": "Efficient Quantum Implementation of Dynamical Mean Field Theory for Correlated Materials",
+    "authors": [
+      "Norman Hogan",
+      "Efekan Kökcü",
+      "Thomas Steckmann",
+      "Liam P. Doak",
+      "Carlos Mejuto-Zaera",
+      "Daan Camps",
+      "Roel Van Beeumen",
+      "Wibe A. de Jong",
+      "A. F. Kemper"
+    ],
+    "summary": "The accurate theoretical description of materials with strongly correlated\nelectrons is a formidable challenge in condensed matter physics and\ncomputational chemistry. Dynamical Mean Field Theory (DMFT) is a successful\napproach that predicts behaviors of such systems by incorporating some of the\ncorrelated behavior using an impurity model, but it is limited by the need to\ncalculate the impurity Green's function. This work proposes a framework for\nDMFT calculations on quantum computers, focusing on near-term applications. It\nleverages the structure of the impurity problem, combining a low-rank Gaussian\nsubspace representation of the ground state and a compressed, short-depth\nquantum circuit that joins state preparation with time evolution to compute\nGreen's functions. We demonstrate the convergence of the DMFT algorithm using\nthe Gaussian subspace in a noise-free setting, and show the hardware viability\nof circuit compression by extracting the impurity Green's function on IBM\nquantum processors for a single impurity coupled to three bath orbitals (8\nqubits, 1 ancilla). We discuss potential paths toward realizing this quantum\ncomputing use case in materials science.",
+    "published": "2025-08-07T18:00:01+00:00",
+    "updated": "2025-11-03T19:18:06+00:00",
+    "link": "http://arxiv.org/abs/2508.05738v3",
+    "pdf_link": "http://arxiv.org/pdf/2508.05738v3",
+    "categories": [
+      "quant-ph",
+      "cond-mat.str-el"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2505.10513v2",
+    "title": "Unlocking early fault-tolerant quantum computing with mitigated magic dilution",
+    "authors": [
+      "Surabhi Luthra",
+      "Alexandra E. Moylett",
+      "Dan E. Browne",
+      "Earl T. Campbell"
+    ],
+    "summary": "As quantum computing progresses towards the early fault-tolerant regime,\nquantum error correction will play a crucial role in protecting qubits and\nenabling logical Clifford operations. However, the number of logical qubits\nwill initially remain limited, posing challenges for resource-intensive tasks\nlike magic state distillation. It is therefore essential to develop efficient\nmethods for implementing non-Clifford operations, such as small-angle\nrotations, to maximise the computational capabilities of devices within these\nconstraints. In this work, we introduce mitigated magic dilution (MMD) as an\napproach to synthesise small-angle rotations by employing quantum error\nmitigation techniques to sample logical Clifford circuits given noisy encoded\nmagic states. We explore the utility of our approach for the simulation of the\n2D Fermi-Hubbard model. We identify evolution time regimes where MMD\noutperforms the Ross-Selinger gate synthesis method [Quantum Inf.\\ Comp.\\\n\\textbf{16}, 901-953 (2016), arXiv:1403.2975] in the number of noisy encoded\nmagic states required for square lattices up to size $8 \\times 8$. Moreover, we\ndemonstrate that our method can provide a practical advantage which is\nquantified by a better-than-quadratic improvement in the resource requirements\nfor small-angle rotations over classical simulators. This work paves the way\nfor early fault-tolerant demonstrations on devices supporting millions of\nquantum operations, the so-called MegaQuOp regime.",
+    "published": "2025-05-15T17:19:19+00:00",
+    "updated": "2025-11-03T18:59:00+00:00",
+    "link": "http://arxiv.org/abs/2505.10513v2",
+    "pdf_link": "http://arxiv.org/pdf/2505.10513v2",
+    "categories": [
+      "quant-ph"
+    ]
   }
 ]
