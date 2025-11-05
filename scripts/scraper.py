@@ -143,7 +143,7 @@ def fetch_papers(query, max_results):
         search = arxiv.Search(
             query=query,
             max_results=max_results,
-            sort_by=arxiv.SortCriterion.SubmittedDate
+            sort_by=arxiv.SortCriterion.LastUpdatedDate
         )
         
         results = list(search.results())
