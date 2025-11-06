@@ -10,9 +10,169 @@ The keywords I'm currently tracking are defined in `config.ini`.
 
 <!-- LATEST_PAPERS_START -->
 
-# Papers Found on: 2025-11-05
+# Papers Found on: 2025-11-06
 
-No new papers matching your keywords were found in the last 48 hours.
+### Introducing Quantum Computing into Statistical Physics: Random Walks and the Ising Model with Qiskit
+* **Authors:** Zihan Li et al.
+* **Published (v1):** 2025-11-05
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2511.03696v1
+* **Abstract:** Quantum computing offers a powerful new perspective on probabilistic and collective behaviors traditionally taught in statistical physics. This paper presents two classroom-ready modules that integrate quantum computing into the undergraduate curriculum using Qiskit: the quantum random walk and the Ising model. Both modules allow students to simulate and contrast classical and quantum systems, deepening their understanding of concepts such as superposition, interference, and statistical distributions. We outline the quantum circuits involved, provide sample code and student activities, and discuss how each example can be used to enhance student engagement with statistical physics. These modules are suitable for integration into courses in statistical mechanics, modern physics, or as part of an introductory unit on quantum computing.
+
+### Realization of a Quantum Streaming Algorithm on Long-lived Trapped-ion Qubits
+* **Authors:** Pradeep Niroula et al.
+* **Published (v1):** 2025-11-05
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2511.03689v1
+* **Abstract:** Large classical datasets are often processed in the streaming model, with data arriving one item at a time. In this model, quantum algorithms have been shown to offer an unconditional exponential advantage in space. However, experimentally implementing such streaming algorithms requires qubits that remain coherent while interacting with an external data stream. In this work, we realize such a data-streaming model using Quantinuum Helios trapped-ion quantum computer with long-lived qubits that communicate with an external server. We implement a quantum pair sketch, which is the primitive underlying many quantum streaming algorithms, and use it to solve Hidden Matching, a problem known to exhibit a theoretical exponential quantum advantage in space. Furthermore, we compile the quantum streaming algorithm to fault-tolerant quantum architectures based on surface and bivariate bicycle codes and show that the quantum space advantage persists even with the overheads of fault-tolerance.
+
+### Entanglement-assisted circuit knitting
+* **Authors:** Shao-Hua Hu et al.
+* **Published (v1):** 2025-10-30
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2510.26789v2
+* **Abstract:** Distributed quantum computing (DQC) provides a promising route toward scalable quantum computation, where entanglement-assisted LOCC and circuit knitting represent two complementary approaches. The former deterministically realizes nonlocal operations but demands extensive entanglement resources, whereas the latter requires no entanglement yet suffers from exponential sampling overhead. Here, we propose a hybrid framework that integrates these two paradigms by performing circuit knitting assisted with a limited amount of entanglement. We establish a general theoretical formulation that yields lower bounds on the optimal sampling overhead and present a constructive protocol demonstrating that a single shared Bell pair can reduce the overhead to the asymptotic limit of standard circuit knitting without requiring classical communication. Furthermore, we extend the entanglement-assisted circuit knitting framework to the black-box setting, which can be applicable to the circuit knitting of quantum combs. This hybrid approach can be viewed as a form of hybrid classical-quantum computation, balancing the trade-off between sampling and entanglement efficiency, and enabling more resource-practical implementations of distributed quantum computing.
+
+### Towards quantum topological data analysis: torsion detection
+* **Authors:** Nhat A. Nghiem et al.
+* **Published (v1):** 2025-08-27
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2508.19943v2
+* **Abstract:** Topological data analysis (TDA) has become an attractive area for the application of quantum computing. Recent advances have uncovered many interesting connections between the two fields. On one hand, complexity theoretic results show that estimating Betti numbers, a central task in TDA, is NP hard, indicating that a generic quantum speedup is unlikely. On the other hand, several recent studies have explored structured, less generic settings and demonstrated that quantum algorithms can still achieve significant speedups under certain conditions. To date, most of these efforts have focused on Betti numbers, which are topological invariants capturing the intrinsic connectivity and holes in a dataset. However, there is another important feature of topological spaces: torsion. Torsion represents a distinct component of homology that can reveal richer structural information. In this work, we introduce a quantum algorithm for torsion detection, that is, determining whether a given simplicial complex contains torsion. Our algorithm, assisted by a low complexity classical procedure, can succeed with high probability and potentially offer exponential speedup over the classical counterpart.
+
+### A Cross-Platform Execution Engine for the Quantum Intermediate Representation
+* **Authors:** Elaine Wong et al.
+* **Published (v1):** 2024-04-22
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2404.14299v2
+* **Abstract:** Hybrid languages like the quantum intermediate representation (QIR) are essential for programming systems that mix quantum and conventional computing models, while execution of these programs is often deferred to a system-specific implementation. Here, we develop the QIR Execution Engine (QIR-EE) for parsing, interpreting, and executing QIR across multiple hardware platforms. QIR-EE uses LLVM to execute hybrid instructions specifying quantum programs and, by design, presents extension points that support customized runtime and hardware environments. We demonstrate an implementation that uses the XACC quantum hardware-accelerator library to dispatch prototypical quantum programs on different commercial quantum platforms and numerical simulators, and we validate execution of QIR-EE on IonQ, Quantinuum, and IBM hardware. Our results highlight the efficiency of hybrid executable architectures for handling mixed instructions, managing mixed data, and integrating with quantum computing frameworks to realize cross-platform execution.
+
+### Constant-Factor Improvements in Quantum Algorithms for Linear Differential Equations
+* **Authors:** Matthew Pocrnic et al.
+* **Published (v1):** 2025-06-25
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2506.20760v2
+* **Abstract:** Finding the solution to linear ordinary differential equations of the form $\partial_t u(t) = -A(t)u(t)$ has been a promising theoretical avenue for \textit{asymptotic} quantum speedups. However, despite the improvements to existing quantum differential equation solvers over the years, little is known about \textit{constant factor} costs of such quantum algorithms. This makes it challenging to assess the prospects for using these algorithms in practice. In this work, we prove constant factor bounds for a promising new quantum differential equation solver, the linear combination of Hamiltonian simulation (LCHS) algorithm. Our bounds are formulated as the number of queries to a unitary $U_A$ that block encodes the generator $A$. In doing so, we make several algorithmic improvements such as tighter truncation and discretization bounds on the LCHS kernel integral, a more efficient quantum compilation scheme for the SELECT operator in LCHS, as well as use of a constant-factor bound for oblivious amplitude amplification, which may be of general interest. To the best of our knowledge, our new formulae improve over previous state of the art by at least two orders of magnitude, where the speedup can be far greater if state preparation has a significant cost. Accordingly, for any previous resource estimates of time-independent linear differential equations for the most general case whereby the dynamics are not \textit{fast-forwardable}, these findings provide a 100-200x reduction in runtime costs. This analysis contributes towards establishing more promising applications for quantum computing.
+
+### Security and Privacy Management of IoT Using Quantum Computing
+* **Authors:** Jaydip Sen et al.
+* **Published (v1):** 2025-11-05
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2511.03538v1
+* **Abstract:** The convergence of the Internet of Things (IoT) and quantum computing is redefining the security paradigm of interconnected digital systems. Classical cryptographic algorithms such as RSA, Elliptic Curve Cryptography (ECC), and Advanced Encryption Standard (AES) have long provided the foundation for securing IoT communication. However, the emergence of quantum algorithms such as Shor's and Grover's threatens to render these techniques vulnerable, necessitating the development of quantum-resilient alternatives. This chapter examines the implications of quantum computing for IoT security and explores strategies for building cryptographically robust systems in the post-quantum era. It presents an overview of Post-Quantum Cryptographic (PQC) families, including lattice-based, code-based, hash-based, and multivariate approaches, analyzing their potential for deployment in resource-constrained IoT environments. In addition, quantum-based methods such as Quantum Key Distribution (QKD) and Quantum Random Number Generators (QRNGs) are discussed for their ability to enhance confidentiality and privacy through physics-based security guarantees. The chapter also highlights issues of privacy management, regulatory compliance, and standardization, emphasizing the need for collaborative efforts across academia, industry, and governance. Overall, it provides a comprehensive perspective on security IoT ecosystems against quantum threats and ensures resilience in the next generation of intelligent networks.
+
+### Low Overhead Universal Quantum Computation with Triorthogonal Codes
+* **Authors:** Dawei Jiao et al.
+* **Published (v1):** 2025-10-07
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2510.05708v2
+* **Abstract:** We study the use of triorthogonal codes for universal fault-tolerant quantum computation and propose two methods to circumvent the Eastin-Knill theorem, which prohibits any single quantum error-correcting code from supporting both universality and a transversal gate set. We show that our methods reduce the resource overhead compared with existing fault-tolerant protocols. We develop a simple fault-tolerant implementation of the logical Hadamard gate for triorthogonal codes by exploiting the fact that they have transversal controlled-Z (CZ) gates, resulting in a circuit with reduced overhead. We also introduce a procedure for generating a symmetric Calderbank-Shor-Steane code paired with a triorthogonal code, which allows CNOT and CZ gate transversality across the pair of codes. In addition, we present logical state teleportation circuits that transfer encoded states between the two codes, allowing all logical operations to be performed transversally. Our methods can be integrated into the Steane error correction framework without incurring additional resource cost. Finally, using the 15-qubit code as an example, we demonstrate that our protocols significantly reduce the gate overhead compared with other existing methods. These results highlight the potential of combining distinct code structures to achieve low-overhead, universal fault-tolerant quantum computation.
+
+### Learning-Optimized Qubit Mapping and Reuse to Minimize Inter-Core Communication in Modular Quantum Architectures
+* **Authors:** Sokea Sang et al.
+* **Published (v1):** 2025-06-11
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2506.09323v3
+* **Abstract:** Modular quantum architectures have emerged as a promising approach for scaling quantum computing systems by connecting multiple Quantum Processing Units (QPUs). However, this approach introduces significant challenges due to costly inter-core operations between chips and quantum state transfers, which contribute to noise and quantum decoherence. This paper presents QARMA, a novel Qubit mapping using Attention-based deep Reinforcement learning (DRL) for Modular quantum Architectures, along with its extension QARMA-R that incorporates dynamic qubit reuse capabilities. Our approach combines an attention-based mechanism with Graph Neural Networks (GNN) to learn optimal qubit allocation, routing, and reuse strategies that minimize inter-core communications. We introduce two key innovations: (1) a transformer-based encoder that captures both the global circuit structure and local qubit interactions and (2) a dynamic qubit reuse compilation mechanism that leverages mid-circuit measurement and reset operations to reduce inter-operation and qubit requirements. Our experimental results show significant improvements over state-of-the-art approaches. Compared to highly-optimized Qiskit with modular architecture configuration, QARMA-R reduces inter-core communications by up to 100% (on average 86%), while QARMA maintains 15-40% improvement for larger circuits without reuse. Against traditional modular qubit mapping, our approach achieves 97-100% reduction in inter-core operation. The proposed methods advance quantum circuit compilation techniques and enable the execution of more extensive quantum algorithms on resource-constrained modular quantum systems, contributing to the growing body of research on scalable quantum computing architectures.
+
+### Demonstration of magic state power of $\mathbf{D}(\mathbf{S}_{3})$ anyons with two qudits
+* **Authors:** Lucy Byles et al.
+* **Published (v1):** 2024-08-06
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2408.03377v3
+* **Abstract:** We consider a lattice of $d=6$ qudits that supports $\mathbf{D}(\mathbf{S}_3)$ non-Abelian anyons. We present a method for implementing both braiding and fusion evolutions using only the operators that create and measure anyons, without requiring additional dynamical control. This provides a minimal protocol demonstrating that $\mathbf{D}(\mathbf{S}_3)$ anyons can generate magic states, thereby establishing their universality for quantum computation. Furthermore, we show that the entire scheme can be encoded in just two qudits, offering a compact blueprint that is inherently scalable and readily implementable in current quantum platforms.
+
+### Trade-offs between classical and quantum space using spooky pebbling
+* **Authors:** Arend-Jan Quist et al.
+* **Published (v1):** 2024-01-19
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2401.10579v6
+* **Abstract:** Pebble games are used to study space/time trade-offs. Recently, spooky pebble games were introduced to study classical space / quantum space / time trade-offs for simulation of classical circuits on quantum computers. In this paper, the spooky pebble game framework is applied for the first time to general circuits. Using this framework we prove an upper bound for quantum space in the spooky pebble game. We also prove that solving the spooky pebble game is PSPACE-complete. Moreover, we present a solver for the spooky pebble game based on satisfiability solvers combined with heuristic optimizers. This spooky pebble game solver was empirically evaluated by calculating optimal classical space / quantum space / time trade-offs. Within limited runtime, the solver could find a strategy reducing quantum space when classical space is taken into account, showing that the spooky pebble model is useful to reduce quantum space.
+
+### Universal Quantum Simulation of 50 Qubits on Europe`s First Exascale Supercomputer Harnessing Its Heterogeneous CPU-GPU Architecture
+* **Authors:** Hans De Raedt et al.
+* **Published (v1):** 2025-11-05
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2511.03359v1
+* **Abstract:** We have developed a new version of the high-performance J\"ulich universal quantum computer simulator (JUQCS-50) that leverages key features of the GH200 superchips as used in the JUPITER supercomputer, enabling simulations of a 50-qubit universal quantum computer for the first time. JUQCS-50 achieves this through three key innovations: (1) extending usable memory beyond GPU limits via high-bandwidth CPU-GPU interconnects and LPDDR5 memory; (2) adaptive data encoding to reduce memory footprint with acceptable trade-offs in precision and compute effort; and (3) an on-the-fly network traffic optimizer. These advances result in an 11.4-fold speedup over the previous 48-qubit record on the K computer.
+
+### Isolated quantum-state networks in ultracold molecules
+* **Authors:** Tom R. Hepworth et al.
+* **Published (v1):** 2025-11-05
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2511.03324v1
+* **Abstract:** Precise control over rotational angular momentum is at the heart of recent advances in quantum chemistry, quantum simulation, and quantum computation with ultracold bialkali molecules. Each rotational state comprises a rich manifold of hyperfine states arising from combinations of rotation and nuclear spins; this often yields hundreds of transitions available between a given pair of rotational states, and the efficient navigation of this complex space is a current challenge for experiments. Here, we describe a general approach based on a simple heuristic and graph theory to quickly identify optimal sets of states in ultracold bialkali molecules. We explain how to find pathways through the many available transitions to prepare the molecule in a specific state with maximum speed for any desired fidelity. We then examine networks of states where multiple couplings are present at the same time. As example applications, we first identify a closed loop of four states in the RbCs molecule where there is minimal population leakage out of the loop during simultaneous microwave coupling; we then extend the optimisation procedure to account for decoherence induced by magnetic-field noise and obtain an optimal set of 3 states for quantum computation applications.
+
+### TensorHyper-VQC: A Tensor-Train-Guided Hypernetwork for Robust and Scalable Variational Quantum Computing
+* **Authors:** Jun Qi et al.
+* **Published (v1):** 2025-08-01
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2508.01116v2
+* **Abstract:** Variational Quantum Computing (VQC) faces fundamental scalability barriers, primarily due to the presence of barren plateaus and its sensitivity to quantum noise. To address these challenges, we introduce TensorHyper-VQC, a novel tensor-train (TT)-guided hypernetwork framework that significantly improves the robustness and scalability of VQC. Our framework fully delegates the generation of quantum circuit parameters to a classical TT network, effectively decoupling optimization from quantum hardware. This innovative parameterization mitigates gradient vanishing, enhances noise resilience through structured low-rank representations, and facilitates efficient gradient propagation. Grounded in Neural Tangent Kernel and statistical learning theory, our rigorous theoretical analyses establish strong guarantees on approximation capability, optimization stability, and generalization performance. Extensive empirical results across quantum dot classification, Max-Cut optimization, and molecular quantum simulation tasks demonstrate that TensorHyper-VQC consistently achieves superior performance and robust noise tolerance, including hardware-level validation on a 156-qubit IBM Heron processor. These results position TensorHyper-VQC as a scalable and noise-resilient framework for advancing practical quantum machine learning on near-term devices.
+
+### Noise-Resilient Quantum Metrology with Quantum Computing
+* **Authors:** Xiangyu Wang et al.
+* **Published (v1):** 2025-08-31
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2509.00771v2
+* **Abstract:** Quantum computing has made remarkable strides in recent years, as demonstrated by quantum supremacy experiments and the realization of high-fidelity, fault-tolerant gates. However, a major obstacle persists: practical real-world applications remain scarce, largely due to the inefficiency of loading classical data into quantum processors. Here, we propose an alternative strategy that shifts the focus from classical data encoding to directly processing quantum data. We target quantum metrology, a practical quantum technology whose precision is often constrained by realistic noise. We develop an experimentally feasible scheme in which a quantum computer optimizes information acquired from quantum metrology, thereby enhancing performance in noisy quantum metrology tasks and overcoming the classical-data-loading bottleneck. We demonstrate this approach through experimental implementation with nitrogen-vacancy centers in diamond and numerical simulations using models of distributed superconducting quantum processors. Our results show that this method improves the accuracy of sensing estimates and significantly boosts sensitivity, as quantified by the quantum Fisher information, thus offering a new pathway to harness near-term quantum computers for realistic quantum metrology.
+
+### Thermodynamic Probes of Multipartite Entanglement in Strongly Interacting Quantum Systems
+* **Authors:** Harsh Sharma et al.
+* **Published (v1):** 2025-11-05
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2511.03266v1
+* **Abstract:** Quantifying multipartite entanglement in quantum many-body systems and hybrid quantum computing architectures is a fundamental yet challenging task. In recent years, thermodynamic quantities such as the maximum extractable work from an isolated system (the ergotropy) have allowed for entanglement measures that are operationally more accessible. However, these measures can be restrictive when applied to systems governed by Hamiltonians with strong collective or interparticle interactions. Motivated by advances in quantum simulators, we propose a framework that circumvents these restrictions by evaluating global and local ergotropy either through controlled quenching of interactions or by measuring suitable local observables only. We show that this formalism allows us to correctly estimate genuine multipartite entanglement in both stationary and time-evolved states of systems with strong interactions, including parametrized quantum states simulated on a quantum circuit with varying circuit depth and noise. We demonstrate its applicability to realistic physical models, namely, the Tavis-Cummings model, the three-level Dicke model, and the transverse-field Ising model, highlighting its potential as a versatile tool for characterizing entanglement in near-term quantum simulators.
+
+### Transition-Aware Decomposition of Single-Qudit Gates
+* **Authors:** Denis A. Drozhzhin et al.
+* **Published (v1):** 2025-10-29
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2510.25561v2
+* **Abstract:** Quantum computation with $d$-level quantum systems, also known as qudits, benefits from the possibility to use a richer computational space compared to qubits. However, for arbitrary qudit-based hardware platform the issue is that a generic qudit operation has to be decomposed into the sequence of native operations $-$ pulses that are adjusted to the transitions between two levels in a qudit. Typically, not all levels in a qudit are simply connected to each other due to specific selection rules. Moreover, the number of pulses plays a significant role, since each pulse takes a certain execution time and may introduce error. In this paper, we propose a resource-efficient algorithm to decompose single-qudit operations into the sequence of pulses that are allowed by qudit selection rules. Using the developed algorithm, the number of pulses is at most $d(d{-}1)/2$ for an arbitrary single-qudit operation. For specific operations the algorithm could produce even fewer pulses. We provide a comparison of qudit decompositions for several types of trapped ions, specifically $^{171}\text{Yb}^+$, $^{137}\text{Ba}^+$ and $^{40}\text{Ca}^+$ with different selection rules, and also decomposition for superconducting qudits.
+
+### The phase diagram of quantum chromodynamics in one dimension on a quantum computer
+* **Authors:** Anton T. Than et al.
+* **Published (v1):** 2024-12-31
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2501.00579v2
+* **Abstract:** The quantum chromodynamics (QCD) phase diagram, which reveals the state of strongly interacting matter at different temperatures and densities, is key to answering open questions in physics, ranging from the behavior of particles in neutron stars to the conditions of the early universe. However, classical simulations of QCD face significant computational barriers, such as the sign problem at finite matter densities. Quantum computing offers a promising solution to overcome these challenges. Here, we take an important step toward exploring the QCD phase diagram with quantum devices by preparing thermal states in one-dimensional non-Abelian gauge theories. We experimentally simulate the thermal states of SU(2) and SU(3) gauge theories at finite densities on a trapped-ion quantum computer using a variational method. This is achieved by introducing two features: Firstly, we add motional ancillae to the existing qubit register to efficiently prepare thermal probability distributions. Secondly, we introduce charge-singlet measurements to enforce color-neutrality constraints. This work marks the first lattice gauge theory quantum simulation of QCD at finite density and temperature for two and three colors, laying the foundation to explore QCD phenomena on quantum platforms.
+
+### Multi-qubit DC gates over an inhomogeneous array of quantum dots
+* **Authors:** Jiaan Qi et al.
+* **Published (v1):** 2024-03-11
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2403.06894v3
+* **Abstract:** The prospect of large-scale quantum computation with an integrated chip of spin qubits is imminent as technology improves. This invites us to think beyond the traditional 2-qubit-gate framework and consider a naturally supported ``instruction set'' of multi-qubit gates. In this work, we systematically study such a family of multi-qubit gates implementable over an array of quantum dots by DC evolution. A useful representation of the computational Hamiltonian is proposed for a dot-array with strong spin-orbit coupling effects, distinctive $g$-factor tensors and varying interdot couplings. Adopting a perturbative treatment, we model a multi-qubit DC gate by the first-order dynamics in the qubit frame and develop a detailed formalism for decomposing the resulting gate, estimating and optimizing the coherent gate errors with appropriate local phase shifts for arbitrary array connectivity. Examples of such multi-qubit gates and their applications in quantum error correction and quantum algorithms are also explored, demonstrating their potential advantage in accelerating complex tasks and reducing overall errors.
+
+### Frequency- and Amplitude-Modulated Gates for Universal Quantum Control
+* **Authors:** Qi Ding et al.
+* **Published (v1):** 2025-11-05
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2511.03164v1
+* **Abstract:** Achieving high-fidelity single- and two-qubit gates is essential for executing arbitrary digital quantum algorithms and for building error-corrected quantum computers. We propose a theoretical framework for implementing quantum gates using frequency- and amplitude-modulated microwave control, which extends conventional amplitude modulation by introducing frequency modulation as an additional degree of control. Our approach operates on fixed-frequency qubits, converting the need for qubit frequency tunability into drive frequency modulation. Using Floquet theory, we analyze and design these drives for optimal fidelity within specified criteria. Our framework spans adiabatic to nonadiabatic gates within the Floquet framework, ensuring broad applicability across gate types and control schemes. Using typical transmon qubit parameters in numerical simulations, we demonstrate a universal gate set-including the X, Hadamard, phase, and CZ gates-with control error well below 0.1% and gate times of 25-40 ns for single-qubit operations and 125-135 ns for two-qubit operations. Furthermore, we show an always-on CZ gate tailored for driven qubits, which has gate times of 80-90 ns.
+
+### Fast gradient-free optimization of excitations in variational quantum eigensolvers
+* **Authors:** Jonas Jäger et al.
+* **Published (v1):** 2024-09-09
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2409.05939v3
+* **Abstract:** Finding molecular ground states and energies with variational quantum eigensolvers is central to chemistry applications on quantum computers. Physically motivated ans\"atze based on excitation operators respect physical symmetries, but existing quantum-aware optimizers, such as Rotosolve, have been limited to simpler operator types. To fill this gap, we introduce ExcitationSolve, a fast quantum-aware optimizer that is globally-informed, gradient-free, and hyperparameter-free. ExcitationSolve extends these optimizers to parameterized unitaries with generators $G$ of the form $G^3=G$ exhibited by excitation operators in approaches such as unitary coupled cluster. ExcitationSolve determines the global optimum along each variational parameter using the same quantum resources that gradient-based optimizers require for one update step. We provide optimization strategies for both fixed and adaptive variational ans\"atze, along with generalizations for simultaneously selecting and optimizing multiple excitations. On molecular ground state energy benchmarks, ExcitationSolve outperforms state-of-the-art optimizers by converging faster, achieving chemical accuracy for equilibrium geometries in a single parameter sweep, yielding shallower adaptive ans\"atze and remaining robust to real hardware noise. By uniting physical insight with efficient optimization, ExcitationSolve paves the way for scalable quantum chemistry calculations.
+
+### Grid-Partitioned MWIS Solving with Neutral Atom Quantum Computing for QUBO Problems
+* **Authors:** Soumyadip Das et al.
+* **Published (v1):** 2025-10-21
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2510.18540v2
+* **Abstract:** Quadratic Unconstrained Binary Optimization (QUBO) problems are prevalent in real-world applications, such as portfolio optimization, but pose significant computational challenges for large-scale instances. We propose a hybrid quantum-classical framework that leverages neutral atom quantum computing to address QUBO problems by mapping them to the Maximum Weighted Independent Set (MWIS) problem on unit disk graphs. Our approach employs spatial grid partitioning to decompose the problem into manageable subgraphs, solves each subgraph using Analog Hamiltonian Simulation (AHS), and merges solutions greedily to approximate the global optimum. We evaluate the framework on a 50-asset portfolio optimization problem using historical S&P 500 data, benchmarking against classical simulated annealing. Results demonstrate competitive performance, highlighting the scalability and practical potential of our method in the Noisy Intermediate-Scale Quantum (NISQ) era. As neutral atom quantum hardware advances, our framework offers a promising path toward solving large-scale optimization problems efficiently.
+
+### Proposals for experimentally realizing (mostly) quantum-autonomous gates
+* **Authors:** José Antonio Marín Guzmán et al.
+* **Published (v1):** 2025-10-08
+* **Updated:** 2025-11-05
+* **Link:** http://arxiv.org/abs/2510.07372v2
+* **Abstract:** Autonomous quantum machines (AQMs) execute tasks without requiring time-dependent external control. Motivations for AQMs include the restrictions imposed by classical control on quantum machines' coherence times and geometries. Most AQM work is theoretical and abstract; yet an experiment recently demonstrated AQMs' usefulness in qubit reset, crucial to quantum computing. To further reduce quantum computing's classical control, we propose realizations of (fully and partially) quantum-autonomous gates on three platforms: Rydberg atoms, trapped ions, and superconducting qubits. First, we show that a Rydberg-blockade interaction or an ultrafast transition can quantum-autonomously effect entangling gates on Rydberg atoms. One can perform $Z$ or entangling gates on trapped ions mostly quantum-autonomously, by sculpting a linear Paul trap or leveraging a ring trap. Passive lasers control these gates, as well as the Rydberg-atom gates, quantum-autonomously. Finally, circuit quantum electrodynamics can enable quantum-autonomous $Z$ and $XY$ gates on superconducting qubits. The gates can serve as building blocks for (fully or partially) quantum-autonomous circuits, which may reduce classical-control burdens.
+
 <!-- LATEST_PAPERS_END -->
 
 ## Full Archive
