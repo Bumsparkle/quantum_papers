@@ -1102,5 +1102,313 @@
     "categories": [
       "quant-ph"
     ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2511.04633v1",
+    "title": "Unclonable Cryptography in Linear Quantum Memory",
+    "authors": [
+      "Omri Shmueli",
+      "Mark Zhandry"
+    ],
+    "summary": "Quantum cryptography is a rapidly-developing area which leverages quantum\ninformation to accomplish classically-impossible tasks. In many of these\nprotocols, quantum states are used as long-term cryptographic keys. Typically,\nthis is to ensure the keys cannot be copied by an adversary, owing to the\nquantum no-cloning theorem. Unfortunately, due to quantum state's tendency to\ndecohere, persistent quantum memory will likely be one of the most challenging\nresources for quantum computers. As such, it will be important to minimize\npersistent memory in quantum protocols.\n  In this work, we consider the case of one-shot signatures (OSS), and more\ngeneral quantum signing tokens. These are important unclonable primitives,\nwhere quantum signing keys allow for signing a single message but not two.\nNaturally, these quantum signing keys would require storage in long-term\nquantum memory. Very recently, the first OSS was constructed in a classical\noracle model and also in the standard model, but we observe that the quantum\nmemory required for these protocols is quite large. In this work, we\nsignificantly decrease the quantum secret key size, in some cases achieving\nasymptotically optimal size. To do so, we develop novel techniques for proving\nthe security of cryptosystems using coset states, which are one of the main\ntools used in unclonable cryptography.",
+    "published": "2025-11-06T18:30:28+00:00",
+    "updated": "2025-11-06T18:30:28+00:00",
+    "link": "http://arxiv.org/abs/2511.04633v1",
+    "pdf_link": "http://arxiv.org/pdf/2511.04633v1",
+    "categories": [
+      "quant-ph",
+      "cs.CR"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2511.04608v1",
+    "title": "Qubit Mapping and Routing tailored to Advanced Quantum ISAs: Not as Costly as You Think",
+    "authors": [
+      "Zhaohui Yang",
+      "Kai Zhang",
+      "Xinyang Tian",
+      "Xiangyu Ren",
+      "Yingjian Liu",
+      "Yunfeng Li",
+      "Jianxin Chen",
+      "Dawei Ding",
+      "Yuanx Xie"
+    ],
+    "summary": "Qubit mapping/routing is a critical stage in compilation for both near-term\nand fault-tolerant quantum computers, yet existing scalable methods typically\nimpose several times the routing overhead in terms of circuit depth or\nduration. This inefficiency stems from a fundamental disconnect: compilers rely\non an abstract routing model (e.g., three-$ \\mathrm{CX} $-unrolled SWAP\ninsertion) that completely ignores the idiosyncrasies of native gates supported\nby physical devices.\n  Recent hardware breakthroughs have enabled high-precision implementations of\ndiverse instruction set architectures (ISAs) beyond standard\n$\\mathrm{CX}$-based gates. Advanced ISAs involving gates such as\n$\\mathrm{\\sqrt{iSWAP}}$ and $\\mathrm{ZZ}(\\theta)$ gates offer superior circuit\nsynthesis capabilities and can be realized with higher fidelities. However,\nsystematic compiler optimization strategies tailored to these advanced ISAs are\nlacking.\n  To address this, we propose Canopus, a unified qubit mapping/routing\nframework applicable to diverse quantum ISAs. Built upon the canonical\nrepresentation of two-qubit gates, Canopus centers on qubit routing to perform\ndeep co-optimization in an ISA-aware approach. Canopus leverages the two-qubit\ncanonical representation and the monodromy polytope to model the synthesis cost\nfor more intelligent $ \\mathrm{SWAP} $ insertion during the routing stage. We\nalso formalize the commutation relations between two-qubit gates through the\ncanonical form, providing a generalized approach to commutativity-based\noptimizations. Experiments show that Canopus consistently reduces routing\noverhead by 15\\%-35\\% compared to state-of-the-art methods across different\nISAs and topologies. Our work also presents a coherent method for\nco-exploration of program patterns, quantum ISAs, and hardware topologies.",
+    "published": "2025-11-06T17:58:53+00:00",
+    "updated": "2025-11-06T17:58:53+00:00",
+    "link": "http://arxiv.org/abs/2511.04608v1",
+    "pdf_link": "http://arxiv.org/pdf/2511.04608v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2408.03987v2",
+    "title": "Double-bracket quantum algorithms for high-fidelity ground state preparation",
+    "authors": [
+      "Matteo Robbiati",
+      "Edoardo Pedicillo",
+      "Andrea Pasquale",
+      "Xiaoyue Li",
+      "Oriel Kiss",
+      "Andrew Wright",
+      "Renato M. S. Farias",
+      "Khanh Uyen Giang",
+      "Jeongrak Son",
+      "Johannes Knörzer",
+      "Siong Thye Goh",
+      "Jun Yong Khoo",
+      "Nelly H. Y. Ng",
+      "Zoë Holmes",
+      "Stefano Carrazza",
+      "Marek Gluza"
+    ],
+    "summary": "Ground state preparation is a central application for quantum computers but\nremains challenging in practice. In this work, we quantitatively investigate\nthe performance and gate counts of double-bracket quantum algorithms (DBQAs)\nfor ground state preparation. We propose a practical strategy in which DBQAs\nrefine initial state preparation circuits, and we compile them for Heisenberg\nchains using controlled-Z and single-qubit gates. Warm-started DBQAs\nconsistently improve both the energy and ground-state fidelity relative to the\ninitial states provided by variational ans\\\"atze, indicating that DBQAs offer\nan effective unitary synthesis method. To demonstrate compatibility with\nnear-term hardware, we executed a proof-of-concept example on IBM devices. With\nerror mitigation, we observed a statistically significant improvement over the\ncorresponding warm-start circuit. Furthermore, numerical emulations for the\nsame system size indicate that executing DBQAs on Quantinuum's hardware could\nachieve similar cost-function gains without requiring error mitigation. These\nfindings suggest that DBQAs are a promising approach for enhancing ground-state\napproximations on near-term quantum devices.",
+    "published": "2024-08-07T18:00:00+00:00",
+    "updated": "2025-11-06T15:24:12+00:00",
+    "link": "http://arxiv.org/abs/2408.03987v2",
+    "pdf_link": "http://arxiv.org/pdf/2408.03987v2",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2410.07961v2",
+    "title": "QCircuitBench: A Large-Scale Dataset for Benchmarking Quantum Algorithm Design",
+    "authors": [
+      "Rui Yang",
+      "Ziruo Wang",
+      "Yuntian Gu",
+      "Tianyi Chen",
+      "Yitao Liang",
+      "Tongyang Li"
+    ],
+    "summary": "Quantum computing is an emerging field recognized for the significant speedup\nit offers over classical computing through quantum algorithms. However,\ndesigning and implementing quantum algorithms pose challenges due to the\ncomplex nature of quantum mechanics and the necessity for precise control over\nquantum states. Despite the significant advancements in AI, there has been a\nlack of datasets specifically tailored for this purpose. In this work, we\nintroduce QCircuitBench, the first benchmark dataset designed to evaluate AI's\ncapability in designing and implementing quantum algorithms using quantum\nprogramming languages. Unlike using AI for writing traditional codes, this task\nis fundamentally more complicated due to highly flexible design space. Our key\ncontributions include: 1. A general framework which formulates the key features\nof quantum algorithm design for Large Language Models. 2. Implementations for\nquantum algorithms from basic primitives to advanced applications, spanning 3\ntask suites, 25 algorithms, and 120,290 data points. 3. Automatic validation\nand verification functions, allowing for iterative evaluation and interactive\nreasoning without human inspection. 4. Promising potential as a training\ndataset through preliminary fine-tuning results. We observed several\ninteresting experimental phenomena: LLMs tend to exhibit consistent error\npatterns, and fine-tuning does not always outperform few-shot learning. In all,\nQCircuitBench is a comprehensive benchmark for LLM-driven quantum algorithm\ndesign, and it reveals limitations of LLMs in this domain.",
+    "published": "2024-10-10T14:24:30+00:00",
+    "updated": "2025-11-06T14:41:51+00:00",
+    "link": "http://arxiv.org/abs/2410.07961v2",
+    "pdf_link": "http://arxiv.org/pdf/2410.07961v2",
+    "categories": [
+      "quant-ph",
+      "cs.DS",
+      "cs.LG"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2511.04389v1",
+    "title": "Minimum measurements quantum protocol for band structure calculation",
+    "authors": [
+      "Michal Krejčí",
+      "Lucie Krejčí",
+      "Ijaz Ahamed Mohammad",
+      "Martin Plesch",
+      "Martin Friák"
+    ],
+    "summary": "Protocols for quantum measurement are an essential part of quantum computing.\nMeasurements are no longer confined to the final step of computation but are\nincreasingly embedded within quantum circuits as integral components of\nnoise-resilient algorithms. However, each observable typically requires a\ndistinct measurement basis, often demanding a different circuit configuration.\nAs the number of such configurations typically grows with the number of qubits,\ndifferent measurement configurations constitute a major bottleneck. Focusing on\nelectronic structure calculations in crystalline systems, we propose a\nmeasurement protocol that maximally reduces the number of measurement settings\nto just three, independent of the number of qubits. This makes it one of the\nfew known protocols that do not scale with qubit number. In particular, we\nderive the measurement protocol from the symmetries of tight-binding (TB)\nHamiltonians and implement it within the Variational Quantum Deflation (VQD)\nalgorithm. We demonstrate its performance on two systems, namely a\ntwo-dimensional CuO$_2$ square lattice (3 qubits) and bilayer graphene (4\nqubits). The protocol can be generalized to more complex many-body Hamiltonians\nwith high symmetry, providing a potential path toward future demonstrations of\nquantum advantage.",
+    "published": "2025-11-06T14:18:10+00:00",
+    "updated": "2025-11-06T14:18:10+00:00",
+    "link": "http://arxiv.org/abs/2511.04389v1",
+    "pdf_link": "http://arxiv.org/pdf/2511.04389v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2511.04359v1",
+    "title": "Neutral-atom quantum computation using multi-qubit geometric gates via adiabatic passage",
+    "authors": [
+      "Sinchan Snigdha Rej",
+      "Bimalendu Deb"
+    ],
+    "summary": "Adiabatic geometric phase gates offer enhanced robustness against\nfluctuations compared to con- ventional Rydberg blockade-based phase gates that\nrely on dynamical phase accumulation. We theoretically demonstrate two- and\nmulti-qubit phase gates in a neutral atom architecture, relying on a double\nstimulated Raman adiabatic passage (double-STIRAP) pulse sequence that imprints\na controllable geometric phase on the qubit systems. The system is designed in\nsuch a way that every atom is individually addressable, and moreover, no extra\nlaser is required to be applied on the target atom while scaling up the system\nfrom two- to multi-qubit quantum gates. The gate fidelity has been numerically\nanalyzed by changing the gate operation time, and we find that 98% to 99%\nfidelity can be achieved for gate time $\\simeq$ 0.6 $\\mu$s. We perform a\nsystematic error analysis, which re- veals that our proposed gates can exhibit\nstrong resilience against fluctuations in Rabi frequencies, finite blockade\nstrength, and atomic position variations. These results establish our approach\nas a physically feasible and scalable pathway toward fault-tolerant quantum\ncomputation with neutral atoms. We simulate Grover's search algorithm for two-,\nthree-, and four-qubit systems with high success probability and thereby\ndemonstrate the utility and scalability of our proposed gates for quantum\ncomputation.",
+    "published": "2025-11-06T13:41:37+00:00",
+    "updated": "2025-11-06T13:41:37+00:00",
+    "link": "http://arxiv.org/abs/2511.04359v1",
+    "pdf_link": "http://arxiv.org/pdf/2511.04359v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2511.04358v1",
+    "title": "Gauge invariance from quantum information principles",
+    "authors": [
+      "Claudia Núñez",
+      "Miguel Pardina",
+      "Manuel Asorey",
+      "José Ignacio Latorre",
+      "Alba Cervera-Lierta"
+    ],
+    "summary": "Entanglement is a hallmark of quantum theory, yet it alone does not capture\nthe full extent of quantum complexity: some highly entangled states can still\nbe classically simulated. Non-classical behavior also requires magic, the\nnon-Clifford component that enables universal quantum computation. Here, we\ninvestigate whether the interplay between entanglement and magic constrains the\nstructure of fundamental interactions. We study gluon-gluon and\ngraviton-graviton scattering at tree level, explicitly breaking gauge and\ngeneral covariance by modifying the quartic vertices and analyzing the\nresulting generation of entanglement and magic. We find that imposing maximal\nentanglement (MaxEnt) alone does not uniquely recover gauge-invariant and\ndiffeomorphism-invariant interactions, but adding the condition of minimal, but\nnonzero, magic singles it out. Our results indicate that nature favors MaxEnt\nand low magic: maximal quantum correlations with limited non-Cliffordness,\nsufficient for universal quantum computing but close to classical simulability.\nThis dual informational principle may underlie the emergence of gauge\ninvariance in fundamental physics.",
+    "published": "2025-11-06T13:41:17+00:00",
+    "updated": "2025-11-06T13:41:17+00:00",
+    "link": "http://arxiv.org/abs/2511.04358v1",
+    "pdf_link": "http://arxiv.org/pdf/2511.04358v1",
+    "categories": [
+      "hep-th",
+      "hep-ph",
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2506.09198v2",
+    "title": "Low-Level and NUMA-Aware Optimization for High-Performance Quantum Simulation",
+    "authors": [
+      "Ali Rezaei",
+      "Luc Jaulmes",
+      "Maria Bahna",
+      "Oliver Thomson Brown",
+      "Antonio Barbalace"
+    ],
+    "summary": "Scalable classical simulation of quantum circuits is crucial for advancing\nquantum algorithm development and validating emerging hardware. This work\nfocuses on performance enhancements through targeted low-level and NUMA-aware\ntuning on a single-node system, thereby not only advancing the efficiency of\nclassical quantum simulations but also establishing a foundation for scalable,\nheterogeneous implementations that bridge toward noiseless quantum computing.\nAlthough few prior studies have reported similar hardware-level optimizations,\nsuch implementations have not been released as open-source software, limiting\nindependent validation and further development. We introduce an open-source,\nhigh-performance extension to the QuEST state vector simulator that integrates\nstate-of-the-art low-level and NUMA-aware optimizations for modern processors.\nOur approach emphasizes locality-aware computation and incorporates\nhardware-specific techniques including NUMA-aware memory allocation, thread\npinning, AVX-512 vectorization, aggressive loop unrolling, and explicit memory\nprefetching. Experiments demonstrate substantial speedups--5.5-6.5x for\nsingle-qubit gate operations, 4.5x for two-qubit gates, 4x for Random Quantum\nCircuits (RQC), and 1.8x for the Quantum Fourier Transform (QFT). Algorithmic\nworkloads further achieve 4.3-4.6x acceleration for Grover and 2.5x for\nShor-like circuits. These results show that systematic, architecture-aware\ntuning can significantly extend the practical simulation capacity of classical\nquantum simulators on current hardware.",
+    "published": "2025-06-10T19:35:11+00:00",
+    "updated": "2025-11-06T13:38:24+00:00",
+    "link": "http://arxiv.org/abs/2506.09198v2",
+    "pdf_link": "http://arxiv.org/pdf/2506.09198v2",
+    "categories": [
+      "quant-ph",
+      "cs.AR"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2511.04297v1",
+    "title": "Cluster States Generation with a Quantum Metasurface",
+    "authors": [
+      "Yehonatan Levin",
+      "Uri Israeli",
+      "Rivka Bekenstein"
+    ],
+    "summary": "We investigate the implementation of photonic cluster state generation\nprotocols using quantum metasurfaces comprising sub-wavelength atomic arrays\nwhich enables quantum-controlled reflectivity. These cluster states are\ngenerated using fundamental quantum logic gates and enable wide-ranging\napplications in quantum computation and communication. In the past few years,\ncertain protocols have been developed, but their physical realizations induces\nnatural losses on the system mainly originated from coupling the photonic\nstructures, setting a limit on the efficiency and maximal qubit number. In this\npaper, we examine a physical implementation of two specific protocols for\ngenerating distinct cluster states: a two-dimensional cluster state and a tree\ncluster state. Our approach leverages the unique properties of a quantum\nmetasurface and its free space settings to implement two-qubit quantum-logic\ngates, namely CNOT, CZ, and E gates, with practical fidelities exceeding 0.9,\nand potential speed-up due to parallelism. In addition, we analyze these\nprotocols fidelities for practical conditions of potential implementation\nexperiments, such as thermal fluctuation of trapped atoms.",
+    "published": "2025-11-06T11:56:48+00:00",
+    "updated": "2025-11-06T11:56:48+00:00",
+    "link": "http://arxiv.org/abs/2511.04297v1",
+    "pdf_link": "http://arxiv.org/pdf/2511.04297v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2501.16939v3",
+    "title": "Two-photon interference between mutually-detuned resonance fluorescence signals scattered off a semiconductor quantum dot",
+    "authors": [
+      "Guoqi Huang",
+      "Jian Wang",
+      "Ziqi Zeng",
+      "Hanqing Liu",
+      "Li Liu",
+      "Weijie Ji",
+      "Bang Wu",
+      "Haiqiao Ni",
+      "Zhichuan Niu",
+      "Rongzhen Jiao",
+      "Davide G. Marangon",
+      "Zhiliang Yuan"
+    ],
+    "summary": "The radiative linewidth of a two-level emitter (TLE) fundamentally limits the\nbandwidth available for quantum information processing. Despite its importance,\nno prior experiment has systematically examined how driving detuning affects\nthe indistinguishability of photons scattered from a TLE - a parameter critical\nfor photonic quantum computing. Here, we perform post-selective two-photon\ninterference measurements between mutually detuned resonance fluorescence\nsignals from an InAs quantum dot embedded in a micropillar cavity. At small\nmutual laser detunings (<=0.5GHz), the results are accurately described by the\npure-state model [Nat. Commun. 16, 6453 (2025)], which treats all\nresonance-fluorescence photons as spontaneous emission. At larger detunings, we\nuncover an anomalous feature in the two-photon interference, where the\nnormalised second-order correlation function under orthogonal polarisations\nyields g2_vert(0) < 0.5.",
+    "published": "2025-01-28T13:32:26+00:00",
+    "updated": "2025-11-06T11:48:39+00:00",
+    "link": "http://arxiv.org/abs/2501.16939v3",
+    "pdf_link": "http://arxiv.org/pdf/2501.16939v3",
+    "categories": [
+      "quant-ph",
+      "physics.atom-ph",
+      "physics.optics"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2511.04271v1",
+    "title": "Quantum time-marching algorithms for solving linear transport problems including boundary conditions",
+    "authors": [
+      "Sergio Bengoechea",
+      "Paul Over",
+      "Thomas Rung"
+    ],
+    "summary": "This article presents the first complete application of a quantum\ntime-marching algorithm for simulating multidimensional linear transport\nphenomena with arbitrary boundaries, whereby the success probabilities are\nproblem intrinsic. The method adapts the linear combination of unitaries\nalgorithm to block encode the diffusive dynamics, while arbitrary boundary\nconditions are enforced by the method of images only at the cost of one\nadditional qubit per spatial dimension. As an alternative to the non-periodic\nreflection, the direct encoding of Neumann conditions by the unitary\ndecomposition of the discrete time-marching operator is proposed. All presented\nalgorithms indicate optimal success probabilities while maintaining linear time\ncomplexity, thereby securing the practical applicability of the quantum\nalgorithm on fault-tolerant quantum computers. The proposed time-marching\nmethod is demonstrated through state-vector simulations of the heat equation in\ncombination with Neumann, Dirichlet, and mixed boundary conditions.",
+    "published": "2025-11-06T11:06:50+00:00",
+    "updated": "2025-11-06T11:06:50+00:00",
+    "link": "http://arxiv.org/abs/2511.04271v1",
+    "pdf_link": "http://arxiv.org/pdf/2511.04271v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2511.04250v1",
+    "title": "Space-Bounded Communication Complexity of Unitaries",
+    "authors": [
+      "Longcheng Li",
+      "Xiaoming Sun",
+      "Jialin Zhang",
+      "Jiadong Zhu"
+    ],
+    "summary": "We study space-bounded communication complexity for unitary implementation in\ndistributed quantum processors, where we restrict the number of qubits per\nprocessor to ensure practical relevance and technical non-triviality. We model\ndistributed quantum processors using distributed quantum circuits with nonlocal\ntwo-qubit gates, defining the communication complexity of a unitary as the\nminimum number of such nonlocal gates required for its realization.\n  Our contributions are twofold. First, for general $n$-qubit unitaries, we\nimprove upon the trivial $O(4^n)$ communication bound. Considering $k$\npairwise-connected processors (each with $n/k$ data qubits and $m$ ancillas),\nwe prove the communication complexity satisfies $O\\left(\\max\\{4^{(1-1/k)n - m},\nn\\}\\right)$--for example, $O(2^n)$ when $m=0$ and $k=2$--and establish the\ntightness of this upper bound. We further extend the analysis to approximation\nmodels and general network topologies. Second, for special unitaries, we show\nthat both the Quantum Fourier Transform (QFT) and Clifford circuits admit\nlinear upper bounds on communication complexity in the exact model,\noutperforming the trivial quadratic bounds applicable to these cases. In the\napproximation model, QFT's communication complexity reduces drastically from\nlinear to logarithmic, while Clifford circuits retain a linear lower bound.\nThese results offer fundamental insights for optimizing communication in\ndistributed quantum unitary implementation, advancing the feasibility of\nlarge-scale distributed quantum computing (DQC) systems.",
+    "published": "2025-11-06T10:35:28+00:00",
+    "updated": "2025-11-06T10:35:28+00:00",
+    "link": "http://arxiv.org/abs/2511.04250v1",
+    "pdf_link": "http://arxiv.org/pdf/2511.04250v1",
+    "categories": [
+      "quant-ph",
+      "cs.CR"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2505.04700v2",
+    "title": "Approximate Quadratization of High-Order Hamiltonians for Combinatorial Quantum Optimization",
+    "authors": [
+      "Sabina Drăgoi",
+      "Alberto Baiardi",
+      "Daniel J. Egger"
+    ],
+    "summary": "Combinatorial optimization problems have wide-ranging applications in\nindustry and academia. Quantum computers may help solve them by sampling from\ncarefully prepared Ansatz quantum circuits. However, current quantum computers\nare limited by their qubit count, connectivity, and noise. This is particularly\nrestrictive when considering optimization problems beyond the quadratic order.\nHere, we introduce Ansatze based on an approximate quadratization of high-order\nHamiltonians which do not incur a qubit overhead. The price paid is a loss in\nthe quality of the noiseless solution. Crucially, this approximation yields\nshallower Ansatze which are more robust to noise than the standard QAOA one. We\nshow this through simulations of systems of 8 to 16 qubits with variable noise\nstrengths. Furthermore, we also propose a noise-aware Ansatz design method for\nquadratic optimization problems. This method implements only part of the\ncorresponding Hamiltonian by limiting the number of layers of SWAP gates in the\nAnsatz. We find that for both problem types, under noise, our approximate\nimplementation of the full problem structure can significantly enhance the\nsolution quality. Our work opens a path to enhance the solution quality that\napproximate quantum optimization achieves on noisy hardware.",
+    "published": "2025-05-07T18:00:07+00:00",
+    "updated": "2025-11-06T07:38:45+00:00",
+    "link": "http://arxiv.org/abs/2505.04700v2",
+    "pdf_link": "http://arxiv.org/pdf/2505.04700v2",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2509.20642v2",
+    "title": "Bridging Quantum Computing and Nuclear Structure: Atomic Nuclei on a Trapped-Ion Quantum Computer",
+    "authors": [
+      "Sota Yoshida",
+      "Takeshi Sato",
+      "Takumi Ogata",
+      "Masaaki Kimura"
+    ],
+    "summary": "We demonstrate quantum simulations of strongly correlated nuclear many-body\nsystems on the RIKEN-Quantinuum Reimei trapped-ion quantum computer, targeting\nground states of oxygen, calcium, and nickel isotopes. By combining a\nhard-core-boson representation of the nuclear shell model with a pair-unitary\ncoupled-cluster doubles ansatz, we achieve sub-percent relative error in the\nground-state energies compared to noise-free statevector simulations. Our\napproach leverages symmetry-aware state preparation and particle-number\npost-selection to efficiently capture pairing correlations characteristic of\nsystems with same-species nucleons. These findings highlight the viability of\nhigh-fidelity trapped-ion platforms for nuclear physics applications and\nprovide a foundation for scaling to more complex nuclear systems.",
+    "published": "2025-09-25T00:58:36+00:00",
+    "updated": "2025-11-06T02:42:30+00:00",
+    "link": "http://arxiv.org/abs/2509.20642v2",
+    "pdf_link": "http://arxiv.org/pdf/2509.20642v2",
+    "categories": [
+      "nucl-th",
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2112.09349v2",
+    "title": "Performance Evaluations of Signed and Unsigned Noisy Approximate Quantum Fourier Arithmetic",
+    "authors": [
+      "Robert A. M. Basili",
+      "Wenyang Qian",
+      "Shiplu Sarker",
+      "Shuo Tang",
+      "Austin Castellino",
+      "Mary Eshaghian-Wilner",
+      "Ashfaq Khokhar",
+      "Glenn Luecke",
+      "James P. Vary"
+    ],
+    "summary": "The Quantum Fourier Transform (QFT) grants competitive advantages, especially\nin resource usage and circuit approximation, for performing arithmetic\noperations on quantum computers, and offers a potential route towards a\nnumerical quantum-computational paradigm. In this paper, we utilize efficient\ntechniques to implement QFT-based integer addition and multiplications. These\noperations are fundamental to various quantum applications including Shor's\nalgorithm, weighted sum optimization problems in data processing and machine\nlearning, and quantum algorithms requiring inner products. We carry out\nperformance evaluations of these implementations based on IBM's superconducting\nqubit architecture using different compatible noise models. We isolate the\nsensitivity of the component quantum circuits on both one-/two-qubit gate error\nrates, and the number of the arithmetic operands' superposed integer states. We\nanalyze performance, and identify the most effective approximation depths for\nunsigned quantum addition and quantum multiplication within the given context.\nWe then perform a similar analysis of signed addition and compare to the\nunsigned results. We observe significant dependency of the optimal\napproximation depth on the degree of machine noise and the number of superposed\nstates in certain performance regimes. Finally, we elaborate on the algorithmic\nchallenges - relevant to signed, unsigned, modular and non-modular versions -\nthat could also be applied to current implementations of QFT-based subtraction,\ndivision, exponentiation, and their potential tensor extensions. We analyze the\nperformance trends in our results and speculate on possible future developments\nwithin this computational paradigm.",
+    "published": "2021-12-17T06:51:18+00:00",
+    "updated": "2025-11-06T01:34:48+00:00",
+    "link": "http://arxiv.org/abs/2112.09349v2",
+    "pdf_link": "http://arxiv.org/pdf/2112.09349v2",
+    "categories": [
+      "quant-ph"
+    ]
   }
 ]
