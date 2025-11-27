@@ -10,7 +10,7 @@ The keywords I'm currently tracking are defined in `config.ini`.
 
 <!-- LATEST_PAPERS_START -->
 
-# Papers Found on: 2025-11-26
+# Papers Found on: 2025-11-27
 
 No new papers matching your keywords were found in the last 48 hours.
 <!-- LATEST_PAPERS_END -->
