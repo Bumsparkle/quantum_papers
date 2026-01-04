@@ -56,18 +56,7 @@ jobs:
           # Read the status file to see if papers were found
           PAPERS_FOUND=0
           if [ -f data/scraper_status.json ]; then
-            PAPERS_FOUND=$(python3 -c "
-import json
-import sys
-try:
-    with open('data/scraper_status.json', 'r') as f:
-        d = json.load(f)
-        papers = int(d.get('papers_found', 0))
-        print(papers)
-except (json.JSONDecodeError, IOError, ValueError, KeyError, TypeError) as e:
-    print(0)
-    sys.exit(0)
-" 2>/dev/null || echo "0")
+            PAPERS_FOUND=$(python3 -c 'import json,sys;exec("try:\n with open(\"data/scraper_status.json\",\"r\") as f:\n  d=json.load(f)\n  print(int(d.get(\"papers_found\",0)))\nexcept:print(0)")') || PAPERS_FOUND=0
             # Ensure PAPERS_FOUND is a valid integer
             if ! [ "$PAPERS_FOUND" -eq "$PAPERS_FOUND" ] 2>/dev/null; then
               PAPERS_FOUND=0
