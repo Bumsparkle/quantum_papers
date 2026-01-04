@@ -143,7 +143,7 @@ def fetch_papers(query, max_results):
         search = arxiv.Search(
             query=query,
             max_results=max_results,
-            sort_by=arxiv.SortCriterion.LastUpdatedDate
+            sort_by=arxiv.SortCriterion.SubmittedDate
         )
         
         results = list(search.results())
@@ -305,6 +305,20 @@ def update_archive(new_papers):
     except IOError as e:
         logging.error(f"Failed to write to {ARCHIVE_JSON_FILE}: {e}")
 
+def write_status_file(new_papers_count):
+    """Writes a status file indicating how many papers were found."""
+    STATUS_FILE = DATA_DIR / 'scraper_status.json'
+    status = {
+        "papers_found": new_papers_count,
+        "timestamp": datetime.now(timezone.utc).isoformat()
+    }
+    try:
+        with open(STATUS_FILE, 'w', encoding='utf-8') as f:
+            json.dump(status, f, indent=2)
+        logging.info(f"Wrote status file: {new_papers_count} papers found")
+    except IOError as e:
+        logging.error(f"Failed to write status file: {e}")
+
 def main():
     """Main execution function for the scraper."""
     logging.info("--- Starting arXiv Scraper Script ---")
@@ -321,18 +335,30 @@ def main():
         
         # 4. Fetch Papers
         all_results = fetch_papers(query, max_results)
+        logging.info(f"Fetched {len(all_results)} total papers from arXiv API.")
         
         # 5. Filter for new papers
         new_papers = filter_new_papers(all_results, seen_ids)
+        logging.info(f"After filtering: {len(new_papers)} new papers found.")
+        
+        # Log some debug info about filtering
+        if len(all_results) > 0 and len(new_papers) == 0:
+            recent_threshold = datetime.now(timezone.utc) - timedelta(days=2)
+            logging.info(f"Debug: Recent threshold is {recent_threshold}")
+            logging.info(f"Debug: First few papers dates: {[p.updated for p in all_results[:3]]}")
+            logging.info(f"Debug: First few paper IDs in archive: {list(seen_ids)[:3] if seen_ids else 'None'}")
         
         # 6. Write new papers to daily markdown
         write_daily_markdown(new_papers)
         
         # 7. Update the JSON archive
         update_archive(new_papers)
-
+        
         # 8. Update the README.md
         update_readme()
+        
+        # 9. Write status file for workflow
+        write_status_file(len(new_papers))
         
         logging.info("--- Scraper script finished successfully ---")
 
