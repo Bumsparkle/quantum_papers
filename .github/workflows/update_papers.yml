@@ -8,17 +8,17 @@ on:
 
   # 2. Runs on a schedule (cron job).
   schedule:
-    # This is set to run every day at 22:00 UTC.
+    # This is set to run every day at 08:00 UTC.
     # You can change the time as you like.
-    - cron: '0 22 * * *'
+    - cron: '0 8 * * *'
 
 # This section defines the actual "job" that will run.
 jobs:
   fetch-and-commit:
     # The job will run on a standard, fresh Ubuntu virtual machine.
     runs-on: ubuntu-latest
-
-    # Grant the job write permissions to the repository's contents.
+    
+    # Grant permissions for the workflow to push changes
     permissions:
       contents: write
 
@@ -53,18 +53,56 @@ jobs:
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'actions-bot@github.com'
           
+          # Read the status file to see if papers were found
+          PAPERS_FOUND=0
+          if [ -f data/scraper_status.json ]; then
+            PAPERS_FOUND=$(python3 -c "
+import json
+import sys
+try:
+    with open('data/scraper_status.json', 'r') as f:
+        d = json.load(f)
+        papers = int(d.get('papers_found', 0))
+        print(papers)
+except (json.JSONDecodeError, IOError, ValueError, KeyError, TypeError) as e:
+    print(0)
+    sys.exit(0)
+" 2>/dev/null || echo "0")
+            # Ensure PAPERS_FOUND is a valid integer
+            if ! [ "$PAPERS_FOUND" -eq "$PAPERS_FOUND" ] 2>/dev/null; then
+              PAPERS_FOUND=0
+            fi
+          fi
+          
           # Add all the files that the script might have changed
           # This includes the daily paper, the archive, and the README
-          git add data/papers_today.md data/archive.json README.md
+          git add data/papers_today.md data/archive.json README.md data/scraper_status.json
           
-          # Check if there are actually any changes to commit
-          # The "if ! git diff..." command means "If the staged changes are NOT empty..."
-          if ! git diff --staged --quiet; then
-            # If there are changes, create a commit with today's date
-            COMMIT_MSG="[Auto-Update] Found new papers for $(date +'%Y-%m-%d')"
-            git commit -m "$COMMIT_MSG"
-            git push
+          # Only commit if papers were actually found
+          if [ "$PAPERS_FOUND" -gt 0 ]; then
+            # Check if there are actually any changes to commit
+            if ! git diff --staged --quiet; then
+              # If there are changes, create a commit with today's date and paper count
+              COMMIT_MSG="[Auto-Update] Found $PAPERS_FOUND paper(s) for $(date +'%Y-%m-%d')"
+              git commit -m "$COMMIT_MSG"
+              git push
+              echo "Committed $PAPERS_FOUND new paper(s)."
+            else
+              echo "No changes to commit despite papers found."
+            fi
           else
-            # If there are no changes, just log it to the console
-            echo "No new papers found, nothing to commit."
+            # If no papers found, only commit if README or archive changed (unlikely)
+            # But don't commit just for the "no papers" message in papers_today.md
+            # Unstage papers_today.md and scraper_status.json (timestamp changes every run)
+            git reset HEAD data/papers_today.md data/scraper_status.json 2>/dev/null || true
+            
+            # Only commit if archive.json or README.md actually changed
+            if ! git diff --staged --quiet; then
+              COMMIT_MSG="[Auto-Update] No new papers for $(date +'%Y-%m-%d')"
+              git commit -m "$COMMIT_MSG"
+              git push
+              echo "Committed: No new papers found."
+            else
+              echo "No new papers found, nothing to commit."
+            fi
           fi
