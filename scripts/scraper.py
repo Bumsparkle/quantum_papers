@@ -172,11 +172,16 @@ def filter_new_papers(results, seen_ids):
     recent_threshold = datetime.now(timezone.utc) - timedelta(days=7)
     
     for paper in results:
-        # Use 'updated' date as it reflects the most recent version.
-        paper_date = paper.updated.astimezone(timezone.utc)
+        # Check both published and updated dates - include if either is recent
+        # This catches newly published papers and recently updated ones
+        paper_updated = paper.updated.astimezone(timezone.utc)
+        paper_published = paper.published.astimezone(timezone.utc)
         
-        # Check if recent AND not seen before
-        if paper_date > recent_threshold and paper.entry_id not in seen_ids:
+        # Check if recent (published OR updated in last 7 days) AND not seen before
+        # Use >= instead of > to include papers exactly at the threshold
+        is_recent = (paper_updated >= recent_threshold) or (paper_published >= recent_threshold)
+        
+        if is_recent and paper.entry_id not in seen_ids:
             new_papers.append(paper)
     
     logging.info(f"Found {len(new_papers)} new paper(s) after filtering.")
