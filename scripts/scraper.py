@@ -116,12 +116,20 @@ def build_query(keywords):
         return "" # Empty query will fetch all recent papers
     
     # Format: (ti:"keyword 1" OR abs:"keyword 1") AND (ti:"keyword 2" OR abs:"keyword 2")
+    # For multi-word keywords, use exact phrase matching. For single words, use word matching.
     query_parts = []
     for keyword in keywords:
-        # Escape quotes in keyword if any (e.g., "AI 'Safety'")
-        safe_keyword = keyword.replace('"', '\\"')
-        # Search in title (ti) or abstract (abs)
-        query_parts.append(f'(ti:"{safe_keyword}" OR abs:"{safe_keyword}")')
+        keyword = keyword.strip()
+        # If keyword contains spaces, use exact phrase matching with quotes
+        # Otherwise, use word matching (more flexible)
+        if ' ' in keyword:
+            # Multi-word: use exact phrase matching
+            safe_keyword = keyword.replace('"', '\\"')
+            query_parts.append(f'(ti:"{safe_keyword}" OR abs:"{safe_keyword}")')
+        else:
+            # Single word: use word matching (more flexible, catches variations)
+            safe_keyword = keyword.replace('"', '\\"')
+            query_parts.append(f'(ti:{safe_keyword} OR abs:{safe_keyword})')
     
     return " AND ".join(query_parts)
 
@@ -139,17 +147,24 @@ def fetch_papers(query, max_results):
     logging.info(f"Executing query: {query if query else 'ALL_PAPERS'}")
     
     # Search for the most recent submissions that match our query
+    # Use SubmittedDate to get newly submitted papers, not just updated ones
     try:
         search = arxiv.Search(
             query=query,
             max_results=max_results,
-            # Changed to LastUpdatedDate to ensure we catch v1, v2, etc. correctly
-            sort_by=arxiv.SortCriterion.LastUpdatedDate,
+            # Use SubmittedDate to prioritize newly submitted papers
+            sort_by=arxiv.SortCriterion.SubmittedDate,
             sort_order=arxiv.SortOrder.Descending
         )
         
         results = list(search.results())
         logging.info(f"Fetched {len(results)} raw results from API.")
+        
+        # Log some sample dates for debugging
+        if results:
+            sample = results[0]
+            logging.info(f"Sample paper dates - Published: {sample.published}, Updated: {sample.updated}")
+        
         return results
     except Exception as e:
         logging.error(f"Error fetching from arXiv API: {e}")
@@ -168,8 +183,12 @@ def filter_new_papers(results, seen_ids):
     """
     new_papers = []
     
-    # CHANGED: Increased window to 7 days to account for weekends/holidays/missed runs.
-    recent_threshold = datetime.now(timezone.utc) - timedelta(days=7)
+    # CHANGED: Increased window to 14 days to account for weekends/holidays/missed runs and API delays.
+    recent_threshold = datetime.now(timezone.utc) - timedelta(days=14)
+    logging.info(f"Filtering for papers published/updated after: {recent_threshold}")
+    
+    filtered_by_date = 0
+    filtered_by_seen = 0
     
     for paper in results:
         # Check both published and updated dates - include if either is recent
@@ -181,9 +200,17 @@ def filter_new_papers(results, seen_ids):
         # Use >= instead of > to include papers exactly at the threshold
         is_recent = (paper_updated >= recent_threshold) or (paper_published >= recent_threshold)
         
-        if is_recent and paper.entry_id not in seen_ids:
-            new_papers.append(paper)
+        if not is_recent:
+            filtered_by_date += 1
+            continue
+            
+        if paper.entry_id in seen_ids:
+            filtered_by_seen += 1
+            continue
+        
+        new_papers.append(paper)
     
+    logging.info(f"Filtered out {filtered_by_date} papers (too old) and {filtered_by_seen} papers (already seen).")
     logging.info(f"Found {len(new_papers)} new paper(s) after filtering.")
     return new_papers
 
@@ -339,6 +366,25 @@ def main():
         # 4. Fetch Papers
         all_results = fetch_papers(query, max_results)
         logging.info(f"Fetched {len(all_results)} total papers from arXiv API.")
+        
+        # If no results and we have keywords, try a more flexible query
+        if not all_results and keywords:
+            logging.info("No results with exact phrase matching. Trying flexible word matching...")
+            # Build a more flexible query using OR instead of exact phrases
+            flexible_parts = []
+            for keyword in keywords:
+                # Split multi-word keywords and use OR logic
+                words = keyword.split()
+                if len(words) > 1:
+                    # For phrases, search for all words (they should appear together in practice)
+                    word_queries = [f'(ti:{w} OR abs:{w})' for w in words]
+                    flexible_parts.append(f'({" AND ".join(word_queries)})')
+                else:
+                    flexible_parts.append(f'(ti:{keyword} OR abs:{keyword})')
+            flexible_query = " AND ".join(flexible_parts)
+            logging.info(f"Trying flexible query: {flexible_query}")
+            all_results = fetch_papers(flexible_query, max_results)
+            logging.info(f"Fetched {len(all_results)} total papers with flexible query.")
         
         # 5. Filter for new papers
         new_papers = filter_new_papers(all_results, seen_ids)
