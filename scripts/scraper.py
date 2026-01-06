@@ -8,7 +8,7 @@ This script performs the following actions:
 1. Reads keywords and settings from `config.ini` in the root directory.
 2. Loads the existing paper archive from `data/archive.json` to avoid duplicates.
 3. Queries the arXiv API for recent papers matching the keywords.
-4. Filters results to find new papers published/updated in the last 48 hours.
+4. Filters results to find new papers published/updated in the last 7 days.
 5. Overwrites `data/papers_today.md` with a human-readable list of new papers.
 6. Appends new paper data to `data/archive.json` for a persistent log.
 
@@ -143,7 +143,9 @@ def fetch_papers(query, max_results):
         search = arxiv.Search(
             query=query,
             max_results=max_results,
-            sort_by=arxiv.SortCriterion.SubmittedDate
+            # Changed to LastUpdatedDate to ensure we catch v1, v2, etc. correctly
+            sort_by=arxiv.SortCriterion.LastUpdatedDate,
+            sort_order=arxiv.SortOrder.Descending
         )
         
         results = list(search.results())
@@ -165,13 +167,12 @@ def filter_new_papers(results, seen_ids):
         list: A filtered list of new arxiv.Result objects.
     """
     new_papers = []
-    # Define "recent" as the last 2 days (48 hours)
-    # This accounts for timezone differences and GitHub Action scheduling delays.
-    recent_threshold = datetime.now(timezone.utc) - timedelta(days=2)
+    
+    # CHANGED: Increased window to 7 days to account for weekends/holidays/missed runs.
+    recent_threshold = datetime.now(timezone.utc) - timedelta(days=7)
     
     for paper in results:
         # Use 'updated' date as it reflects the most recent version.
-        # arXiv 'published' date is the date of v1.
         paper_date = paper.updated.astimezone(timezone.utc)
         
         # Check if recent AND not seen before
@@ -188,11 +189,11 @@ def write_daily_markdown(new_papers):
     
     if not new_papers:
         logging.info("No new papers to report today.")
-        md_content.append("No new papers matching your keywords were found in the last 48 hours.")
+        md_content.append("No new papers matching your keywords were found in the last 7 days.")
     else:
         logging.info(f"Writing {len(new_papers)} new paper(s) to markdown file.")
         
-        # Sort papers by published date, newest first
+        # Sort papers by updated date, newest first
         new_papers.sort(key=lambda p: p.updated, reverse=True)
         
         for paper in new_papers:
@@ -236,17 +237,14 @@ def update_readme():
         return
 
     # 3. Define the placeholder tags
-    start_tag = "<!-- LATEST_PAPERS_START -->"
-    end_tag = "<!-- LATEST_PAPERS_END -->"
+    start_tag = ""
+    end_tag = ""
     
     # 4. Use regex to find and replace content
-    # re.DOTALL makes '.' match newline characters, which is crucial
+    # re.DOTALL makes '.' match newline characters
     pattern = re.compile(f"{re.escape(start_tag)}.*{re.escape(end_tag)}", re.DOTALL)
     
-    # 5. *** THE FIX ***
-    # We must escape all backslashes in the paper content.
-    # Otherwise, re.subn will try to parse them as back-references (e.g., \g, \1)
-    # and fail if the abstract contains scientific notation.
+    # 5. Escape backslashes in paper content to prevent regex errors with scientific notation
     safe_papers_content = papers_content.replace('\\', '\\\\')
     
     # We add newlines for nice formatting in the markdown
@@ -340,13 +338,6 @@ def main():
         # 5. Filter for new papers
         new_papers = filter_new_papers(all_results, seen_ids)
         logging.info(f"After filtering: {len(new_papers)} new papers found.")
-        
-        # Log some debug info about filtering
-        if len(all_results) > 0 and len(new_papers) == 0:
-            recent_threshold = datetime.now(timezone.utc) - timedelta(days=2)
-            logging.info(f"Debug: Recent threshold is {recent_threshold}")
-            logging.info(f"Debug: First few papers dates: {[p.updated for p in all_results[:3]]}")
-            logging.info(f"Debug: First few paper IDs in archive: {list(seen_ids)[:3] if seen_ids else 'None'}")
         
         # 6. Write new papers to daily markdown
         write_daily_markdown(new_papers)
