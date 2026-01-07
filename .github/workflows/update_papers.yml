@@ -49,9 +49,9 @@ jobs:
       # Step 5: Commit the changes back to your repository
       - name: Commit and push changes
         run: |
-          # Configure Git with a bot username and email
-          git config --global user.name 'GitHub Actions Bot'
-          git config --global user.email 'actions-bot@github.com'
+          # Configure Git
+          git config --global user.name 'Felix Arkle'
+          git config --global user.email 'felixarkle@icloud.com'
           
           # Read the status file to see if papers were found
           PAPERS_FOUND=0
