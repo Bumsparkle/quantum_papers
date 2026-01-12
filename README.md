@@ -1,10 +1,36 @@
 
 
-# Papers Found on: 2026-01-11
+# Papers Found on: 2026-01-12
 
-No new papers matching your keywords were found in the last 7 days.
+### On the robustness of Quantum Phase Estimation to compute ground properties of many-electron systems
+* **Authors:** Wassil Sennane et al.
+* **Published (v1):** 2026-01-09
+* **Updated:** 2026-01-09
+* **Link:** http://arxiv.org/abs/2601.05788v1
+* **Abstract:** We propose an analysis of the Quantum Phase Estimation (QPE) algorithm applied to electronic systems by investigating its free parameters such as the time step, number of phase qubits, initial state preparation, number of measurement shots, and parameters related to the unitary operators implementation. A deep understanding of these parameters is crucial to pave the way towards more automation of QPE applied to predictive computational chemistry and material science. To our knowledge, various aspects remain unexplored and a holistic parameter selection method remains to be developed. After reviewing key QPE features, we propose a constructive method to set the QPE free parameters. We derive, among other things, explicit conditions for achieving chemical accuracy in ground energy estimation. We also demonstrate that, using our conditions, the complexity of the Trotterized version of QPE tends to depend only on physical system properties and not on the number of phase qubits. Numerical simulations on the H2 molecule provide a first validation of our approach.
+
+### Why Are Verdazyl Radicals Non-Emissive? An Experimental and Computational Study
+* **Authors:** Alexandre Malinge et al.
+* **Published (v1):** 2026-01-08
+* **Updated:** 2026-01-08
+* **Link:** http://arxiv.org/abs/2601.05390v1
+* **Abstract:** Verdazyl radicals are a versatile class of air-stable organic radicals used in various applications, especially for their magnetic properties. Despite the development of a wide range of verdazyl derivatives, however, they are all non-emissive. To investigate the reasons behind this and to understand the excited-state dynamics of verdazyls, we combine steady-state and femtosecond pump-probe spectroscopy with quantum chemical calculations. In the carbazole-substituted 2,4,6-triphenylverdazyl (TPV-Cz) , we observe ultrafast internal conversion of the first excited state on a timescale of 0.5 $\pm$ 0.1 ps, followed by vibrational relaxation with a lifetime of 3.7 $\pm$ 0.4 ps. Spin-flip time-dependent density functional theory calculations reveal that the sub-picosecond non-radiative decay comes from a low-energy conical intersection between the D1 and D0 states, driven by an out-of-plane distortion of the verdazyl ring. This distortion is observed and remains energetically accessible in the isolated verdazyl ring in 2,4,6-triphenylverdazyl and in TPV-Cz. This shows that the conical intersection geometry is a recurring feature across different types of verdazyl derivatives and explains why all verdazyls are non-emissive despite different functionalization. Our results provide a mechanistic understanding of the photophysical properties of verdazyl radicals and offers a pathway for the future design of emissive verdazyl derivatives.
 
 
-# Papers Found on: 2026-01-11
 
-No new papers matching your keywords were found in the last 7 days.
+# Papers Found on: 2026-01-12
+
+### On the robustness of Quantum Phase Estimation to compute ground properties of many-electron systems
+* **Authors:** Wassil Sennane et al.
+* **Published (v1):** 2026-01-09
+* **Updated:** 2026-01-09
+* **Link:** http://arxiv.org/abs/2601.05788v1
+* **Abstract:** We propose an analysis of the Quantum Phase Estimation (QPE) algorithm applied to electronic systems by investigating its free parameters such as the time step, number of phase qubits, initial state preparation, number of measurement shots, and parameters related to the unitary operators implementation. A deep understanding of these parameters is crucial to pave the way towards more automation of QPE applied to predictive computational chemistry and material science. To our knowledge, various aspects remain unexplored and a holistic parameter selection method remains to be developed. After reviewing key QPE features, we propose a constructive method to set the QPE free parameters. We derive, among other things, explicit conditions for achieving chemical accuracy in ground energy estimation. We also demonstrate that, using our conditions, the complexity of the Trotterized version of QPE tends to depend only on physical system properties and not on the number of phase qubits. Numerical simulations on the H2 molecule provide a first validation of our approach.
+
+### Why Are Verdazyl Radicals Non-Emissive? An Experimental and Computational Study
+* **Authors:** Alexandre Malinge et al.
+* **Published (v1):** 2026-01-08
+* **Updated:** 2026-01-08
+* **Link:** http://arxiv.org/abs/2601.05390v1
+* **Abstract:** Verdazyl radicals are a versatile class of air-stable organic radicals used in various applications, especially for their magnetic properties. Despite the development of a wide range of verdazyl derivatives, however, they are all non-emissive. To investigate the reasons behind this and to understand the excited-state dynamics of verdazyls, we combine steady-state and femtosecond pump-probe spectroscopy with quantum chemical calculations. In the carbazole-substituted 2,4,6-triphenylverdazyl (TPV-Cz) , we observe ultrafast internal conversion of the first excited state on a timescale of 0.5 $\pm$ 0.1 ps, followed by vibrational relaxation with a lifetime of 3.7 $\pm$ 0.4 ps. Spin-flip time-dependent density functional theory calculations reveal that the sub-picosecond non-radiative decay comes from a low-energy conical intersection between the D1 and D0 states, driven by an out-of-plane distortion of the verdazyl ring. This distortion is observed and remains energetically accessible in the isolated verdazyl ring in 2,4,6-triphenylverdazyl and in TPV-Cz. This shows that the conical intersection geometry is a recurring feature across different types of verdazyl derivatives and explains why all verdazyls are non-emissive despite different functionalization. Our results provide a mechanistic understanding of the photophysical properties of verdazyl radicals and offers a pathway for the future design of emissive verdazyl derivatives.
+
