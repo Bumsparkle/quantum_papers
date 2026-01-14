@@ -2524,5 +2524,145 @@
       "quant-ph",
       "math.OC"
     ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.07824v2",
+    "title": "Computing quantum magic of state vectors",
+    "authors": [
+      "Piotr Sierant",
+      "Jofre Vallès-Muns",
+      "Artur Garcia-Saez"
+    ],
+    "summary": "Non-stabilizerness, also known as ``magic,'' quantifies how far a quantum state departs from the stabilizer set. It is a central resource behind quantum advantage and a useful probe of the complexity of quantum many-body states. Yet standard magic quantifiers, such as the stabilizer Rényi entropy (SRE) for qubits and the mana for qutrits, are costly to evaluate numerically, with the computational complexity growing rapidly with the number $N$ of qudits. Here we introduce efficient, numerically exact algorithms that exploit the fast Hadamard transform to compute the SRE for qubits ($d=2$) and the mana for qutrits ($d=3$) for pure states given as state vectors. Our methods compute SRE and mana at cost $O(N d^{2N})$, providing an exponential improvement over the naive $O(d^{3N})$ scaling, with substantial parallelism and straightforward GPU acceleration. We further show how to combine the fast Hadamard transform with Monte Carlo sampling to estimate the SRE of state vectors, and we extend the approach to compute the mana of mixed states. All algorithms are implemented in the open-source Julia package HadaMAG ( https://github.com/bsc-quantic/HadaMAG.jl/ ), which provides a high-performance toolbox for computing SRE and mana with built-in support for multithreading, MPI-based distributed parallelism, and GPU acceleration. The package, together with the methods developed in this work, offers a practical route to large-scale numerical studies of magic in quantum many-body systems.",
+    "published": "2026-01-12T18:58:06+00:00",
+    "updated": "2026-01-13T18:54:47+00:00",
+    "link": "http://arxiv.org/abs/2601.07824v2",
+    "pdf_link": "https://arxiv.org/pdf/2601.07824v2",
+    "categories": [
+      "quant-ph",
+      "cond-mat.dis-nn",
+      "cond-mat.stat-mech"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.08578v1",
+    "title": "Quantum Computing -- Strategic Recommendations for the Industry",
+    "authors": [
+      "Marvin Erdmann",
+      "Lukas Karch",
+      "Abhishek Awasthi",
+      "Caitlin Isobel Jones",
+      "Pallavi Bhardwaj",
+      "Florian Krellner",
+      "Jonas Stein",
+      "Claudia Linnhoff-Popien",
+      "Nico Kraus",
+      "Peter Eder",
+      "Sarah Braun",
+      "Tong Liu"
+    ],
+    "summary": "This whitepaper surveys the current landscape and short- to mid-term prospects for quantum-enabled optimization and machine learning use cases in industrial settings. Grounded in the QCHALLenge program, it synthesizes hardware trajectories from different quantum architectures and providers, and assesses their maturity and potential for real-world use cases under a standardized traffic-light evaluation framework. We provide a concise summary of relevant hardware roadmaps, distinguishing superconducting and ion-trap technologies, their current states, modalities, and projected scaling trajectories. The core of the presented work are the use case evaluations in the domains of optimization problems and machine learning applications. For the conducted experiments, we apply a consistent set of evaluation criteria (model formulation, scalability, solution quality, runtime, and transferability) which are assessed in a shared system of three categories, ranging from optimistic (solutions produced by quantum computers are competitive with classical methods and/or a clear path to a quantum advantage is shown) to pessimistic (significant hurdles prevent practical application of quantum solutions now and potentially in the future). The resulting verdicts illuminate where quantum approaches currently offer promise, where hybrid classical-quantum strategies are most viable, and where classical methods are expected to remain superior.",
+    "published": "2026-01-13T13:58:42+00:00",
+    "updated": "2026-01-13T13:58:42+00:00",
+    "link": "http://arxiv.org/abs/2601.08578v1",
+    "pdf_link": "https://arxiv.org/pdf/2601.08578v1",
+    "categories": [
+      "quant-ph",
+      "cs.ET"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.08533v1",
+    "title": "Symmetry-Adapted State Preparation for Quantum Chemistry on Fault-Tolerant Quantum Computers",
+    "authors": [
+      "Viktor Khinevich",
+      "Wataru Mizukami"
+    ],
+    "summary": "We present systematic and resource-efficient constructions of continuous symmetry projectors, particularly $U(1)$ particle number and $SU(2)$ total spin, tailored for fault-tolerant quantum computations. Our approach employs a linear combination of unitaries (LCU) as well as generalized quantum signal processing (GQSP and GQSVT) to implement projectors. These projectors can then be coherently applied as state filters prior to quantum phase estimation (QPE). We analyze their asymptotic gate complexities for explicit circuit realizations. For the particle number and $S_z$ symmetries, GQSP offers favorable resource usage features owing to its low ancilla qubit requirements and robustness to finite precision rotation gate synthesis. For the total spin projection, the structured decomposition of $\\hat{P}_{S,M_S}$ reduces the projector T gate count. Numerical simulations show that symmetry filtering substantially increases the QPE success probability, leading to a lower overall cost compared to that of unfiltered approaches across representative molecular systems. Resource estimates further indicate that the cost of symmetry filtering is $3$ to $4$ orders of magnitude lower than that of the subsequent phase estimation step This advantage is especially relevant in large, strongly correlated systems, such as FeMoco, a standard strongly correlated open-shell benchmark. For FeMoco, the QPE cost is estimated at ${\\sim}10^{10}$ T gates, while our symmetry projector requires only ${\\sim}10^{6}$--$10^{7}$ T gates. These results establish continuous-symmetry projectors as practical and scalable tools for state preparation in quantum chemistry and provide a pathway toward realizing more efficient fault-tolerant quantum simulations.",
+    "published": "2026-01-13T13:17:59+00:00",
+    "updated": "2026-01-13T13:17:59+00:00",
+    "link": "http://arxiv.org/abs/2601.08533v1",
+    "pdf_link": "https://arxiv.org/pdf/2601.08533v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.08389v1",
+    "title": "A dataflow programming framework for linear optical distributed quantum computing",
+    "authors": [
+      "Giovanni de Felice",
+      "Boldizsár Poór",
+      "Cole Comfort",
+      "Lia Yeh",
+      "Mateusz Kupper",
+      "William Cashman",
+      "Bob Coecke"
+    ],
+    "summary": "Photonic systems offer a promising platform for interconnecting quantum processors and enabling scalable, networked architectures. Designing and verifying such architectures requires a unified formalism that integrates linear algebraic reasoning with probabilistic and control-flow structures. In this work, we introduce a graphical framework for distributed quantum computing that brings together linear optics, the ZX-calculus, and dataflow programming. Our language supports the formal analysis and optimization of distributed protocols involving both qubits and photonic modes, with explicit interfaces for classical control and feedforward, all expressed within a synchronous dataflow model with discrete-time dynamics. Within this setting, we classify entangling photonic fusion measurements, show how their induced Pauli errors can be corrected via a novel flow structure for fusion networks, and establish correctness proofs for new repeat-until-success protocols enabling arbitrary fusions. Layer by layer, we construct qubit architectures incorporating practical optical components such as beam splitters, switches, and photon sources, with graphical proofs that they are deterministic and support universal quantum computation. Together, these results establish a foundation for verifiable compilation and automated optimization in networked quantum computing.",
+    "published": "2026-01-13T09:57:25+00:00",
+    "updated": "2026-01-13T09:57:25+00:00",
+    "link": "http://arxiv.org/abs/2601.08389v1",
+    "pdf_link": "https://arxiv.org/pdf/2601.08389v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.08137v1",
+    "title": "Dissipative ground-state preparation of a quantum spin chain on a trapped-ion quantum computer",
+    "authors": [
+      "Kazuhiro Seki",
+      "Yuta Kikuchi",
+      "Tomoya Hayata",
+      "Seiji Yunoki"
+    ],
+    "summary": "We demonstrate a dissipative protocol for ground-state preparation of a quantum spin chain on a trapped-ion quantum computer. As a first step, we derive a Kraus representation of a dissipation channel for the protocol recently proposed by Ding et al. [Phys. Rev. Res. 6, 033147 (2024)] that still holds for arbitrary temporal discretization steps, extending the analysis beyond the Lindblad dynamics regime. The protocol guarantees that the fidelity with the ground state monotonically increases (or remains unchanged) under repeated applications of the channel to an arbitrary initial state, provided that the ground state is the unique steady state of the dissipation channel. Using this framework, we implement dissipative ground-state preparation of a transverse-field Ising chain for up to 19 spins on the trapped-ion quantum computer Reimei provided by Quantinuum. Despite the presence of hardware noise, the dynamics consistently converges to a low-energy state far away from the maximally mixed state even when the corresponding quantum circuits contain as many as 4110 entangling gates, demonstrating the intrinsic robustness of the protocol. By applying zero-noise extrapolation, the resulting energy expectation values are systematically improved to agree with noiseless simulations within statistical uncertainties.",
+    "published": "2026-01-13T01:58:56+00:00",
+    "updated": "2026-01-13T01:58:56+00:00",
+    "link": "http://arxiv.org/abs/2601.08137v1",
+    "pdf_link": "https://arxiv.org/pdf/2601.08137v1",
+    "categories": [
+      "quant-ph",
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.08068v1",
+    "title": "Quantum Energetic Advantage before Computational Advantage in Boson Sampling",
+    "authors": [
+      "Ariane Soret",
+      "Nessim Dridi",
+      "Stephen C. Wein",
+      "Valérian Giesz",
+      "Shane Mansfield",
+      "Pierre-Emmanuel emeriau"
+    ],
+    "summary": "Understanding the energetic efficiency of quantum computers is essential for assessing their scalability and for determining whether quantum technologies can outperform classical computation beyond runtime alone. In this work, we analyze the energy required to solve the Boson Sampling problem, a paradigmatic task for quantum advantage, using a realistic photonic quantum computing architecture. Using the Metric-Noise-Resource methodology, we establish a quantitative connection between experimental control parameters, dominant noise processes, and energetic resources through a performance metric tailored to Boson Sampling. We estimate the energy cost per sample and identify operating regimes that optimize energetic efficiency. By comparing the energy consumption of quantum and state-of-the-art classical implementations, we demonstrate the existence of a quantum energetic advantage -- defined as a lower energy cost per sample compared to the best-known classical implementation -- that emerges before the onset of computational advantage, even in regimes where classical algorithms remain faster. Finally, we propose an experimentally feasible Boson Sampling architecture, including a complete noise and loss budget, that enables a near-term observation of quantum energetic advantage.",
+    "published": "2026-01-12T23:22:21+00:00",
+    "updated": "2026-01-12T23:22:21+00:00",
+    "link": "http://arxiv.org/abs/2601.08068v1",
+    "pdf_link": "https://arxiv.org/pdf/2601.08068v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.07872v1",
+    "title": "Quantum Computing and Visualization Research Challenges and Opportunities",
+    "authors": [
+      "E. Wes Bethel",
+      "Roel Van Beeumen",
+      "Talita Perciano"
+    ],
+    "summary": "Quantum computing (QC) has experienced rapid growth in recent years with the advent of robust programming environments, readily accessible software simulators and cloud-based QC hardware platforms, and growing interest in learning how to design useful methods that leverage this emerging technology for practical applications. From the perspective of the field of visualization, this article examines research challenges and opportunities along the path from initial feasibility to practical use of QC platforms applied to meaningful problems.",
+    "published": "2026-01-11T00:31:38+00:00",
+    "updated": "2026-01-11T00:31:38+00:00",
+    "link": "http://arxiv.org/abs/2601.07872v1",
+    "pdf_link": "https://arxiv.org/pdf/2601.07872v1",
+    "categories": [
+      "quant-ph"
+    ]
   }
 ]
