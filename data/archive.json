@@ -2664,5 +2664,38 @@
     "categories": [
       "quant-ph"
     ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.09556v1",
+    "title": "Geometry- and Topology-Informed Quantum Computing: From States to Real-Time Control with FPGA Prototypes",
+    "authors": [
+      "Gunhee Cho"
+    ],
+    "summary": "This book gives a geometry-first, hardware-aware route through quantum-information workflows, with one goal: connect states, circuits, and measurement to deterministic classical pipelines that make hybrid quantum systems run. Part 1 develops the backbone (essential linear algebra, the Bloch-sphere viewpoint, differential-geometric intuition, and quantum Fisher information geometry) so evolution can be read as motion on curved spaces and measurement as statistics. Part 2 reframes circuits as dataflow graphs: measurement outcomes are parsed, aggregated, and reduced to small linear-algebra updates that schedule the next pulses, highlighting why low-latency, low-jitter streaming matters. Part 3 treats multi-qubit structure and entanglement as geometry and computation, including teleportation, superdense coding, entanglement detection, and Shor's algorithm via quantum phase estimation. Part 4 focuses on topological error correction and real-time decoding (Track A): stabilizer codes, surface-code decoding as \"topology -> graph -> algorithm\", and Union-Find decoders down to microarchitectural/RTL constraints, with verification, fault injection, and host/control-stack integration under product metrics (bounded latency, p99 tails, fail-closed policies, observability). Optional Track C covers quantum cryptography and streaming post-processing (BB84/E91, QBER/abort rules, privacy amplification, and zero-knowledge/post-quantum themes), emphasizing FSMs, counters, and hash pipelines. Appendices provide visualization-driven iCEstick labs (switch-to-bit conditioning, fixed-point phase arithmetic, FSM sequencing, minimal control ISAs), bridging principles to implementable systems.",
+    "published": "2026-01-14T15:18:29+00:00",
+    "updated": "2026-01-14T15:18:29+00:00",
+    "link": "http://arxiv.org/abs/2601.09556v1",
+    "pdf_link": "https://arxiv.org/pdf/2601.09556v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.09374v1",
+    "title": "Network-Based Quantum Computing: an efficient design framework for many-small-node distributed fault-tolerant quantum computing",
+    "authors": [
+      "Soshun Naito",
+      "Yasunari Suzuki",
+      "Yuuki Tokunaga"
+    ],
+    "summary": "In fault-tolerant quantum computing, a large number of physical qubits are required to construct a single logical qubit, and a single quantum node may be able to hold only a small number of logical qubits. In such a case, the idea of distributed fault-tolerant quantum computing (DFTQC) is important to demonstrate large-scale quantum computation using small-scale nodes. However, the design of distributed systems on small-scale nodes, where each node can store only one or a few logical qubits for computation, has not been explored well yet. In this paper, we propose network-based quantum computation (NBQC) to efficiently realize distributed fault-tolerant quantum computation using many small-scale nodes. A key idea of NBQC is to let computational data continuously move throughout the network while maintaining the connectivity to other nodes. We numerically show that, for practical benchmark tasks, our method achieves shorter execution times than circuit-based strategies and more node-efficient constructions than measurement-based quantum computing. Also, if we are allowed to specialize the network to the structure of quantum programs, such as peak access frequencies, the number of nodes can be significantly reduced. Thus, our methods provide a foundation in designing DFTQC architecture exploiting the redundancy of many small fault-tolerant nodes.",
+    "published": "2026-01-14T10:58:31+00:00",
+    "updated": "2026-01-14T10:58:31+00:00",
+    "link": "http://arxiv.org/abs/2601.09374v1",
+    "pdf_link": "https://arxiv.org/pdf/2601.09374v1",
+    "categories": [
+      "quant-ph",
+      "cs.DC"
+    ]
   }
 ]
