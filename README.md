@@ -1,10 +1,120 @@
 
 
-# Papers Found on: 2026-01-20
+# Papers Found on: 2026-01-21
 
-No new papers matching your keywords were found in the last 7 days.
+### Evaluating state-of-the-art cloud quantum computers for quantum neural networks in gravitational waves data analysis
+* **Authors:** Maria-Catalina Isfan et al.
+* **Published (v1):** 2026-01-20
+* **Updated:** 2026-01-20
+* **Link:** http://arxiv.org/abs/2601.14036v1
+* **Abstract:** In this work, we explore the possibility of using quantum computers provided for usage in cloud by big companies (such as IBM, IonQ, IQM Quantum Computers, etc.) to run our quantum neural network (QNN) developed for data analysis in the context of LISA Space Mission, developed with the Qiskit library in Python. Our previous work demonstrated that our QNN learns patterns in gravitational wave (GW) data much faster than a classical neural network, making it suitable for fast GW signal detection in future LISA data streams. Analyzing the fees from hardware providers like IBM Quantum, Amazon Braket and Microsoft Azure, we found that the fees for running the first segment of our QNN sum up to \$2000, \$60000, and \$1000000 respectively. Using free plans, we succeed to run the 3-qubit feature map of the QNN for one random data sample on {\fontfamily{qcr} \selectfont ibm\_kyoto} and {\fontfamily{qcr}\selectfont IQM Quantum Computers\_Garnet} quantum computers, obtaining a fidelity of 99\%; we could also run the first prediction segment of our QNN on {\fontfamily{qcr} \selectfont ibm\_kyoto}, implemented for 4 qubits, and obtained a prediction accuracy of 20\%. We queried providers such as IBM Quantum, Amazon Braket, Pasqal, and Munich Quantum Valley to obtain access to their plans, but, with the exception of Amazon Braket, our applications remain unanswered to this day. Other major setbacks in using the quantum computers we had access to included Qiskit library version issues (as in the cases of IBM Quantum and IQM Quantum Computers) and the frequent unavailability of the devices, as was the case with the Microsoft Azure provider. All the results presented in this paper were accumulated in 2024.
+
+### Onset of thermalization of q-deformed SU(2) Yang-Mills theory on a trapped-ion quantum computer
+* **Authors:** Tomoya Hayata et al.
+* **Published (v1):** 2026-01-20
+* **Updated:** 2026-01-20
+* **Link:** http://arxiv.org/abs/2601.13530v1
+* **Abstract:** Nonequilibrium dynamics of quantum many-body systems is one of the main targets of quantum simulations. This focus - together with rapid advances in quantum-computing hardware - has driven increasing applications in high-energy physics, particularly in lattice gauge theories. However, most existing experimental demonstrations remain restricted to (1+1)-dimensional and/or abelian gauge theories, such as the Schwinger model and the toric code. It is essential to develop quantum simulations of nonabelian gauge theories in higher dimensions, addressing realistic problems in high-energy physics. To fill the gap, we demonstrate a quantum simulation of thermalization dynamics in a (2+1)-dimensional $q$-deformed $\mathrm{SU}(2)_3$ Yang-Mills theory using a trapped-ion quantum computer. By restricting the irreducible representations of the gauge fields to the integer-spin sector of $\mathrm{SU}(2)_3$, we obtain a simplified yet nontrivial model described by Fibonacci anyons, which preserves the essential nonabelian fusion structure of the gauge fields. We successfully simulate the real-time dynamics of this model using quantum circuits that explicitly implement $F$-moves. In our demonstrations, the quantum circuits execute up to 47 sequential $F$-moves. We identify idling errors as the dominant error source, which can be effectively mitigated using dynamical decoupling combined with a parallelized implementation of $F$-moves.
+
+### Quantum Encryption Resilience Score (QERS) for MQTT, HTTP, and HTTPS under Post-Quantum Cryptography in Computer, IoT, and IIoT Systems
+* **Authors:** Jonatan Rassekhnia et al.
+* **Published (v1):** 2026-01-19
+* **Updated:** 2026-01-19
+* **Link:** http://arxiv.org/abs/2601.13423v1
+* **Abstract:** Post-quantum cryptography (PQC) introduces significant computational and communication overhead, which poses challenges for resource-constrained computer systems, Internet of Things (IoT), and Industrial IoT (IIoT) devices. This paper presents an experimental evaluation of the Quantum Encryption Resilience Score (QERS) applied to MQTT, HTTP, and HTTPS communication protocols operating under PQC. Using an ESP32-C6 client and an ARM-based Raspberry Pi CM4 server, latency, CPU utilization, RSSI, energy consumption, key size, and TLS handshake overhead are measured under realistic operating conditions. QERS integrates these heterogeneous metrics into normalized Basic, Tuned, and Fusion scores, enabling systematic comparison of protocol efficiency and security resilience. Experimental results show that MQTT provides the highest efficiency under PQC constraints, while HTTPS achieves the highest security-weighted resilience at the cost of increased latency and resource consumption. The proposed framework supports informed protocol selection and migration planning for PQC-enabled IoT and IIoT deployments.
+
+### QERS: Quantum Encryption Resilience Score for Post-Quantum Cryptography in Computer, IoT, and IIoT Systems
+* **Authors:** Jonatan Rassekhnia et al.
+* **Published (v1):** 2026-01-19
+* **Updated:** 2026-01-19
+* **Link:** http://arxiv.org/abs/2601.13399v1
+* **Abstract:** Post-quantum cryptography (PQC) is becoming essential for securing Internet of Things (IoT) and Industrial IoT (IIoT) systems against quantum-enabled adversaries. However, existing evaluation approaches primarily focus on isolated performance metrics, offering limited support for holistic security and deployment decisions. This paper introduces QERS (Quantum Encryption Resilience Score), a universal measurement framework that integrates cryptographic performance, system constraints, and multi-criteria decision analysis to assess PQC readiness in computer, IoT, and IIoT environments. QERS combines normalized metrics, weighted aggregation, and machine learning-assisted analysis to produce interpretable resilience scores across heterogeneous devices and communication protocols. Experimental results demonstrate how the framework enables comparative evaluation of post-quantum schemes under realistic resource constraints, supporting informed security design and migration planning. This work is presented as a preprint, with extended statistical validation planned as part of ongoing graduate research.
+
+### Two-Point Stabilizer Rényi Entropy: a Computable Magic Proxy of Interacting Fermions
+* **Authors:** Jun Qi Fang et al.
+* **Published (v1):** 2026-01-19
+* **Updated:** 2026-01-19
+* **Link:** http://arxiv.org/abs/2601.13314v1
+* **Abstract:** Quantifying non-stabilizerness (``magic'') in interacting fermionic systems remains a formidable challenge, particularly for extracting high order correlations from quantum Monte Carlo simulations. In this Letter, we establish the two-point stabilizer Rényi entropy (SRE) and its mutual counterpart as robust, computationally accessible probes for detecting magic in diverse fermionic phases. By deriving local estimators suitable for advanced numerical methods, we demonstrate that these metrics effectively characterize quantum phase transitions: in the one-dimensional spinless $t$-$V$ model, they sharply identify the Luttinger liquid to charge density wave transition, while in the two-dimensional honeycomb lattice via determinant quantum Monte Carlo, they faithfully capture the critical exponents of the Gross-Neveu-Ising universality class. Furthermore, extending our analysis to the fractional quantum Hall regime, we unveil a non-trivial spatial texture of magic in the Laughlin state, revealing signatures of short-range exclusion correlations. Our results validate the two-point SRE as a versatile and sensitive diagnostic, forging a novel link between quantum resource theory, critical phenomena, and topological order in strongly correlated matter.
+
+### Quantifying the properties of evolutionary quantum states of the XXZ spin model using quantum computing
+* **Authors:** M. P. Tonne et al.
+* **Published (v1):** 2026-01-15
+* **Updated:** 2026-01-19
+* **Link:** http://arxiv.org/abs/2601.10650v2
+* **Abstract:** The entanglement distance of evolutionary quantum states of a two-spin system with the XXZ model has been studied. The analysis has been conducted both analytically and using quantum computing. An analytical dependence of the entanglement distance on the values of the model coupling constants and the parameters of the initial states has been obtained. The speed of evolution of a two-spin system has been investigated. The analysis has been performed analytically and using quantum computing. An explicit dependence of the speed of evolution on the coupling constants and on the parameters of the initial state has been obtained. The results of quantum computations are in good agreement with the theoretical predictions.
+
+### Is Quantum Computing Ready for Real-Time Database Optimization?
+* **Authors:** Hanwen Liu et al.
+* **Published (v1):** 2026-01-17
+* **Updated:** 2026-01-17
+* **Link:** http://arxiv.org/abs/2601.12123v1
+* **Abstract:** Database systems encompass several performance-critical optimization tasks, such as join ordering and index tuning. As data volumes grow and workloads become more complex, these problems have become exponentially harder to solve efficiently. Quantum computing, especially quantum annealing, is a promising paradigm that can efficiently explore very large search spaces through quantum tunneling. It can escape local optima by tunneling through energy barriers rather than climbing over them. Earlier works mainly focused on providing an abstract representation (e.g., Quadratic Unconstrained Binary Optimization (QUBO)) for the database optimization problems (e.g., join order) and overlooked the real integration within database systems due to the high overhead of quantum computing services (e.g., a minimum 5s runtime for D-Wave's CQM-Solver). Recently, quantum annealing providers have offered more low-latency solutions, e.g., NL-Solver, which paves the road to actually realizing quantum solutions within DBMSs. However, this raises new systems research challenges in balancing efficiency and solution quality.   In this talk, we show that this balance is possible to achieve. As a proof of concept, we present Q2O, the first real Quantum-augmented Query Optimizer. We show the end-to-end workflow: we encode the join order problem as a nonlinear model, a format solvable by the NL-Solver, using actual database statistics; the solution is translated into a plan hint that guides PostgreSQL's optimizer to produce a complete plan. Q2O is capable of handling actual queries in real time.
+
+### Efficient O(N^1.5) Electronic Structure Computation of Million-Atom Systems
+* **Authors:** Zichong Zhang et al.
+* **Published (v1):** 2026-01-17
+* **Updated:** 2026-01-17
+* **Link:** http://arxiv.org/abs/2601.12098v1
+* **Abstract:** The exploration of quantum phenomena in complex materials such as moiré superlattices is limited by the O(N^3) scaling of conventional electronic structure methods. Here we introduce a high-performance tight-binding framework that reduces the complexity to O(N^1.5) by transforming the Hamiltonian into a real symmetric form and combining Sylvester's inertia law with LDL decomposition. This approach enables efficient band structure calculations for large systems: solving magic angle twisted bilayer graphene in minutes on a laptop and scaling to 1.5 million atoms within days on a workstation. We apply it to the previously inaccessible ultra-low twist-angle regime (less than 0.16 degree) with mechanical strain relaxation and find robust flat bands persisting down to 0.09 degree. Our framework bridges density functional theory accuracy with large-scale quantum simulation, opening a route to systematic data-driven exploration of mesoscale quantum materials.
 
 
-# Papers Found on: 2026-01-20
 
-No new papers matching your keywords were found in the last 7 days.
+# Papers Found on: 2026-01-21
+
+### Evaluating state-of-the-art cloud quantum computers for quantum neural networks in gravitational waves data analysis
+* **Authors:** Maria-Catalina Isfan et al.
+* **Published (v1):** 2026-01-20
+* **Updated:** 2026-01-20
+* **Link:** http://arxiv.org/abs/2601.14036v1
+* **Abstract:** In this work, we explore the possibility of using quantum computers provided for usage in cloud by big companies (such as IBM, IonQ, IQM Quantum Computers, etc.) to run our quantum neural network (QNN) developed for data analysis in the context of LISA Space Mission, developed with the Qiskit library in Python. Our previous work demonstrated that our QNN learns patterns in gravitational wave (GW) data much faster than a classical neural network, making it suitable for fast GW signal detection in future LISA data streams. Analyzing the fees from hardware providers like IBM Quantum, Amazon Braket and Microsoft Azure, we found that the fees for running the first segment of our QNN sum up to \$2000, \$60000, and \$1000000 respectively. Using free plans, we succeed to run the 3-qubit feature map of the QNN for one random data sample on {\fontfamily{qcr} \selectfont ibm\_kyoto} and {\fontfamily{qcr}\selectfont IQM Quantum Computers\_Garnet} quantum computers, obtaining a fidelity of 99\%; we could also run the first prediction segment of our QNN on {\fontfamily{qcr} \selectfont ibm\_kyoto}, implemented for 4 qubits, and obtained a prediction accuracy of 20\%. We queried providers such as IBM Quantum, Amazon Braket, Pasqal, and Munich Quantum Valley to obtain access to their plans, but, with the exception of Amazon Braket, our applications remain unanswered to this day. Other major setbacks in using the quantum computers we had access to included Qiskit library version issues (as in the cases of IBM Quantum and IQM Quantum Computers) and the frequent unavailability of the devices, as was the case with the Microsoft Azure provider. All the results presented in this paper were accumulated in 2024.
+
+### Onset of thermalization of q-deformed SU(2) Yang-Mills theory on a trapped-ion quantum computer
+* **Authors:** Tomoya Hayata et al.
+* **Published (v1):** 2026-01-20
+* **Updated:** 2026-01-20
+* **Link:** http://arxiv.org/abs/2601.13530v1
+* **Abstract:** Nonequilibrium dynamics of quantum many-body systems is one of the main targets of quantum simulations. This focus - together with rapid advances in quantum-computing hardware - has driven increasing applications in high-energy physics, particularly in lattice gauge theories. However, most existing experimental demonstrations remain restricted to (1+1)-dimensional and/or abelian gauge theories, such as the Schwinger model and the toric code. It is essential to develop quantum simulations of nonabelian gauge theories in higher dimensions, addressing realistic problems in high-energy physics. To fill the gap, we demonstrate a quantum simulation of thermalization dynamics in a (2+1)-dimensional $q$-deformed $\mathrm{SU}(2)_3$ Yang-Mills theory using a trapped-ion quantum computer. By restricting the irreducible representations of the gauge fields to the integer-spin sector of $\mathrm{SU}(2)_3$, we obtain a simplified yet nontrivial model described by Fibonacci anyons, which preserves the essential nonabelian fusion structure of the gauge fields. We successfully simulate the real-time dynamics of this model using quantum circuits that explicitly implement $F$-moves. In our demonstrations, the quantum circuits execute up to 47 sequential $F$-moves. We identify idling errors as the dominant error source, which can be effectively mitigated using dynamical decoupling combined with a parallelized implementation of $F$-moves.
+
+### Quantum Encryption Resilience Score (QERS) for MQTT, HTTP, and HTTPS under Post-Quantum Cryptography in Computer, IoT, and IIoT Systems
+* **Authors:** Jonatan Rassekhnia et al.
+* **Published (v1):** 2026-01-19
+* **Updated:** 2026-01-19
+* **Link:** http://arxiv.org/abs/2601.13423v1
+* **Abstract:** Post-quantum cryptography (PQC) introduces significant computational and communication overhead, which poses challenges for resource-constrained computer systems, Internet of Things (IoT), and Industrial IoT (IIoT) devices. This paper presents an experimental evaluation of the Quantum Encryption Resilience Score (QERS) applied to MQTT, HTTP, and HTTPS communication protocols operating under PQC. Using an ESP32-C6 client and an ARM-based Raspberry Pi CM4 server, latency, CPU utilization, RSSI, energy consumption, key size, and TLS handshake overhead are measured under realistic operating conditions. QERS integrates these heterogeneous metrics into normalized Basic, Tuned, and Fusion scores, enabling systematic comparison of protocol efficiency and security resilience. Experimental results show that MQTT provides the highest efficiency under PQC constraints, while HTTPS achieves the highest security-weighted resilience at the cost of increased latency and resource consumption. The proposed framework supports informed protocol selection and migration planning for PQC-enabled IoT and IIoT deployments.
+
+### QERS: Quantum Encryption Resilience Score for Post-Quantum Cryptography in Computer, IoT, and IIoT Systems
+* **Authors:** Jonatan Rassekhnia et al.
+* **Published (v1):** 2026-01-19
+* **Updated:** 2026-01-19
+* **Link:** http://arxiv.org/abs/2601.13399v1
+* **Abstract:** Post-quantum cryptography (PQC) is becoming essential for securing Internet of Things (IoT) and Industrial IoT (IIoT) systems against quantum-enabled adversaries. However, existing evaluation approaches primarily focus on isolated performance metrics, offering limited support for holistic security and deployment decisions. This paper introduces QERS (Quantum Encryption Resilience Score), a universal measurement framework that integrates cryptographic performance, system constraints, and multi-criteria decision analysis to assess PQC readiness in computer, IoT, and IIoT environments. QERS combines normalized metrics, weighted aggregation, and machine learning-assisted analysis to produce interpretable resilience scores across heterogeneous devices and communication protocols. Experimental results demonstrate how the framework enables comparative evaluation of post-quantum schemes under realistic resource constraints, supporting informed security design and migration planning. This work is presented as a preprint, with extended statistical validation planned as part of ongoing graduate research.
+
+### Two-Point Stabilizer Rényi Entropy: a Computable Magic Proxy of Interacting Fermions
+* **Authors:** Jun Qi Fang et al.
+* **Published (v1):** 2026-01-19
+* **Updated:** 2026-01-19
+* **Link:** http://arxiv.org/abs/2601.13314v1
+* **Abstract:** Quantifying non-stabilizerness (``magic'') in interacting fermionic systems remains a formidable challenge, particularly for extracting high order correlations from quantum Monte Carlo simulations. In this Letter, we establish the two-point stabilizer Rényi entropy (SRE) and its mutual counterpart as robust, computationally accessible probes for detecting magic in diverse fermionic phases. By deriving local estimators suitable for advanced numerical methods, we demonstrate that these metrics effectively characterize quantum phase transitions: in the one-dimensional spinless $t$-$V$ model, they sharply identify the Luttinger liquid to charge density wave transition, while in the two-dimensional honeycomb lattice via determinant quantum Monte Carlo, they faithfully capture the critical exponents of the Gross-Neveu-Ising universality class. Furthermore, extending our analysis to the fractional quantum Hall regime, we unveil a non-trivial spatial texture of magic in the Laughlin state, revealing signatures of short-range exclusion correlations. Our results validate the two-point SRE as a versatile and sensitive diagnostic, forging a novel link between quantum resource theory, critical phenomena, and topological order in strongly correlated matter.
+
+### Quantifying the properties of evolutionary quantum states of the XXZ spin model using quantum computing
+* **Authors:** M. P. Tonne et al.
+* **Published (v1):** 2026-01-15
+* **Updated:** 2026-01-19
+* **Link:** http://arxiv.org/abs/2601.10650v2
+* **Abstract:** The entanglement distance of evolutionary quantum states of a two-spin system with the XXZ model has been studied. The analysis has been conducted both analytically and using quantum computing. An analytical dependence of the entanglement distance on the values of the model coupling constants and the parameters of the initial states has been obtained. The speed of evolution of a two-spin system has been investigated. The analysis has been performed analytically and using quantum computing. An explicit dependence of the speed of evolution on the coupling constants and on the parameters of the initial state has been obtained. The results of quantum computations are in good agreement with the theoretical predictions.
+
+### Is Quantum Computing Ready for Real-Time Database Optimization?
+* **Authors:** Hanwen Liu et al.
+* **Published (v1):** 2026-01-17
+* **Updated:** 2026-01-17
+* **Link:** http://arxiv.org/abs/2601.12123v1
+* **Abstract:** Database systems encompass several performance-critical optimization tasks, such as join ordering and index tuning. As data volumes grow and workloads become more complex, these problems have become exponentially harder to solve efficiently. Quantum computing, especially quantum annealing, is a promising paradigm that can efficiently explore very large search spaces through quantum tunneling. It can escape local optima by tunneling through energy barriers rather than climbing over them. Earlier works mainly focused on providing an abstract representation (e.g., Quadratic Unconstrained Binary Optimization (QUBO)) for the database optimization problems (e.g., join order) and overlooked the real integration within database systems due to the high overhead of quantum computing services (e.g., a minimum 5s runtime for D-Wave's CQM-Solver). Recently, quantum annealing providers have offered more low-latency solutions, e.g., NL-Solver, which paves the road to actually realizing quantum solutions within DBMSs. However, this raises new systems research challenges in balancing efficiency and solution quality.   In this talk, we show that this balance is possible to achieve. As a proof of concept, we present Q2O, the first real Quantum-augmented Query Optimizer. We show the end-to-end workflow: we encode the join order problem as a nonlinear model, a format solvable by the NL-Solver, using actual database statistics; the solution is translated into a plan hint that guides PostgreSQL's optimizer to produce a complete plan. Q2O is capable of handling actual queries in real time.
+
+### Efficient O(N^1.5) Electronic Structure Computation of Million-Atom Systems
+* **Authors:** Zichong Zhang et al.
+* **Published (v1):** 2026-01-17
+* **Updated:** 2026-01-17
+* **Link:** http://arxiv.org/abs/2601.12098v1
+* **Abstract:** The exploration of quantum phenomena in complex materials such as moiré superlattices is limited by the O(N^3) scaling of conventional electronic structure methods. Here we introduce a high-performance tight-binding framework that reduces the complexity to O(N^1.5) by transforming the Hamiltonian into a real symmetric form and combining Sylvester's inertia law with LDL decomposition. This approach enables efficient band structure calculations for large systems: solving magic angle twisted bilayer graphene in minutes on a laptop and scaling to 1.5 million atoms within days on a workstation. We apply it to the previously inaccessible ultra-low twist-angle regime (less than 0.16 degree) with mechanical strain relaxation and find robust flat bands persisting down to 0.09 degree. Our framework bridges density functional theory accuracy with large-scale quantum simulation, opening a route to systematic data-driven exploration of mesoscale quantum materials.
+
