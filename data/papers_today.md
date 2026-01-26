@@ -1,29 +1,36 @@
-# Papers Found on: 2026-01-23
+# Papers Found on: 2026-01-26
 
-### Studying energy-resolved transport with wavepacket dynamics on quantum computers
-* **Authors:** Melody Lee et al.
+### On the computation of the canonical basis for irreducible highest weight $U_q (\mathfrak{gl}_{\infty})$-module
+* **Authors:** Nicolas Jacon et al.
+* **Published (v1):** 2026-01-23
+* **Updated:** 2026-01-23
+* **Link:** http://arxiv.org/abs/2601.16889v1
+* **Abstract:** We study canonical basis elements in higher-level Fock spaces associated with the quantum group $U_q(\mathfrak{gl}_\infty)$, which are conjecturally related to Calogero-Moser theory for complex reflection groups. We generalize the Leclerc-Miyachi formula to arbitrary levels by introducing new explicit constructions based on symbols, including a column removal theorem and closed formulas in several cases. These results provide explicit descriptions of canonical basis elements with applications to Calogero-Moser cellular characters and to the decomposition matrices of Ariki-Koike algebras.
+
+### Harnessing Quantum Computing for Energy Materials: Opportunities and Challenges
+* **Authors:** Seongmin Kim et al.
+* **Published (v1):** 2026-01-23
+* **Updated:** 2026-01-23
+* **Link:** http://arxiv.org/abs/2601.16816v1
+* **Abstract:** Developing high-performance materials is critical for diverse energy applications to increase efficiency, improve sustainability and reduce costs. Classical computational methods have enabled important breakthroughs in energy materials development, but they face scaling and time-complexity limitations, particularly for high-dimensional or strongly correlated material systems. Quantum computing (QC) promises to offer a paradigm shift by exploiting quantum bits with their superposition and entanglement to address challenging problems intractable for classical approaches. This perspective discusses the opportunities in leveraging QC to advance energy materials research and the challenges QC faces in solving complex and high-dimensional problems. We present cases on how QC, when combined with classical computing methods, can be used for the design and simulation of practical energy materials. We also outline the outlook for error-corrected, fault-tolerant QC capable of achieving predictive accuracy and quantum advantage for complex material systems.
+
+### A Robust Strontium Tweezer Apparatus for Quantum Computing
+* **Authors:** Marijn Venderbosch et al.
+* **Published (v1):** 2026-01-23
+* **Updated:** 2026-01-23
+* **Link:** http://arxiv.org/abs/2601.16564v1
+* **Abstract:** Neutral atoms for quantum computing applications show promise in terms of scalability and connectivity. We demonstrate the realization of a versatile apparatus capable of stochastically loading a 5x5 array of optical tweezers with single $^{88}$Sr atoms featuring flexible magnetic field control and excellent optical access. A custom-designed oven, spin-flip Zeeman slower, and deflection stage produce a controlled flux of Sr directed to the science chamber. In the science chamber, featuring a vacuum pressure of $3 \times 10^{-11}$ mbar, the Sr is cooled using two laser cooling stages, resulting in $\sim 3 \times 10^5$ atoms at a temperature of 5(1) $μ$K. The optical tweezers feature a $1/e^2$ waist of 0.81(2) $μ$m, and loaded atoms can be imaged with a fidelity of $\sim 0.997$ and a survival probability of $0.99^{+0.01}_{-0.02}$. The atomic array presented here forms the core of a full-stack quantum computing processor targeted for quantum chemistry computational problems.
+
+### Integrated Photonic Quantum Computing: From Silicon to Lithium Niobate
+* **Authors:** Hui Zhang et al.
+* **Published (v1):** 2026-01-23
+* **Updated:** 2026-01-23
+* **Link:** http://arxiv.org/abs/2601.16484v1
+* **Abstract:** Quantum technologies have surpassed classical systems by leveraging the unique properties of superposition and entanglement in photons and matter. Recent advancements in integrated quantum photonics, especially in silicon-based and lithium niobate platforms, are pushing the technology toward greater scalability and functionality. Silicon circuits have progressed from centimeter-scale, dual-photon systems to millimeter-scale, high-density devices that integrate thousands of components, enabling sophisticated programmable manipulation of multi-photon states. Meanwhile, lithium niobate, thanks to its wide optical transmission window, outstanding nonlinear and electro-optic coefficients, and chemical stability, has emerged as an optimal substrate for fully integrated photonic quantum chips. Devices made from this material exhibit high efficiency in in generating, manipulating, converting, storing, and detecting photon states, thereby establishing a basis for deterministic multi-photon generation and single-photon quantum interactions, as well as comprehensive frequency-state control. This review explores the development of integrated photonic quantum technologies based on both silicon and lithium niobate, highlighting invaluable insights gained from silicon-based systems that can assist the scaling of lithium niobate technologies. It examines the functional integration mechanisms of lithium niobate in electro-optic tuning and nonlinear energy conversion, showcasing its transformative impact throughout the photonic quantum computing process. Looking ahead, we speculate on the developmental pathways for lithium niobate platforms and their potential to revolutionize areas such as quantum communication, complex system simulation, quantum sampling, and optical quantum computing paradigms.
+
+### Bichromatic Tweezers for Qudit Quantum Computing in ${}^{87}$Sr
+* **Authors:** Enrique A. Segura Carrillo et al.
 * **Published (v1):** 2026-01-22
 * **Updated:** 2026-01-22
-* **Link:** http://arxiv.org/abs/2601.16180v1
-* **Abstract:** Probing energy-dependent transport in quantum simulators requires preparing states with tunable energy and small energy variance. Existing approaches often study quench dynamics of simple initial states, such as computational basis states, which are far from energy eigenstates and therefore limit the achievable energy resolution. In this work, we propose using wavepackets to probe transport properties with improved energy resolution. To demonstrate the utility of this approach, we prepare and evolve wavepackets on Quantinuum's H2-2 quantum computer and identify an energy-dependent localization transition in the Anderson model on an 8x7 lattice--a finite-size mobility edge. We observe that a wavepacket initialized at low energy remains spatially localized under time evolution, while a high-energy wavepacket delocalizes, consistent with the presence of a mobility edge. Crucial to our experiments is an error mitigation strategy that infers the noiseless output bit string distribution using maximum-likelihood estimation. Compared to post-selection, this method removes systematic errors and reduces statistical uncertainty by up to a factor of 5. We extend our methods to the many-particle regime by developing a quantum algorithm for preparing quasiparticle wavepackets in a one-dimensional model of interacting fermions. This technique has modest quantum resource requirements, making wavepacket-based studies of transport in many-body systems a promising application for near-term quantum computers.
-
-### Quantum-HPC hybrid computation of biomolecular excited-state energies
-* **Authors:** Kentaro Yamamoto et al.
-* **Published (v1):** 2026-01-22
-* **Updated:** 2026-01-22
-* **Link:** http://arxiv.org/abs/2601.15677v1
-* **Abstract:** We develop a workflow within the ONIOM framework and demonstrate it on the hybrid computing system consisting of the supercomputer Fugaku and the Quantinuum Reimei trapped-ion quantum computer. This hybrid platform extends the layered approach for biomolecular chemical reactions to accurately treat the active site, such as a protein, and the large and often weakly correlated molecular environment. Our result marks a significant milestone in enabling scalable and accurate simulation of complex biomolecular reactions
-
-### A Computational Companion to Transient de Sitter and Quasi de Sitter States in SO(32) and E_8 X E_8 Heterotic String Theories I: Formalisms
-* **Authors:** Archana Maji et al.
-* **Published (v1):** 2026-01-21
-* **Updated:** 2026-01-21
-* **Link:** http://arxiv.org/abs/2601.15489v1
-* **Abstract:** We construct four-dimensional de Sitter space as an excited state, rather than as a vacuum configuration, in type IIB, heterotic SO(32), and heterotic E_8 \times E_8 string theories. This framework provides a mechanism to evade vacuum-based no-go theorems for de Sitter solutions in string theory. Starting from a generic M-theory configuration, we obtain de Sitter isometry in the dual string theories through appropriate dynamical duality sequences in the late-time limit. The excited state, identified as a Glauber-Sudarshan state, is constructed as the expectation value of the metric operator in M-theory using path-integral techniques.   We further analyze the conditions required for the existence of a well-defined effective field theory description and show that these conditions are equivalent to the Null Energy Condition for a (3+1)-dimensional FLRW cosmology. Finally, we investigate constraints arising from axionic cosmology and demonstrate how the time-dependent solutions are modified when experimental bounds on the axionic coupling constant are taken into account.   This article serves as a computational companion to sections 3 and 4 of the paper https://doi.org/10.48550/arXiv.2511.03798.
-
-### The computational two-way quantum capacity
-* **Authors:** Johannes Jakob Meyer et al.
-* **Published (v1):** 2026-01-21
-* **Updated:** 2026-01-21
-* **Link:** http://arxiv.org/abs/2601.15393v1
-* **Abstract:** Quantum channel capacities are fundamental to quantum information theory. Their definition, however, does not limit the computational resources of sender and receiver. In this work, we initiate the study of computational quantum capacities. These quantify how much information can be reliably transmitted when imposing the natural requirement that en- and decoding have to be computationally efficient. We focus on the computational two-way quantum capacity and showcase that it is closely related to the computational distillable entanglement of the Choi state of the channel. This connection allows us to show a stark computational capacity separation. Under standard cryptographic assumptions, there exists a quantum channel of polynomial complexity whose computational two-way quantum capacity vanishes while its unbounded counterpart is nearly maximal. More so, we show that there exists a sharp transition in computational quantum capacity from nearly maximal to zero when the channel complexity leaves the polynomial realm. Our results demonstrate that the natural requirement of computational efficiency can radically alter the limits of quantum communication.
+* **Link:** http://arxiv.org/abs/2601.16328v1
+* **Abstract:** Neutral atoms have become a competitive platform for quantum metrology, simulation, sensing, and computing. Current magic trapping techniques are insufficient to engineer magic trapping conditions for qudits encoded in hyperfine states with $J \neq 0$, compromising qudit coherence. In this paper we propose a scheme to engineer magic trapping conditions for qudits via bichromatic tweezers. We show it is possible to suppress differential light shifts across all magnetic sublevels of the $5s5p$ $\mathrm{^{3}P_2}$ state by using two carefully chosen wavelengths (with comparable tensor light shift magnitude and opposite sign) at an appropriate intensity ratio, thus suppressing light-shift induced dephasing, enabling scalar magic conditions between the ground state and $5s5p$ $\mathrm{^{3}P_2}$, and tensor magic conditions for qudits encoded within it. Furthermore, this technique enables robust operation at the tensor magic angle 54.7$^\circ$ with linear trap polarization via reduced sensitivity to uncertainty in experimental parameters. We expect this technique to enable new loading protocols, enhance cooling efficiency, and enhance nuclear spins' coherence times, thus facilitating qudit-based quantum computing in ${}^{87}$Sr in the $5s5p$ $\mathrm{^{3}P_2}$ manifold.
