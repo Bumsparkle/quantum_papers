@@ -3340,5 +3340,45 @@
       "quant-ph",
       "cs.CV"
     ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.19889v1",
+    "title": "Distinguishing synthetic unravelings on quantum computers",
+    "authors": [
+      "Eloy Piñol",
+      "Piotr Sierant",
+      "Dustin Keys",
+      "Romain Veyron",
+      "Miguel Angel García-March",
+      "Tanner Reese",
+      "Morgan W. Mitchell",
+      "Jan Wehr",
+      "Maciej Lewenstein"
+    ],
+    "summary": "Distinct monitoring or intervention schemes can produce different conditioned stochastic quantum trajectories while sharing the same unconditional (ensemble-averaged) dynamics. This is the essence of unravelings of a given Gorini-Kossakowski-Sudarshan-Lindblad (GKSL) master equation: any trajectory-ensemble average of a function that is linear in the conditional state is completely determined by the unconditional density matrix, whereas applying a nonlinear function before averaging can yield unraveling-dependent results beyond the average evolution. A paradigmatic example is resonance fluorescence, where direct photodetection (jump/Poisson) and homodyne or heterodyne detection (diffusive/Wiener) define inequivalent unravelings of the same GKSL dynamics. In earlier work, we showed that nonlinear trajectory averages can distinguish such unravelings, but observing the effect in that optical setting requires demanding experimental precision. Here we translate the same idea to a digital setting by introducing synthetic unravelings implemented as quantum circuits acting on one and two qubits. We design two unravelings - a projective measurement unraveling and a random-unitary \"kick\" unraveling - that share the same ensemble-averaged evolution while yielding different nonlinear conditional-state statistics. We implement the protocols on superconducting-qubit hardware provided by IBM Quantum to access trajectory-level information. We show that the variance across trajectories and the ensemble-averaged von Neumann entropy distinguish the unravelings in both theory and experiment, while the unconditional state and the ensemble-averaged expectation values that are linear in the state remain identical. Our results provide an accessible demonstration that quantum trajectories encode information about measurement backaction beyond what is fixed by the unconditional dynamics.",
+    "published": "2026-01-27T18:56:38+00:00",
+    "updated": "2026-01-27T18:56:38+00:00",
+    "link": "http://arxiv.org/abs/2601.19889v1",
+    "pdf_link": "https://arxiv.org/pdf/2601.19889v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.10964v2",
+    "title": "Stabilizer Code-Generic Universal Fault-Tolerant Quantum Computation",
+    "authors": [
+      "Nicholas J. C. Papadopoulos",
+      "Ramin Ayanzadeh"
+    ],
+    "summary": "Fault-tolerant quantum computation allows quantum computations to be carried out while resisting unwanted noise. Several error-correcting codes have been developed to achieve this task, but none alone are capable of universal quantum computation. This universality is highly desired and often achieved using additional techniques such as code concatenation, code switching, or magic state distillation, which can be costly and only work for specific codes. This work implements logical Clifford and T gates through novel ancilla-mediated protocols to construct a universal fault-tolerant quantum gate set. Unlike traditional techniques, our implementation is deterministic, does not consume ancilla registers, does not modify the underlying data codes or registers, and is generic over all stabilizer codes. Thus, any single code becomes capable of universal quantum computation by leveraging helper codes in ancilla registers and mid-circuit measurements. Furthermore, since these logical gates are stabilizer code-generic, these implementations enable communication between heterogeneous stabilizer codes. These features collectively open the door to countless possibilities for existing and undiscovered codes as well as their scalable, heterogeneous coexistence.",
+    "published": "2026-01-16T03:06:56+00:00",
+    "updated": "2026-01-27T00:31:25+00:00",
+    "link": "http://arxiv.org/abs/2601.10964v2",
+    "pdf_link": "https://arxiv.org/pdf/2601.10964v2",
+    "categories": [
+      "quant-ph",
+      "cs.DS"
+    ]
   }
 ]
