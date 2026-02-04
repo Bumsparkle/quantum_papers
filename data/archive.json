@@ -3649,5 +3649,72 @@
     "categories": [
       "quant-ph"
     ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.03710v1",
+    "title": "Quantum Computing for Electronic Circular Dichroism Spectrum Prediction of Chiral Molecules",
+    "authors": [
+      "Amandeep Singh Bhatia",
+      "Sabre Kais"
+    ],
+    "summary": "Electronic circular dichroism (ECD) spectroscopy captures the chiroptical response of molecules, enabling absolute configuration assignment that is vital for enantioselective synthesis and drug design. The practical use of ECD spectra in predictive modeling remains restricted, as existing approaches offer limited confidence for chiral discrimination. By contrast, theoretical ECD calculations demand substantial computational effort rooted in electronic structure theory, which constrains their scalability to larger chemically diverse molecules. These limitations underscore the need for computational approaches that retain first principles physical rigor while enabling efficient and scalable prediction. Motivated by recent advances in quantum algorithms for chemistry, we introduce a variational quantum framework combined with the quantum equation of motion formalism to compute molecular properties and predict ECD spectra, implemented within a multi GPU or QPU accelerated hybrid quantum/classical workflow. We demonstrate its efficient applicability on 12 clinically relevant chiral drug molecules accessing expanded active spaces. The proposed framework is assessed by comparison with established classical wavefunction based methods, employing Coupled Cluster Singles and Doubles (CCSD) for ground-state energy benchmarks and Complete Active Space Configuration Interaction (CASCI) as the reference method for excited state energies and chiroptical properties within the same active orbital space. Notably, the quantum computed ECD spectra, obtained from chemically relevant active spaces mapped onto quantum circuits of approximately 20 to 24 qubits, exhibit near quantitative agreement with classical reference calculations, accurately reproducing spectral line shapes, Cotton effect signs, and relative peak intensities.",
+    "published": "2026-02-03T16:33:00+00:00",
+    "updated": "2026-02-03T16:33:00+00:00",
+    "link": "http://arxiv.org/abs/2602.03710v1",
+    "pdf_link": "https://arxiv.org/pdf/2602.03710v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.03618v1",
+    "title": "Optimal Effective Hamiltonian for Quantum Computing and Simulation",
+    "authors": [
+      "Hao-Yu Guan",
+      "Xiao-Long Zhu",
+      "Yu-Hang Dang",
+      "Xiu-Hao Deng"
+    ],
+    "summary": "The effective Hamiltonian serves as the conceptual pivot of quantum engineering, transforming physical complexity into programmable logic; yet, its construction remains compromised by the mathematical non-uniqueness of block diagonalization, which introduces an intrinsic \"gauge freedom\" that standard methods fail to resolve. We address this by establishing the Least Action Unitary Transformation (LAUT) as the fundamental principle for effective models. By minimizing geometric action, LAUT guarantees dynamical fidelity and inherently enforces the preservation of symmetries--properties frequently violated by conventional Schrieffer-Wolff and Givens rotation techniques. We identify the Bloch-Brandow formalism as the natural perturbative counterpart to this principle, yielding analytic expansions that preserve symmetries to high order. We validate this framework against experimental data from superconducting quantum processors, demonstrating that LAUT quantitatively reproduces interaction rates in driven entangling gates where standard approximations diverge. Furthermore, in tunable coupler architectures, we demonstrate that the LAUT approach captures essential non-rotating-wave contributions that standard models neglect; this inclusion is critical for quantitatively reproducing interaction rates and revealing physical multi-body interactions such as $XZX+YZY$, which are verified to be physical rather than gauge artifacts. By reconciling variational optimality with analytical tractability, this work provides a systematic, experimentally validated route for high-precision system learning and Hamiltonian engineering.",
+    "published": "2026-02-03T15:09:29+00:00",
+    "updated": "2026-02-03T15:09:29+00:00",
+    "link": "http://arxiv.org/abs/2602.03618v1",
+    "pdf_link": "https://arxiv.org/pdf/2602.03618v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.03536v1",
+    "title": "An Evaluation of the Remote CX Protocol under Noise in Distributed Quantum Computing",
+    "authors": [
+      "Leo Sünkel",
+      "Michael Kölle",
+      "Tobias Rohe",
+      "Claudia Linnhoff-Popien"
+    ],
+    "summary": "Quantum computers connected through classical and quantum communication channels can be combined to function as a single unit to run large quantum circuits that each device is unable to execute on their own. The distributed quantum computing paradigm is therefore often seen as a potential pathway to scaling quantum computing to capacities necessary for practical and large-scale applications. Whether connecting multiple quantum processing units (QPUs) in clusters or over networks, quantum communication requires entanglement to be generated and distributed over distances. Using entanglement, the remote CX protocol can be performed, which allows the application of the CX gate involving qubits located in different QPUs. In this work, we use a specialized simulation framework for a high-level evaluation of the impact of the protocol when executed under noise in various network configurations using different number of QPUs. We compare naive and graph partitioning qubit assignment strategies and how they affect the fidelity in experiments run on Grover, GHZ, VQC, and random circuits. The results provide insights on how QPU and network configurations or naive scheduling can degrade performance.",
+    "published": "2026-02-03T13:52:13+00:00",
+    "updated": "2026-02-03T13:52:13+00:00",
+    "link": "http://arxiv.org/abs/2602.03536v1",
+    "pdf_link": "https://arxiv.org/pdf/2602.03536v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.03522v1",
+    "title": "QRC-Lab: An Educational Toolbox for Quantum Reservoir Computing",
+    "authors": [
+      "Anderson Fernandes Pereira dos Santos"
+    ],
+    "summary": "Quantum Reservoir Computing (QRC) has emerged as a strong pa- radigm for Noisy Intermediate-Scale Quantum (NISQ) machine learning, ena- bling the processing of temporal data with minimal training overhead by exploi- ting the high-dimensional dynamics of quantum states. This paper introduces QRC-Lab, an open-source, modular Python framework designed to bridge the gap between theoretical quantum dynamics and applied machine learning work- flows. We provide a rigorous definition of QRC, contrast physical and gate- based approaches, and formalize the reservoir mapping used in the toolbox. QRC-Lab instantiates a configurable gate-based laboratory for studying in- put encoding, reservoir connectivity, and measurement strategies, and validates these concepts through three educational case studies: short-term memory re- construction, temporal parity (XOR), and NARMA10 forecasting as a deliberate stress test. In addition, we include a learning-theory motivated generalization- gap scan to build intuition about capacity control in quantum feature maps. The full source code, experiment scripts, and reproducibility assets are publicly available at: https://doi.org/10.5281/zenodo.18469026.",
+    "published": "2026-02-03T13:38:56+00:00",
+    "updated": "2026-02-03T13:38:56+00:00",
+    "link": "http://arxiv.org/abs/2602.03522v1",
+    "pdf_link": "https://arxiv.org/pdf/2602.03522v1",
+    "categories": [
+      "quant-ph"
+    ]
   }
 ]
