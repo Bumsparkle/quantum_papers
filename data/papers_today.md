@@ -1,29 +1,29 @@
-# Papers Found on: 2026-02-05
+# Papers Found on: 2026-02-06
 
-### Digital signatures with classical shadows on near-term quantum computers
-* **Authors:** Pradeep Niroula et al.
+### Lower bounds on non-local computation from controllable correlation
+* **Authors:** Richard Cleve et al.
+* **Published (v1):** 2026-01-30
+* **Updated:** 2026-02-05
+* **Link:** http://arxiv.org/abs/2602.00255v2
+* **Abstract:** Understanding entanglement cost in non-local quantum computation (NLQC) is relevant to complexity, cryptography, gravity, and other areas. This entanglement cost is largely uncharacterized; previous lower bound techniques apply to narrowly defined cases, and proving lower bounds on most simple unitaries has remained open. Here, we give two new lower bound techniques that can be evaluated for any unitary, based on their controllable correlation and controllable entanglement. For Haar random two qubit unitaries, our techniques typically lead to non-trivial lower bounds. Further, we obtain lower bounds on most of the commonly studied two qubit quantum gates, including CNOT, DCNOT, $\sqrt{\text{SWAP}}$, and the XX interaction, none of which previously had known lower bounds. For the CNOT gate, one of our techniques gives a tight lower bound, fully resolving its entanglement cost. The resulting lower bounds have parallel repetition properties, and apply in the noisy setting.
+
+### Reducing the Computational Cost Scaling of Tensor Network Algorithms via Field-Programmable Gate Array Parallelism
+* **Authors:** Songtai Lv et al.
+* **Published (v1):** 2026-02-05
+* **Updated:** 2026-02-05
+* **Link:** http://arxiv.org/abs/2602.05900v1
+* **Abstract:** Improving the computational efficiency of quantum many-body calculations from a hardware perspective remains a critical challenge. Although field-programmable gate arrays (FPGAs) have recently been exploited to improve the computational scaling of algorithms such as Monte Carlo methods, their application to tensor network algorithms is still at an early stage. In this work, we propose a fine-grained parallel tensor network design based on FPGAs to substantially enhance the computational efficiency of two representative tensor network algorithms: the infinite time-evolving block decimation (iTEBD) and the higher-order tensor renormalization group (HOTRG). By employing a quad-tile partitioning strategy to decompose tensor elements and map them onto hardware circuits, our approach effectively translates algorithmic computational complexity into scalable hardware resource utilization, enabling an extremely high degree of parallelism on FPGAs. Compared with conventional CPU-based implementations, our scheme exhibits superior scalability in computation time, reducing the bond-dimension scaling of the computational cost from $O(D_b^3)$ to $O(D_b)$ for iTEBD and from $O(D_b^6)$ to $O(D_b^2)$ for HOTRG. This work provides a theoretical foundation for future hardware implementations of large-scale tensor network computations.
+
+### Hamiltonian Benchmark of a Solid-State Spin-Photon Interface for Computation
+* **Authors:** Tejas Acharya et al.
+* **Published (v1):** 2026-02-05
+* **Updated:** 2026-02-05
+* **Link:** http://arxiv.org/abs/2602.05637v1
+* **Abstract:** Light-matter interfaces are pivotal for quantum computation and communication. While typically analyzed using single-mode or open-quantum-system approximations, these models often neglect multi-mode field states and light-matter entanglement, hindering exact protocol modeling. Here, we solve the full Hamiltonian dynamics of a solid-state spin-photon interface for three key protocols: the generation of photon-number superpositions, a controlled photon-photon gate, and the production of photonic cluster states. By deriving exact fidelities, we identify fundamental performance limits. Our results reveal that while realistic imperfections severely limit photon-photon gates, they only slightly affect linear photonic clusters and are nearly harmless for photon-number state superpositions.
+
+### Quantum computational imaging and sensing
+* **Authors:** Mohan Sarovar et al.
 * **Published (v1):** 2026-02-04
 * **Updated:** 2026-02-04
-* **Link:** http://arxiv.org/abs/2602.04859v1
-* **Abstract:** Quantum mechanics provides cryptographic primitives whose security is grounded in hardness assumptions independent of those underlying classical cryptography. However, existing proposals require low-noise quantum communication and long-lived quantum memory, capabilities which remain challenging to realize in practice. In this work, we introduce a quantum digital signature scheme that operates with only classical communication, using the classical shadows of states produced by random circuits as public keys. We provide theoretical and numerical evidence supporting the conjectured hardness of learning the private key (the circuit) from the public key (the shadow). A key technical ingredient enabling our scheme is an improved state-certification primitive that achieves higher noise tolerance and lower sample complexity than prior methods. We realize this certification by designing a high-rate error-detecting code tailored to our random-circuit ensemble and experimentally generating shadows for 32-qubit states using circuits with $\geq 80$ logical ($\geq 582$ physical) two-qubit gates, attaining 0.90 $\pm$ 0.01 fidelity. With increased number of measurement samples, our hardware-demonstrated primitives realize a proof-of-principle quantum digital signature, demonstrating the near-term feasibility of our scheme.
-
-### Vistas of Algebraic Probability: Quantum Computation and Information
-* **Authors:** Antonio Falcó et al.
-* **Published (v1):** 2026-02-04
-* **Updated:** 2026-02-04
-* **Link:** http://arxiv.org/abs/2602.04351v1
-* **Abstract:** Kolmogorov's foundation of probability takes measure spaces, $σ$-algebras, and probability measures as basic objects. It is, however, widely recognized that this classical framework is inadequate for random phenomena involving quantum effects, and more generally for \emph{quantum-like} situations. A broader formulation is provided by an algebraic viewpoint: one starts from an algebra of random variables equipped with a distinguished linear functional -- the \emph{state} -- interpreted as expectation. In this sense, the approach can also be viewed as a modern reading of ideas already implicit in early probability (e.g., the Bernoullis), while its contemporary form has been developed and used extensively in quantum physics.   The algebraic framework accommodates both classical and quantum-like behaviours, yet it remains underused in classical probability and uncertainty quantification, where it can nevertheless open new perspectives and clarify structural features. Although the language carries a physics flavor, the subject is purely probabilistic. The key distinction between classical and quantum-like behaviour is \emph{commutativity}: its failure produces the characteristic effects of quantum-like situations. The rise of quantum computing is a prominent setting in which such behaviour may become relevant even for practitioners in computational science. Here we focus on the purely algebraic core of the approach. By restricting attention to finite-dimensional algebras, we avoid many analytical subtleties while retaining the main ideas, their classical limit, and their applicability to quantum-like models and quantum computation.
-
-### A Quantum Computing Framework for VLBI Data Correlation
-* **Authors:** Lei Liu et al.
-* **Published (v1):** 2026-02-04
-* **Updated:** 2026-02-04
-* **Link:** http://arxiv.org/abs/2602.04269v1
-* **Abstract:** We present a quantum computing framework for VLBI data correlation. We point out that a classical baseband time series data of length $N$ can be embedded into a quantum superposition state using amplitude encoding with only $\log_2 N$ qubits. The basic VLBI correlation and fringe fitting operations, including fringe rotation, Fourier transform, delay compensation, and cross correlation, can be implemented via quantum algorithms with significantly reduced computational complexity. We construct a full quantum processing pipeline and validate its feasibility and accuracy through direct comparison with a classical VLBI pipeline. We recognize that amplitude encoding of large data volumes remains the primary bottleneck in quantum computing; however, the quantized nature of VLBI raw data helps reduce the state-preparation complexity. Our investigation demonstrates that quantum computation offers a promising paradigm for VLBI data correlation and is likely to play a role in future VLBI systems.
-
-### Data Verification is the Future of Quantum Computing Copilots
-* **Authors:** Junhao Song et al.
-* **Published (v1):** 2026-02-03
-* **Updated:** 2026-02-03
-* **Link:** http://arxiv.org/abs/2602.04072v1
-* **Abstract:** Quantum program generation demands a level of precision that may not be compatible with the statistical reasoning carried out in the inference of large language models (LLMs). Hallucinations are mathematically inevitable and not addressable by scaling, which leads to infeasible solutions. We argue that architectures prioritizing verification are necessary for quantum copilots and AI automation in domains governed by constraints. Our position rests on three key points: verified training data enables models to internalize precise constraints as learned structures rather than statistical approximations; verification must constrain generation rather than filter outputs, as valid designs occupy exponentially shrinking subspaces; and domains where physical laws impose correctness criteria require verification embedded as architectural primitives. Early experiments showed LLMs without data verification could only achieve a maximum accuracy of 79% in circuit optimization. Our positions are formulated as quantum computing and AI4Research community imperatives, calling for elevating verification from afterthought to architectural foundation in AI4Research.
+* **Link:** http://arxiv.org/abs/2602.05102v1
+* **Abstract:** We present a new framework for imaging and sensing based on utilizing a quantum computer to coherently process quantum information in an electromagnetic field. We describe the framework, its potential to provide improvements in imaging and sensing performance and present an example application, the design of coherent receivers for optical communication. Finally, we go over the improvements in quantum technologies required to fully realize quantum computational imaging and sensing.
