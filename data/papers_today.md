@@ -1,29 +1,29 @@
-# Papers Found on: 2026-02-06
+# Papers Found on: 2026-02-09
 
-### Lower bounds on non-local computation from controllable correlation
-* **Authors:** Richard Cleve et al.
-* **Published (v1):** 2026-01-30
-* **Updated:** 2026-02-05
-* **Link:** http://arxiv.org/abs/2602.00255v2
-* **Abstract:** Understanding entanglement cost in non-local quantum computation (NLQC) is relevant to complexity, cryptography, gravity, and other areas. This entanglement cost is largely uncharacterized; previous lower bound techniques apply to narrowly defined cases, and proving lower bounds on most simple unitaries has remained open. Here, we give two new lower bound techniques that can be evaluated for any unitary, based on their controllable correlation and controllable entanglement. For Haar random two qubit unitaries, our techniques typically lead to non-trivial lower bounds. Further, we obtain lower bounds on most of the commonly studied two qubit quantum gates, including CNOT, DCNOT, $\sqrt{\text{SWAP}}$, and the XX interaction, none of which previously had known lower bounds. For the CNOT gate, one of our techniques gives a tight lower bound, fully resolving its entanglement cost. The resulting lower bounds have parallel repetition properties, and apply in the noisy setting.
+### Charge-$4e$ superconductor with parafermionic vortices: A path to universal topological quantum computation
+* **Authors:** Zhengyan Darius Shi et al.
+* **Published (v1):** 2026-02-06
+* **Updated:** 2026-02-06
+* **Link:** http://arxiv.org/abs/2602.06963v1
+* **Abstract:** Topological superconductors (TSCs) provide a promising route to fault-tolerant quantum information processing. However, the canonical Majorana platform based on $2e$ TSCs remains computationally constrained. In this work, we find a $4e$ TSC that overcomes these constraints by combining a charge-$4e$ condensate with an Abelian chiral $\mathbb{Z}_3$ topological order in an intertwined fashion. Remarkably, this $4e$ TSC can be obtained by proliferating vortex-antivortex pairs in a stack of two $2e$ $p+ip$ TSCs, or by melting a $ν=2/3$ quantum Hall state. Specific to this TSC, the $hc/(4e)$ fluxes act as charge-conjugation defects in the topological order, whose braiding with anyons transmutes anyons into their antiparticles. This symmetry enrichment leads to $\mathbb{Z}_3$ parafermion zero modes trapped in the elementary vortex cores, which naturally encode qutrits. Braiding the parafermion defects alone generates the full many-qutrit Clifford group. We further show that a simple single-probe interferometric measurement enables topologically protected magic-state preparation, promoting Clifford operations to a universal gate set. Importantly, the non-Abelian excitations in the $4e$ TSC are confined to externally controlled defects, making them uniquely identifiable and amenable to controlled creation and motion with superconducting-circuit technology. Our results establish hierarchical electron aggregation as a complementary principle for engineering topological quantum matter with enhanced computational power.
 
-### Reducing the Computational Cost Scaling of Tensor Network Algorithms via Field-Programmable Gate Array Parallelism
-* **Authors:** Songtai Lv et al.
+### Extensible universal photonic quantum computing with nonlinearity
+* **Authors:** Shang Yu et al.
+* **Published (v1):** 2026-02-06
+* **Updated:** 2026-02-06
+* **Link:** http://arxiv.org/abs/2602.06544v1
+* **Abstract:** Universal quantum computing requires an architecture that supports both linear circuits and, crucially, strong nonlinear resources. For quantum photonic systems, integrating such nonlinearities with scalable linear circuitry has been a major bottleneck, leaving most optical experiments without nonlinear operations and, consequently, incapable of achieving universality. Here, we report an extensible photonic computer that supports a universal gate set by seamlessly combining fully programmable, scalable linear optical networks with integrated nonlinear modules. This platform enables a broad range of quantum computing and simulation tasks. We demonstrate the quasi-deterministic generation of optical Gottesman-Kitaev-Preskill states, which are essential resources for bosonic error correction, yet had previously been realized only probabilistically. Furthermore, we simulate complex many-body quantum dynamics, exemplified by the Bose-Hubbard model. Such quantum simulation tasks have long been considered beyond the reach of photonic hardware limited to linear operations. These capabilities, enabled by our extensible architecture, establish a viable route towards photonic quantum simulation and fault-tolerant quantum computing.
+
+### Achieving Sub-Exponential Speedup in Gate-Based Quantum Computing for Quadratic Unconstrained Binary Optimization
+* **Authors:** Ying-Wei Tseng et al.
+* **Published (v1):** 2026-02-06
+* **Updated:** 2026-02-06
+* **Link:** http://arxiv.org/abs/2602.06420v1
+* **Abstract:** Recent quantum-inspired methods based on the Simulated Annealing algorithm have shown strong potential for solving combinatorial optimization problems. However, Grover's algorithm in gate-based quantum computing offers only a quadratic speedup, which remains impractical for large problem sizes. This paper proposes a hybrid approach that integrates Simulated Annealing with Grover's algorithm to achieve sub-exponential speedup, thereby improving its industrial applicability.   In enzyme fermentation, variables such as temperature, stirring, wait time, pH, tryptophan, rice flour and others are encoded by 625 binary parameters, defining the space of possible enzyme formulations. We aim to find a binary configuration that maximizes the active ingredient, formulated as a 625-bit Quadratic Unconstrained Binary Optimization problem generated from historical experiments and artificial intelligence techniques. Minimizing the QUBO cost corresponds to maximizing the active ingredient. This case study demonstrates that the proposed hybrid method achieves sub-exponential speedup using gate-based quantum computing.
+
+### High-Level Fault-Tolerant Abstractions for Quantum-Gate Circuit Design and Synthesis: PQC and Topological Anyon Architectures (TQC) for Categorical Computations in SU(2)_3 TQFT and D-brane Stability
+* **Authors:** Vaidik A Sharma et al.
 * **Published (v1):** 2026-02-05
 * **Updated:** 2026-02-05
-* **Link:** http://arxiv.org/abs/2602.05900v1
-* **Abstract:** Improving the computational efficiency of quantum many-body calculations from a hardware perspective remains a critical challenge. Although field-programmable gate arrays (FPGAs) have recently been exploited to improve the computational scaling of algorithms such as Monte Carlo methods, their application to tensor network algorithms is still at an early stage. In this work, we propose a fine-grained parallel tensor network design based on FPGAs to substantially enhance the computational efficiency of two representative tensor network algorithms: the infinite time-evolving block decimation (iTEBD) and the higher-order tensor renormalization group (HOTRG). By employing a quad-tile partitioning strategy to decompose tensor elements and map them onto hardware circuits, our approach effectively translates algorithmic computational complexity into scalable hardware resource utilization, enabling an extremely high degree of parallelism on FPGAs. Compared with conventional CPU-based implementations, our scheme exhibits superior scalability in computation time, reducing the bond-dimension scaling of the computational cost from $O(D_b^3)$ to $O(D_b)$ for iTEBD and from $O(D_b^6)$ to $O(D_b^2)$ for HOTRG. This work provides a theoretical foundation for future hardware implementations of large-scale tensor network computations.
-
-### Hamiltonian Benchmark of a Solid-State Spin-Photon Interface for Computation
-* **Authors:** Tejas Acharya et al.
-* **Published (v1):** 2026-02-05
-* **Updated:** 2026-02-05
-* **Link:** http://arxiv.org/abs/2602.05637v1
-* **Abstract:** Light-matter interfaces are pivotal for quantum computation and communication. While typically analyzed using single-mode or open-quantum-system approximations, these models often neglect multi-mode field states and light-matter entanglement, hindering exact protocol modeling. Here, we solve the full Hamiltonian dynamics of a solid-state spin-photon interface for three key protocols: the generation of photon-number superpositions, a controlled photon-photon gate, and the production of photonic cluster states. By deriving exact fidelities, we identify fundamental performance limits. Our results reveal that while realistic imperfections severely limit photon-photon gates, they only slightly affect linear photonic clusters and are nearly harmless for photon-number state superpositions.
-
-### Quantum computational imaging and sensing
-* **Authors:** Mohan Sarovar et al.
-* **Published (v1):** 2026-02-04
-* **Updated:** 2026-02-04
-* **Link:** http://arxiv.org/abs/2602.05102v1
-* **Abstract:** We present a new framework for imaging and sensing based on utilizing a quantum computer to coherently process quantum information in an electromagnetic field. We describe the framework, its potential to provide improvements in imaging and sensing performance and present an example application, the design of coherent receivers for optical communication. Finally, we go over the improvements in quantum technologies required to fully realize quantum computational imaging and sensing.
+* **Link:** http://arxiv.org/abs/2602.06089v1
+* **Abstract:** We propose a dual-architecture quantum simulation framework for modeling morphisms and stability conditions in the bounded derived category $\mathbf{D}^b(\mathrm{Coh}(X))$, with applications to D-brane physics on Kähler and non-Kähler manifolds. Two physically executable quantum realizations are constructed: parameterized quantum circuits (PQCs) implemented on conventional gate-based qubit platforms, and a topological quantum computing (TQC) realization using braiding and fusion of Fibonacci anyons modeled via SU(2)$_3$ modular tensor categories.In the PQC model, we encode slope functionals S(F) and stability constraints as variational observables, mapping derived morphisms to unitaries that evolve over parameterized angles. The output expectation values simulate quantum-corrected Chern class inequalities with deformation terms $δ$, capturing quantum corrections to classical geometric stability. In the TQC model, we engineer braid group representations to implement functorial transformations such as spherical twists and autoequivalences as sequences of fault-tolerant braid operations. This bifurcated approach provides a robust engineering pipeline for simulating categorical stability and homological algebra on quantum hardware, bridging abstract derived category theory with executable quantum architectures.
