@@ -4151,5 +4151,76 @@
     "categories": [
       "quant-ph"
     ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.10951v1",
+    "title": "Quantum Optimization in Loc(Q)ation Science: QUBO Formulations, Benchmark Problems, and a Computational Study",
+    "authors": [
+      "Felix P. Broesamle",
+      "Stefan Nickel"
+    ],
+    "summary": "Recent advances in quantum computing and the increasing availability of quantum hardware have substantially enhanced the practical relevance of quantum approaches to discrete optimization. Among these, the Quadratic Unconstrained Binary Optimization (QUBO) formulation provides a unifying modeling framework for a broad class of $\\mathbf{NP}$-hard problems and is naturally suited to quantum computing and quantum-inspired algorithms. Location science, network design, and logistics represent core application domains of discrete optimization, combining high practical impact with substantial computational challenges. In this work, we develop QUBO formulations for several fundamental problems in these domains, including a nonlinear integer formulation of the Discrete Ordered Median Problem (DOMP). Beyond their modeling relevance, these QUBO formulations serve as representative benchmark problems for assessing quantum algorithms and quantum hardware. We further derive a tight bound for the penalty parameter ensuring equivalence between the QUBO formulation and its underlying integer program. Finally, we conduct a comprehensive computational study using QAOA, WS-QAOA, and classical heuristics for QUBO instances of the $p$-Median Problem and the Fixed-Charge Facility Location Problem (FCFLP), and introduce two effective warm-start strategies for WS-QAOA based on its linear programming relaxation.",
+    "published": "2026-02-11T15:39:26+00:00",
+    "updated": "2026-02-11T15:39:26+00:00",
+    "link": "http://arxiv.org/abs/2602.10951v1",
+    "pdf_link": "https://arxiv.org/pdf/2602.10951v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.10435v1",
+    "title": "Multiconfiguration Pair-Density Functional Theory Calculations of Ground and Excited States of Complex Chemical Systems with Quantum Computers",
+    "authors": [
+      "Zhanou Liu",
+      "Yuhao Chen",
+      "Yingjin Ma",
+      "Xiao He",
+      "Yuxin Deng"
+    ],
+    "summary": "Accurately describing strong electron correlation in complex systems remains a prominent challenge in computational chemistry as near-term quantum algorithms treating total correlation often require prohibitively deep circuits. Here we present a hybrid strategy combining the Variational Quantum Eigensolver with Multiconfiguration Pair-Density Functional Theory to efficiently decouple correlation effects. This approach confines static correlation to a compact multireference quantum state while recovering dynamic correlation through a classical on-top density functional using reduced-density information. By enabling self-consistent orbital optimization, the method significantly reduces quantum resource overheads without sacrificing physical rigor. We demonstrate chemical accuracy on standard benchmarks by reproducing C$_2$ equilibrium bond lengths and benzene excitation energies with mean absolute errors of 0.006 Å and 0.048 eV respectively. Most notably, for the strongly correlated Cr$_2$ dimer requiring a large complete active space (48e, 42o), the framework yields a bound potential-energy curve and recovers qualitative dissociation behavior despite realistic hardware noise. These results establish that separating correlation types provides a practical route to reliable predictions on near-term quantum hardware.",
+    "published": "2026-02-11T02:26:36+00:00",
+    "updated": "2026-02-11T02:26:36+00:00",
+    "link": "http://arxiv.org/abs/2602.10435v1",
+    "pdf_link": "https://arxiv.org/pdf/2602.10435v1",
+    "categories": [
+      "cs.CE"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.10225v1",
+    "title": "Quantum Integrated Sensing and Computation with Indefinite Causal Order",
+    "authors": [
+      "Ivana Nikoloska"
+    ],
+    "summary": "Quantum operations with indefinite causal order (ICO) represent a framework in quantum information processing where the relative order between two events can be indefinite. In this paper, we investigate whether sensing and computation, two canonical tasks in quantum information processing, can be carried out within the ICO framework. We propose a scheme for integrated sensing and computation that uses the same quantum state for both tasks. The quantum state is represented as an agent that performs state observation and learns a function of the state to make predictions via a parametric model. Under an ICO operation, the agent experiences a superposition of orders, one in which it performs state observation and then executes the required computation steps, and another in which the agent carries out the computation first and then performs state observation. This is distinct from prevailing information processing and machine intelligence paradigms where information acquisition and learning follow a strict causal order, with the former always preceding the latter. We provide experimental results and we show that the proposed scheme can achieve small training and testing losses on a representative task in magnetic navigation.",
+    "published": "2026-02-10T19:16:20+00:00",
+    "updated": "2026-02-10T19:16:20+00:00",
+    "link": "http://arxiv.org/abs/2602.10225v1",
+    "pdf_link": "https://arxiv.org/pdf/2602.10225v1",
+    "categories": [
+      "quant-ph",
+      "cs.AI",
+      "cs.IT",
+      "eess.SP"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.10141v1",
+    "title": "Permanents of matrix ensembles: computation, distribution, and geometry",
+    "authors": [
+      "Igor Rivin"
+    ],
+    "summary": "We report on a computational and experimental study of permanents. On the computational side, we use the GPU to greaatly accelerate the computation of permanents over $\\mathbb{C},$ $\\mathbb{R},$ $\\mathbb{F}_p$ and $\\mathbb{Q}.$ In particular, we use this to compute the permanents of DFT and Schur matrices far beyond the ranges hitherto known. On the experimental side, we present two new observations. First, for Haar-distributed unitary matrices~$U$, the permanent $\\perm(U)$ follows a circularly-symmetric complex Gaussian distribution $\\mathcal{CN}(0,σ^2)$ -- we confirm this via a number of tests for $n$ up to~23 with $50{,}000$ samples. The DFT matrix permanent is an extreme outlier for every prime $n\\ge 7$. In contrast, for Haar-random \\emph{orthogonal} matrices~$O$, the permanent $\\perm(O)$ is approximately real Gaussian but with positive excess kurtosis that decays as~$O(1/n)$, indicating slower convergence. For matrices with Gaussian entries (GUE, GOE, Ginibre), the permanent follows an $α$-stable distribution with stability index $α\\approx 1.0$--$1.4$, well below the Gaussian value $α=2$.\n  Secondly, we study the permanent along geodesics on the unitary group. For the geodesic from the identity to the $n$-cycle permutation matrix, we find a universal scaling function $f(t)=\\frac{1}{n}\\ln|\\perm(γ(t))|$ that is independent of~$n$ in the large-$n$ limit, with a midpoint value \\[\n  \\perm(γ({\\textstyle\\frac12}))\n  = (-1)^{(n-1)/2}\\cdot 2e^{-n}\\bigl(1+\\tfrac{1}{3n}+O(n^{-2})\\bigr) \\] for odd~$n$ and zero for even~$n$. For the geodesic to the DFT matrix, the permanent recovers $10$--$40$ times above its valley minimum when $n$ is prime, but not when $n$ is composite -- a geodesic fingerprint of primality.",
+    "published": "2026-02-08T22:31:42+00:00",
+    "updated": "2026-02-08T22:31:42+00:00",
+    "link": "http://arxiv.org/abs/2602.10141v1",
+    "pdf_link": "https://arxiv.org/pdf/2602.10141v1",
+    "categories": [
+      "quant-ph",
+      "math-ph",
+      "math.CO",
+      "math.PR"
+    ]
   }
 ]
