@@ -1,22 +1,10 @@
 
 
-# Papers Found on: 2026-02-20
+# Papers Found on: 2026-02-21
 
-### Free Quantum Computing
-* **Authors:** Jacques Carette et al.
-* **Published (v1):** 2026-02-18
-* **Updated:** 2026-02-18
-* **Link:** http://arxiv.org/abs/2602.16927v1
-* **Abstract:** Quantum computing improves substantially on known classical algorithms for various important problems, but the nature of the relationship between quantum and classical computing is not yet fully understood. This relationship can be clarified by free models, that add to classical computing just enough physical principles to represent quantum computing and no more. Here we develop an axiomatisation of quantum computing that replaces the standard continuous postulates with a small number of discrete equations, as well as a free model that replaces the standard linear-algebraic model with a category-theoretical one. The axioms and model are based on reversible classical computing, isolate quantum advantage in the ability to take certain well-behaved square roots, and link to various quantum computing hardware platforms. This approach allows combinatorial optimisation, including brute force computer search, to optimise quantum computations. The free model may be interpreted as a programming language for quantum computers, that has the same expressivity and computational universality as the standard model, but additionally allows automated verification and reasoning.
+No new papers matching your keywords were found in the last 7 days.
 
 
+# Papers Found on: 2026-02-21
 
-# Papers Found on: 2026-02-20
-
-### Free Quantum Computing
-* **Authors:** Jacques Carette et al.
-* **Published (v1):** 2026-02-18
-* **Updated:** 2026-02-18
-* **Link:** http://arxiv.org/abs/2602.16927v1
-* **Abstract:** Quantum computing improves substantially on known classical algorithms for various important problems, but the nature of the relationship between quantum and classical computing is not yet fully understood. This relationship can be clarified by free models, that add to classical computing just enough physical principles to represent quantum computing and no more. Here we develop an axiomatisation of quantum computing that replaces the standard continuous postulates with a small number of discrete equations, as well as a free model that replaces the standard linear-algebraic model with a category-theoretical one. The axioms and model are based on reversible classical computing, isolate quantum advantage in the ability to take certain well-behaved square roots, and link to various quantum computing hardware platforms. This approach allows combinatorial optimisation, including brute force computer search, to optimise quantum computations. The free model may be interpreted as a programming language for quantum computers, that has the same expressivity and computational universality as the standard model, but additionally allows automated verification and reasoning.
-
+No new papers matching your keywords were found in the last 7 days.
