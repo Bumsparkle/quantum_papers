@@ -1,4 +1,4 @@
-
+# Daily Quantum Papers
 
 # Papers Found on: 2026-03-03
 
