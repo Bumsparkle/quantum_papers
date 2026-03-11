@@ -5519,5 +5519,226 @@
     "categories": [
       "quant-ph"
     ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.09580v1",
+    "title": "ZX-Flow: A Flexible Criterion for Deterministic Computation with ZX-Diagrams",
+    "authors": [
+      "Aleks Kissinger",
+      "John van de Wetering"
+    ],
+    "summary": "Flow criteria are used to efficiently extract computations, either in the form of measurement patterns or quantum circuits, from ZX-diagrams. Existing criteria such as causal flow, generalised flow, and Pauli flow, were all originally formulated for graph states, so they require ZX-diagrams to be in a very particular graph-state-like form. This form is easily broken by applying basic ZX rules and makes establishing some desirable properties very complicated. Here, we introduce a new \"ZX-native\" flow criterion called ZX-flow, formulated using a new type of decoration of a ZX-diagram we call Pauli semiwebs. These are a generalisation of Pauli webs, which have recently been used extensively in reasoning about fault-tolerant computations in the ZX-calculus. We show that ZX-flow is straightforwardly preserved by all Clifford rewrites and furthermore that a ZX-diagram has ZX-flow if and only if it is Clifford-equivalent to a graph-like ZX-diagram with Pauli flow. Finally, we show that any diagram with ZX-flow can be readily interpreted either as a deterministic measurement-based computation or as a Clifford isometry followed by a sequence of Pauli exponentials. The latter can then be efficiently extracted to a quantum circuit.",
+    "published": "2026-03-10T12:26:09+00:00",
+    "updated": "2026-03-10T12:26:09+00:00",
+    "link": "http://arxiv.org/abs/2603.09580v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.09580v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.09368v1",
+    "title": "Verified delegated quantum computation requires techniques beyond cut-and-choose",
+    "authors": [
+      "Fabian Wiesner",
+      "Anna Pappa"
+    ],
+    "summary": "Delegated quantum computation enables a client with limited quantum capabilities to outsource computations to a more powerful quantum server while preserving correctness and privacy. Verification is crucial in this setting to ensure that the untrusted quantum server performs the computation honestly and returns correct results. A common verification method is the quantum cut-and-choose technique. Inspired by classical verification methods for two-party computation, the client uses the majority of the delegated rounds to test the server's honesty, while keeping the remaining ones for the actual computation. Combining this technique with other methods, such as quantum error correction, could help achieve negligible cheating probabilities for the server; however, such methods can impose significant overheads making implementations unfeasible for the near-term future. In this work, we investigate whether cut-and-choose can yield efficient and secure verifiable quantum computation without additional costly techniques. We find that verifiable delegated quantum computation protocols relying solely on cut-and-choose techniques cannot be secure and efficient at the same time.",
+    "published": "2026-03-10T08:45:23+00:00",
+    "updated": "2026-03-10T08:45:23+00:00",
+    "link": "http://arxiv.org/abs/2603.09368v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.09368v1",
+    "categories": [
+      "quant-ph",
+      "cs.CR"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.09233v1",
+    "title": "Efficient Qubit Simulation of Hybrid Oscillator-Qubit Quantum Computation",
+    "authors": [
+      "Xi Lu",
+      "Bojko N. Bakalov",
+      "Yuan Liu"
+    ],
+    "summary": "We introduce a framework for simulating hybrid oscillator-qubit quantum processors on qubit-only systems through position encoding. By encoding continuous-variable position and momentum wave functions into qubit amplitudes, our method efficiently simulates all Gaussian and conditional Gaussian operations -- encompassing the phase-space instruction set (beam splitter, single-qubit rotation, conditional displacement) and extending to squeezing, conditional squeezing, conditional rotation, and conditional beam splitter -- using $O\\!\\left(\\log^2\\!\\left(Γ+ \\log(1/ε)\\right)\\right)$ qubit gates per hybrid gate, where $Γ$ is the Fock-level bound and $ε$ is the target precision. This polylogarithmic per-gate complexity represents an exponential improvement over Fock basis encoding approaches, which require exponential quantum or classical resources in the number of qubits per mode. We provide rigorous numerical characterization of quantum Fourier transform errors for Fock-bounded states, enabling precise resource estimation for practical implementations. This work establishes that hybrid oscillator-qubit algorithms can be implemented on qubit processors with polynomial overhead, providing new insights into the computational power trade-offs between discrete-variable and hybrid continuous-discrete-variable quantum computing.",
+    "published": "2026-03-10T06:05:55+00:00",
+    "updated": "2026-03-10T06:05:55+00:00",
+    "link": "http://arxiv.org/abs/2603.09233v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.09233v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.09082v1",
+    "title": "PPO-Based Hybrid Optimization for RIS-Assisted Semantic Vehicular Edge Computing",
+    "authors": [
+      "Wei Feng",
+      "Jingbo Zhang",
+      "Qiong Wu",
+      "Pingyi Fan",
+      "Qiang Fan"
+    ],
+    "summary": "To support latency-sensitive Internet of Vehicles (IoV) applications amidst dynamic environments and intermittent links, this paper proposes a Reconfigurable Intelligent Surface (RIS)-aided semantic-aware Vehicle Edge Computing (VEC) framework. This approach integrates RIS to optimize wireless connectivity and semantic communication to minimize latency by transmitting semantic features. We formulate a comprehensive joint optimization problem by optimizing offloading ratios, the number of semantic symbols, and RIS phase shifts. Considering the problem's high dimensionality and non-convexity, we propose a two-tier hybrid scheme that employs Proximal Policy Optimization (PPO) for discrete decision-making and Linear Programming (LP) for offloading optimization. {The simulation results have validated the proposed framework's superiority over existing methods. Specifically, the proposed PPO-based hybrid optimization scheme reduces the average end-to-end latency by approximately 40% to 50% compared to Genetic Algorithm (GA) and Quantum-behaved Particle Swarm Optimization (QPSO). Moreover, the system demonstrates strong scalability by maintaining low latency even in congested scenarios with up to 30 vehicles.",
+    "published": "2026-03-10T01:47:10+00:00",
+    "updated": "2026-03-10T01:47:10+00:00",
+    "link": "http://arxiv.org/abs/2603.09082v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.09082v1",
+    "categories": [
+      "cs.LG",
+      "cs.NI"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.08883v1",
+    "title": "Parallel iQCC Enables 200 Qubit Scale Quantum Chemistry on Accelerated Computing Platforms Surpassing Classical Benchmarks in Ruthenium Catalysts",
+    "authors": [
+      "Seyyed Mehdi Hosseini Jenab",
+      "Brandon Henderson",
+      "Scott N. Genin"
+    ],
+    "summary": "We introduce a parallel, GPU-accelerated implementation of the iterative qubit coupled cluster (iQCC) method that overcomes the exponential growth of the transformed Hamiltonian -- the principal bottleneck for classical emulation of quantum chemistry circuits. By distributing Hamiltonian terms across compute nodes via bit-wise partitioning and offloading Pauli contractions to GPUs, we achieve speedups exceeding two orders of magnitude over the serial CPU approach. Crucially, iQCC confines the variational evolution to a classically simulable operator subspace by selecting entanglers exclusively from the Direct Interaction Space, which guarantees non-vanishing energy gradients at every iteration and thereby naturally avoids the barren-plateau phenomenon that renders highly expressive quantum circuits untrainable. Leveraging these algorithmic and hardware advances, we simulate electronic-structure Hamiltonians for industrially relevant ruthenium catalysts in the 100--124 qubit regime, completing full ground-state calculations on NVIDIA GPUs in the ranges of 1.2 - 45 hrs and surpassing the accuracy of Density Matrix Renormalization Group. These results effectively de-quantize a significant portion of the NISQ roadmap: quantum advantage for chemistry is often assumed to emerge beyond ${\\sim}50$ qubits, yet our work demonstrates that this frontier lies significantly further -- potentially past 200 qubits -- reshaping expectations for where genuine quantum advantage may first appear.",
+    "published": "2026-03-09T19:49:37+00:00",
+    "updated": "2026-03-09T19:49:37+00:00",
+    "link": "http://arxiv.org/abs/2603.08883v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.08883v1",
+    "categories": [
+      "quant-ph",
+      "physics.chem-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.08696v1",
+    "title": "A note on large-scale quantum chemistry on quantum computers: the case of a molecule with half-Möbius topology",
+    "authors": [
+      "Samuele Piccinelli",
+      "Stefano Barison",
+      "Alberto Baiardi",
+      "Francesco Tacchino",
+      "Jascha Repp",
+      "Igor Rončević",
+      "Florian Albrecht",
+      "Harry L. Anderson",
+      "Leo Gross",
+      "Alessandro Curioni",
+      "Ivano Tavernelli"
+    ],
+    "summary": "We report quantum chemistry calculations performed on superconducting quantum processors for a molecule exhibiting the half-Möbius electronic topology originally introduced by Rončević et al. Using SqDRIFT, a randomized sample-based Krylov quantum diagonalization algorithm, we achieve reliable quantum simulations on active spaces corresponding to 36 orbitals (72 qubits) and extend previous studies up to 50 orbitals (100 qubits). We demonstrate that a systematic increase of active space sizes, which has a concrete impact on the accuracy of the electronic structure description, is achievable with state-of-the-art quantum processors, thus offering a promising path towards practically relevant quantum-assisted electronic-structure calculations.",
+    "published": "2026-03-09T17:55:39+00:00",
+    "updated": "2026-03-09T17:55:39+00:00",
+    "link": "http://arxiv.org/abs/2603.08696v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.08696v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.08680v1",
+    "title": "Metriq: A Collaborative Platform for Benchmarking Quantum Computers",
+    "authors": [
+      "Alessandro Cosentino",
+      "Changhao Li",
+      "Vincent Russo",
+      "Bradley A. Chase",
+      "Tom Lubinski",
+      "Siyuan Niu",
+      "Neer Patel",
+      "Nathan Shammah",
+      "William J. Zeng"
+    ],
+    "summary": "The fragmented landscape of quantum computer benchmarks, characterized by system-specific tools and inconsistent evaluation methodologies, hinders reliable cross-platform performance assessment. We introduce Metriq, an open-source collaborative platform for reproducible cross-platform quantum benchmarking that integrates benchmark definition and execution, data collection, and public presentation into a unified workflow. The Metriq benchmark suite spans both system-level metrics that characterize fundamental device properties such as entanglement quality, gate performance, and circuit speed, as well as application-inspired protocols that assess performance on quantum machine learning, optimization, and quantum simulation tasks. Benchmarks are chosen to scale with processor size, and the framework incorporates cost and resource estimation to support practical evaluation. Using Metriq, we collect and publicly release results from more than ten quantum computers across multiple hardware vendors, enabling systematic cross-platform comparison. The resulting curated dataset also reveals the practical strengths and limitations of individual benchmarks, creating a feedback loop that informs the ongoing refinement of the suite. To summarize performance across the benchmark suite, we introduce the Metriq Score, a composite index aggregating benchmark outcomes. We further present cross-benchmark analyses enabled by the shared dataset and their correlations with hardware calibration metrics. Through open development and data sharing, Metriq provides a practical foundation for reproducible benchmarking of quantum computers as hardware and benchmarking methods continue to evolve.",
+    "published": "2026-03-09T17:49:41+00:00",
+    "updated": "2026-03-09T17:49:41+00:00",
+    "link": "http://arxiv.org/abs/2603.08680v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.08680v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.08395v1",
+    "title": "Experimental Realization of the Markov Chain Monte Carlo Algorithm on a Quantum Computer",
+    "authors": [
+      "Baptiste Claudon",
+      "Sergi Ramos-Calderer",
+      "Jean-Philip Piquemal"
+    ],
+    "summary": "Quantum algorithms present a quadratically improved complexity over classical ones for certain sampling tasks. For instance, the Quantum Amplitude Estimation (QAE) algorithm promises to speedup the estimation of the mean of certain functions, given access to the quantum state corresponding to the probability distribution to be sampled from. Classically, samples are often obtained by running steps a Markov Chain. In this work, we experimentally use encodings of Markov chains to prepare quantum states and run a quantum Markov Chain Monte Carlo algorithm (qMCMC) on Quantinuum's H2 and Helios quantum computers. We demonstrate that it is possible to obtain accurate results on current Noisy Intermediate Scale Quantum (NISQ) hardware, operating directly on the physical qubits.",
+    "published": "2026-03-09T13:53:08+00:00",
+    "updated": "2026-03-09T13:53:08+00:00",
+    "link": "http://arxiv.org/abs/2603.08395v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.08395v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.07495v1",
+    "title": "Sharpening Worst-Case Error Assessment for Fault-Tolerant Quantum Computing: Fidelity and Its Deviation",
+    "authors": [
+      "Kyoungho Cho",
+      "Ilkwon Sohn",
+      "Yongsoo Hwang",
+      "Jeongho Bang"
+    ],
+    "summary": "Gate fidelity -- an average fidelity over all possible input states -- is the workhorse metric for benchmarking quantum gates or circuits, yet fault-tolerant quantum computing ultimately depends on the worst-case behavior, typically quantifiable by so-called the diamond distance. In the low-error regime, the coherent errors can inflate the worst-case error even when the reported gate fidelity is high, making the gate fidelity alone an unreliable proxy for fault-tolerance readiness. To capture the missing information, we introduce a companion observable -- what we dub the fidelity deviation -- that quantifies how strongly the state-dependent fidelities fluctuate across input states. Adopting such fluctuations in assessing the fault-tolerance is physically natural because some input directions are nearly unaffected while others form narrow \"valleys\" that dominate adversarial circuit behavior. For coherent (unitary) gate errors on two or more qubits, we show that the gate fidelity together with the fidelity deviation constrains the relevant spectral moments of the error unitary, enabling an explicit and tight certificate of the worst-case error. Both quantities are estimated directly from the same randomized input-measurement experiment, without full process tomography. We show that the fidelity and its deviation can provide an economical, operationally meaningful, and accurate standard for assessing the fault tolerance of the engineered quantum gates and circuits.",
+    "published": "2026-03-08T06:35:40+00:00",
+    "updated": "2026-03-08T06:35:40+00:00",
+    "link": "http://arxiv.org/abs/2603.07495v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.07495v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.07341v1",
+    "title": "paces: Parallelized Application of Co-Evolving Subspaces, a method for computing quantum dynamics on GPUs",
+    "authors": [
+      "R. Kevin Kessing"
+    ],
+    "summary": "An efficient method of computing the dynamics of a pure quantum state under the time-dependent Schrödinger equation is described: At each timestep, a restricted subspace of the potentially infinite-dimensional total Hilbert space is systematically and naturally constructed via the image of repeated applications of the Hamiltonian operator, and the time evolution is computed exactly within said subspace. The subspace is dynamically recomputed at each timestep such that it co-evolves with the state vector. We benchmark the method using the Holstein model and compare the formal information content of its representation to the matrix-product state formalism. The method is built from the ground up as a parallel algorithm for graphics processing units and is applicable to arbitrary Hamiltonians that are sparse in a given basis. It can be extended to open quantum system dynamics and/or time-dependent generators.",
+    "published": "2026-03-07T21:04:14+00:00",
+    "updated": "2026-03-07T21:04:14+00:00",
+    "link": "http://arxiv.org/abs/2603.07341v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.07341v1",
+    "categories": [
+      "quant-ph",
+      "physics.chem-ph",
+      "physics.comp-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.06969v1",
+    "title": "Securing Cryptography in the Age of Quantum Computing and AI: Threats, Implementations, and Strategic Response",
+    "authors": [
+      "Viraaji Mothukuri",
+      "Reza M. Parizi"
+    ],
+    "summary": "This review examines how quantum computing and artificial intelligence challenge current cryptographic systems. We analyze the literature to assess the resilience of algorithms against quantum attacks (Shor's and Grover's algorithms) and AI-enhanced cryptanalysis. RSA and elliptic curve cryptography are at risk of compromise from quantum computers. Symmetric algorithms like AES-128 retain security, but with a reduced effective key length under quantum attacks. Deep learning models demonstrate improved side-channel analysis, extracting keys from protected implementations. These convergent threats require a defense-in-depth approach that combines post-quantum algorithms, implementation hardening, and cryptographic agility. We find that lattice-based algorithms (ML-KEM, ML-DSA) resist known quantum attacks but require careful implementation to prevent side-channel leakage. Hash-based signatures (SLH-DSA) provide conservative security with signature sizes ranging from 17 to 50 KB. No single approach addresses both quantum and AI threats comprehensively. Organizations must treat cryptographic security as an ongoing process rather than a fixed deployment, maintaining the capability to update algorithms as threats evolve.",
+    "published": "2026-03-07T01:07:35+00:00",
+    "updated": "2026-03-07T01:07:35+00:00",
+    "link": "http://arxiv.org/abs/2603.06969v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.06969v1",
+    "categories": [
+      "cs.CR"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.06709v1",
+    "title": "The Need for Quantitative Resilience Models and Metrics in Classical-Quantum Computing Systems",
+    "authors": [
+      "Santiago Núñez-Corrales"
+    ],
+    "summary": "Increasingly deeper integration of HPC resources and QPUs unveils new challenges in computer architecture and engineering. As a consequence, dependability arises again as a concern encompassing resilience, reproducibility and security. The properties of quantum computing systems involve a reinterpretation of these factors in retrodictive, predictive, and prescriptive ways. We state here that resilience must become an \\emph{a priori} design constraint rather than an afterthought of HPC-QPU integration. This article describes the need for conceptual and quantitative models to estimate and assess the resilience hybrid classical-quantum computing infrastructure. We suggest how resilience methods in civil engineering can apply at various levels of the classical-quantum computing stack. We also discuss implications of a model of end-user value for the estimation of consequences resulting from the propagation of vulnerabilities from a given level of the stack upwards. Finally, we argue in favor of new resilience models can help the impact of improving specific components in quantum technology stacks to provide a clearer picture about the value of separation of concerns across different layers. Ultimately, HPC-QPU integration will increasingly demand more precise statements about the cost-benefit ratio of specific system improvements and their cascading consequences against estimates of delivered value to users.",
+    "published": "2026-03-05T19:07:43+00:00",
+    "updated": "2026-03-05T19:07:43+00:00",
+    "link": "http://arxiv.org/abs/2603.06709v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.06709v1",
+    "categories": [
+      "quant-ph",
+      "cs.DC",
+      "cs.ET"
+    ]
   }
 ]
