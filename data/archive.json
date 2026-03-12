@@ -5740,5 +5740,100 @@
       "cs.DC",
       "cs.ET"
     ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.10919v1",
+    "title": "Hybridlane: A Software Development Kit for Hybrid Continuous-Discrete Variable Quantum Computing",
+    "authors": [
+      "Jim Furches",
+      "Timothy J. Stavenger",
+      "Carlos Ortiz Marrero"
+    ],
+    "summary": "Hybrid quantum computing systems that combine discrete-variable qubits with continuous-variable qumodes offer promising advantages for quantum simulation, error correction, and sensing applications. However, existing quantum software frameworks lack native support for expressing and manipulating hybrid circuits, forcing developers to work with fragmented toolchains or rely on simulation-coupled representations that limit scalability. We present Hybridlane, an open-source software development kit providing a unified frontend for hybrid continuous-discrete variable quantum computing. Hybridlane introduces automatic wire type inference to distinguish qubits from qumodes without manual annotations, enabling compile-time validation of circuit correctness. By decoupling gate semantics from matrix representations, Hybridlane can describe wide and deep circuits with minimal memory consumption and without requiring simulation. The framework implements a comprehensive library of hybrid gates and decompositions following established instruction set architectures, while remaining compatible with PennyLane's extensive qubit algorithm library. Furthermore, it supports multiple backends including classical simulation with Bosonic Qiskit and hardware compilation to Sandia National Laboratories' QSCOUT ion trap. We demonstrate Hybridlane's capabilities through bosonic quantum phase estimation and ion trap calibration workflows.",
+    "published": "2026-03-11T16:04:35+00:00",
+    "updated": "2026-03-11T16:04:35+00:00",
+    "link": "http://arxiv.org/abs/2603.10919v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.10919v1",
+    "categories": [
+      "quant-ph",
+      "cs.ET"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.10707v1",
+    "title": "Hybrid Photonic Quantum Reservoir Computing for High-Dimensional Financial Surface Prediction",
+    "authors": [
+      "Fyodor Amanov",
+      "Azamkhon Azamov"
+    ],
+    "summary": "We propose a hybrid photonic quantum reservoir computing (QRC) framework for swaption surface prediction. The pipeline compresses 224-dimensional surfaces to a 20-dimensional latent space via a sparse denoising autoencoder, extracts 1,215 Fock-basis features from an ensemble of three fixed photonic reservoirs, concatenates them with a 120-dimensional classical context, and maps the resulting 1,335-dimensional feature vector to predictions with Ridge regression. We benchmark against 10 classical and quantum baselines on six held-out trading days. Our approach achieves the lowest surface RMSE of~$0.0425$ while maintaining sub-millisecond inference. The quantum layer has zero trainable parameters, sidestepping barren plateaus entirely. Variational quantum methods (VQC, Quantum LSTM) yield negative $R^{2}$ on test data, confirming that fixed quantum feature extractors paired with regularised readouts are more viable for low-data financial applications.",
+    "published": "2026-03-11T12:26:16+00:00",
+    "updated": "2026-03-11T12:26:16+00:00",
+    "link": "http://arxiv.org/abs/2603.10707v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.10707v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.10647v1",
+    "title": "Experimental simulation of non-equilibrium quantum piston on a programmable photonic quantum computer",
+    "authors": [
+      "Govind Krishna",
+      "Rohan Yadgirkar",
+      "Balakrishnan Krishnakumar",
+      "Andrea Cataldo",
+      "Ze-Sheng Xu",
+      "Johannes W. N. Los",
+      "Val Zwiller",
+      "Jun Gao",
+      "Ali W. Elshaari"
+    ],
+    "summary": "Quantum fluctuation relations provide a microscopic formulation of thermodynamics beyond equilibrium, but experimentally accessing many-body quantum work statistics remains an outstanding challenge. The quantum piston constitutes a canonical model of boundary-driven nonequilibrium dynamics, where finite-time deformation of a confining potential generates non-adiabatic transitions, dissipation and irreversibility. Here we experimentally simulate the nonequilibrium dynamics of a two-boson quantum piston on a programmable photonic quantum computer. Using two indistinguishable photons, we encode a truncated piston propagator through a quasi-unitary embedding, with an ancilla mode representing leakage into higher-energy states outside the resolved manifold. This architecture enables direct reconstruction of thermodynamic transition statistics for both expansion and compression protocols as functions of driving speed and final trap length. We observe the crossover from quasi-adiabatic to strongly non-adiabatic evolution and show that bosonic interference restructures the resulting two-particle Fock-state populations and work distributions. The measured statistics are in close agreement with theoretical predictions and satisfy the Jarzynski equality across expansion and compression protocols for cyclic driving we further quantify irreversibility through dissipated work and state overlap. Our work identifies programmable photonic quantum hardware as a powerful platform for simulating nonequilibrium quantum thermodynamics and for experimentally resolving how indistinguishability and many-body interference shape quantum work, dissipation and entropy production.",
+    "published": "2026-03-11T11:06:45+00:00",
+    "updated": "2026-03-11T11:06:45+00:00",
+    "link": "http://arxiv.org/abs/2603.10647v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.10647v1",
+    "categories": [
+      "quant-ph",
+      "cond-mat.stat-mech",
+      "physics.optics"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.10621v1",
+    "title": "QuantumX: an experience for the consolidation of Quantum Computing and Quantum Software Engineering as an emerging discipline",
+    "authors": [
+      "Juan M. Murillo",
+      "Ignacio García Rodríguez de Guzmán",
+      "Enrique Moguel",
+      "Javier Romero-Álvarez",
+      "Jaime Alvarado-Valiente",
+      "Álvaro M. Aparicio-Morales",
+      "Jose Garcia-Alonso",
+      "Ana Díaz Muñoz",
+      "Eduardo Fernández-Medina",
+      "Francisco Chicano",
+      "Carlos Canal",
+      "José Daniel Viqueira",
+      "Sebastián Villarroya",
+      "Eduardo Gutiérrez",
+      "Adrián Romero-Flores",
+      "Alfonso E. Márquez-Chamorro",
+      "Antonio Ruiz-Cortes",
+      "Cyrille YetuYetu Kesiku",
+      "Pedro Sánchez",
+      "Diego Alonso Cáceres",
+      "Lidia Sánchez-González",
+      "Fernando Plou"
+    ],
+    "summary": "The first edition of the QuantumX track, held within the XXIX Jornadas de Ingeniería del Software y Bases de Datos (JISBD 2025), brought together leading Spanish research groups working at the intersection of Quantum Computing and Software Engineering. The event served as a pioneering forum to explore how principles of software quality, governance, testing, orchestration, and abstraction can be adapted to the quantum paradigm. The presented works spanned diverse areas (from quantum service engineering and hybrid architectures to quality models, circuit optimization, and quantum machine learning), reflecting the interdisciplinary nature and growing maturity of Quantum Computing and Quantum Software Engineering. The track also fostered community building and collaboration through the presentation of national and Ibero-American research networks such as RIPAISC and QSpain, and through dedicated networking sessions that encouraged joint initiatives. Beyond reporting on the event, this article provides a structured synthesis of the contributions presented at QuantumX, identifies common research themes and engineering concerns, and outlines a set of open challenges and future directions for the advancement of Quantum Software Engineering. This first QuantumX track established the foundation for a sustained research community and positioned Spain as an emerging contributor to the European and global quantum software ecosystem.",
+    "published": "2026-03-11T10:33:14+00:00",
+    "updated": "2026-03-11T10:33:14+00:00",
+    "link": "http://arxiv.org/abs/2603.10621v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.10621v1",
+    "categories": [
+      "cs.SE"
+    ]
   }
 ]
