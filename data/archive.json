@@ -5835,5 +5835,90 @@
     "categories": [
       "cs.SE"
     ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.08395v2",
+    "title": "Experimental Realization of the Markov Chain Monte Carlo Algorithm on a Quantum Computer",
+    "authors": [
+      "Baptiste Claudon",
+      "Sergi Ramos-Calderer",
+      "Jean-Philip Piquemal"
+    ],
+    "summary": "Quantum algorithms present a quadratically improved complexity over classical ones for certain sampling tasks. For instance, the Quantum Amplitude Estimation (QAE) algorithm promises to speedup the estimation of the mean of certain functions, given access to the quantum state corresponding to the probability distribution to be sampled from. Classically, samples are often obtained by running steps a Markov Chain. In this work, we experimentally use encodings of Markov chains to prepare quantum states and run a quantum Markov Chain Monte Carlo algorithm (qMCMC) on Quantinuum's H2 and Helios quantum computers. We demonstrate that it is possible to obtain accurate results on current Noisy Intermediate Scale Quantum (NISQ) hardware, operating directly on the physical qubits.",
+    "published": "2026-03-09T13:53:08+00:00",
+    "updated": "2026-03-12T16:59:01+00:00",
+    "link": "http://arxiv.org/abs/2603.08395v2",
+    "pdf_link": "https://arxiv.org/pdf/2603.08395v2",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.12127v1",
+    "title": "The Geometry of Clifford Algorithms: Bernstein-Vazirani as Classical Computation in a Rotated Basis",
+    "authors": [
+      "Bartosz Chmura"
+    ],
+    "summary": "The Bernstein-Vazirani (BV) algorithm is frequently taught as a canonical example of quantum parallelism, yet the standard interference-based explanation often obscures its underlying simplicity. We present a geometric reframing in which the Hadamard gate \"wrapping\" acts as a global basis rotation rather than a generator of computational complexity. This perspective reveals that the algorithm is effectively a classical linear computation over GF(2) performed in the conjugate Fourier basis, with the apparent parallelism arising from coordinate transformation. Building on Mermin's earlier pedagogical shortcut, which presented a 'classical' circuit equivalent but stopped short of explicitly labeling it as such, we elevate this to a formal geometric framework. In the extension, we distinguish between globally rotated circuits--which we reveal as classical linear computations--and topologically twisted circuits that generate quantum entanglement. We introduce a pedagogical taxonomy distinguishing (1) pure computational-basis circuits, (2) globally rotated circuits (exemplified by Bernstein-Vazirani), and (3) topologically twisted circuits involving non-aligned subsystem bases. This framework allows viewing the Gottesman-Knill theorem from a new angle, extends students' understanding of phase kickback and the 'Ricochet Property'. Furthermore, it provides a more intuitive starting point for explaining Bell-pair extensions through concrete circuit derivations and Qiskit simulations suitable for undergraduate quantum information courses. The outlook explores how this geometric view paves the way for understanding entanglement as topological twists.",
+    "published": "2026-03-12T16:29:39+00:00",
+    "updated": "2026-03-12T16:29:39+00:00",
+    "link": "http://arxiv.org/abs/2603.12127v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.12127v1",
+    "categories": [
+      "quant-ph",
+      "physics.ed-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.11812v1",
+    "title": "Uniqueness of imaginarity-assisted transformation from computationally universal to strictly universal quantum computation",
+    "authors": [
+      "Yasuaki Nakayama",
+      "Yuki Takeuchi",
+      "Seiseki Akibue"
+    ],
+    "summary": "The computational universality with an elementary gate set $\\{H,CCZ\\}$ can be transformed to the strict universality by using a maximally imaginary state $|+i\\rangle$ and some non-imaginary ancillary qubits. From the viewpoint of operational resource theory, it would be intriguing to elucidate a resource for the universality transformation. In this paper, we explore a necessary and sufficient condition for resource states to realize the universality transformation under free real operations. We show that $|+i\\rangle$ is a unique resource state up to the free operations. Moreover, we obtain a stronger conclusion. If a given resource state cannot be used for the universality transformation, then realizable quantum gates are restricted to real orthogonal matrices. Therefore, we can tell that $|+i\\rangle$ is unique (up to the free operations) not only as a state whose resource measure of imaginarity is maximal, but also as a state which empowers real operations with the ability to apply at least one non-real quantum gate (regardless of the magnitudes of its imaginary parts).",
+    "published": "2026-03-12T11:19:20+00:00",
+    "updated": "2026-03-12T11:19:20+00:00",
+    "link": "http://arxiv.org/abs/2603.11812v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.11812v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.11572v1",
+    "title": "Quantum computing for transport research: an introduction, systematic review, and perspective",
+    "authors": [
+      "Lachlan Oberg",
+      "Paul Corry",
+      "Moji Ghadimi",
+      "Ashish Bhaskar"
+    ],
+    "summary": "Transport engineering has significant potential to benefit from quantum computing. The rise of intelligent transport systems, autonomous vehicles, and the Internet of Things has created an unprecedented demand for efficient information processing and computational optimisation. Accordingly, transport engineers and scientists have explored the ever-improving capabilities of quantum computers in an effort to meet this demand. Motivated by this growing interest, this paper sets out four aims: (1) to introduce the fundamental aspects of quantum computing relevant to the transport domain, (2) to identify transport-related problems which are suitable for quantum acceleration, (3) to develop a pipeline for solving these problems, and (4) to provide a systematic review of the existing literature. For the latter, a systematic search of the Scopus database (and supplemented by additional citation sources) identified 103 studies for inclusion following PRISMA 2020 guidelines. While a diverse set of use cases have been proposed, we conclude that future research should prioritise problems where quantum computation offers a clear practical benefit. To this end, we suggest promising directions to guide further work in this burgeoning subfield.",
+    "published": "2026-03-12T05:51:38+00:00",
+    "updated": "2026-03-12T05:51:38+00:00",
+    "link": "http://arxiv.org/abs/2603.11572v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.11572v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.11527v1",
+    "title": "Error-Mitigated Hamiltonian Simulation: Complexity Analysis and Optimization for Near-Term and Early-Fault-Tolerant Quantum Computers",
+    "authors": [
+      "Keisuke Murota",
+      "Synge Todo",
+      "Suguru Endo"
+    ],
+    "summary": "Simulating real-time dynamics under a Hamiltonian is a central goal of quantum information science. While numerous Hamiltonian-simulation quantum algorithms have been proposed, the effects of physical noise have rarely been incorporated into performance analysis, despite the non-negligible noise levels in quantum devices. In this work, we analyze noisy Hamiltonian simulation with quantum error mitigation for Trotterized and randomized LCU-based Hamiltonian simulation algorithms. We give an end-to-end comprehensive complexity analysis of error-mitigated Hamiltonian simulation algorithms using the mean-squared error. Because quantum error mitigation incurs an exponential cost with the number of layers in quantum algorithms, there is a trade-off between the sampling cost and the bias in simulation accuracy or the algorithmic sampling overhead. Optimizing this trade-off, we derive an analytic depth-selection rule and characterize the optimal end-to-end scaling as a function of target accuracy and noise parameters. We further quantify the noise-characterization cost required for error mitigation via gate set tomography and the recently proposed space-time noise inversion method, showing that the latter can significantly reduce the characterization overhead.",
+    "published": "2026-03-12T04:29:24+00:00",
+    "updated": "2026-03-12T04:29:24+00:00",
+    "link": "http://arxiv.org/abs/2603.11527v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.11527v1",
+    "categories": [
+      "quant-ph"
+    ]
   }
 ]
