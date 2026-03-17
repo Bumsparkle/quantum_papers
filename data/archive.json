@@ -6011,5 +6011,192 @@
       "quant-ph",
       "cond-mat.dis-nn"
     ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.15610v1",
+    "title": "Universal Weakly Fault-Tolerant Quantum Computation via Code Switching in the [[8,3,2]] Code",
+    "authors": [
+      "Shixin Wu",
+      "Dawei Zhong",
+      "Todd A. Brun",
+      "Daniel A. Lidar"
+    ],
+    "summary": "Code-switching offers a route to universal, fault-tolerant quantum computation by circumventing the limitation implied by the Eastin-Knill theorem against a universal transversal gate set within a single quantum code. Here, we present a fault-tolerant code-switching protocol between two versions of the $[[8, 3, 2]]$ code. One version supports weakly fault-tolerant single-qubit Clifford gates, while the other supports a logical $\\overline{\\mathrm{CCZ}}$ gate via transversal $T/T^\\dagger$ together with logical $\\overline{\\mathrm{CZ}}$, $\\overline{\\mathrm{CNOT}}$, and $\\overline{\\mathrm{SWAP}}$ gates. Because both codes have distance 2, the protocol operates in a postselected, error-detecting regime: single faults lead to detectable outcomes, and accepted runs exhibit quadratic suppression of logical error rates. This yields a universal scheme for postselected fault-tolerant computation. We validate the protocol numerically through simulations of state preparation, code switching, and a three-logical-qubit implementation of Grover's search.",
+    "published": "2026-03-16T17:57:54+00:00",
+    "updated": "2026-03-16T17:57:54+00:00",
+    "link": "http://arxiv.org/abs/2603.15610v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.15610v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.15561v1",
+    "title": "Velocity-Enabled Quantum Computing with Neutral Atoms",
+    "authors": [
+      "Ohad Lib",
+      "Hendrik Timme",
+      "Maximilian Ammenwerth",
+      "Flavien Gyger",
+      "Renhao Tao",
+      "Shijia Sun",
+      "Immanuel Bloch",
+      "Johannes Zeiher"
+    ],
+    "summary": "Realizing error-corrected logical qubits is a central goal for the current development of digital quantum computers. Neutral atoms offer the opportunity to coherently shuttle atoms for realizing efficient quantum error correction based on long-range connectivity and parallel atom transport. Nevertheless, time overheads in shuttling atoms and complex control hardware pose challenges to scaling current architectures. Here, we introduce atom velocity as a new degree of freedom in neutral-atom architectures tailored to quantum error correction. Through controlled Doppler shifts, we demonstrate velocity-selective mid-circuit state preparation and measurement on moving atoms, leaving spectator atoms unaffected. Furthermore, we achieve on-the-fly local single-qubit rotations by mapping micron-scale atom displacements to the spatial phase of global control beams. Complementing these techniques with CZ entangling gates with a fidelity of 99.86(4)%, we experimentally implement key primitives for quantum error correction and measurement-based quantum computing. We generate an eight-qubit entangled cluster state with an average stabilizer value of 0.830(4), realize an [[4,2,2]] error-detection code with 99.0(3) % logical Bell-state fidelity, and perform stabilizer measurements using a flying ancilla. By enabling selective operations on continuously moving atoms using only global beams, this velocity-enabled architecture reduces hardware overhead while minimizing shuttling and transfer delays, opening a new pathway for fast, large-scale atom-based quantum computation.",
+    "published": "2026-03-16T17:24:15+00:00",
+    "updated": "2026-03-16T17:24:15+00:00",
+    "link": "http://arxiv.org/abs/2603.15561v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.15561v1",
+    "categories": [
+      "quant-ph",
+      "physics.atom-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.15538v1",
+    "title": "QiboAgent: a practitioner's guideline to open source assistants for Quantum Computing code development",
+    "authors": [
+      "Lorenzo Esposito",
+      "Andrea Papaluca",
+      "Stefano Carrazza"
+    ],
+    "summary": "We introduce QiboAgent, a reference implementation designed to serve as a practitioner's guideline for developing specialized coding assistants in Quantum Computing middleware. Addressing the limitations in scientific software development of general-purpose proprietary models, we explore how lightweight, open-source Large Language Models (LLMs) provided with a custom workflow architecture compare. In detail, we experiment with two complementary paradigms: a Retrieval-Augmented Generation pipeline for high-precision information retrieval, and an autonomous agentic workflow for complex software engineering tasks. We observe that this hybrid approach significantly reduces hallucination rates in code generation compared to a proprietary baseline, achieving a peak accuracy of 90.2% with relatively small open-source models of size up to 30B parameters. Furthermore, the agentic framework exhibits advanced coding capabilities, automating the resolution of maintenance issues and new features requests, or by prototyping larger-scale refactors of the codebase, such as producing a compiled Rust module with bindings of an original pure python package, Qibo in our case. The LLM workflows used for our analysis are integrated into a user interface and a Model Context Protocol server, providing an accessible tool for Qibo developers.",
+    "published": "2026-03-16T17:05:06+00:00",
+    "updated": "2026-03-16T17:05:06+00:00",
+    "link": "http://arxiv.org/abs/2603.15538v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.15538v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.15534v1",
+    "title": "Analog-Digital Quantum Computing with Quantum Annealing Processors",
+    "authors": [
+      "Rahul Deshpande",
+      "Majid Kheirkhah",
+      "Chris Rich",
+      "Richard Harris",
+      "Jack Raymond",
+      "Emile Hoskinson",
+      "Pratik Sathe",
+      "Andrew J. Berkley",
+      "Stefan Paul",
+      "Brian Barch",
+      "Daniel A. Lidar",
+      "Markus Müller",
+      "Gabriel Aeppli",
+      "Andrew D. King",
+      "Mohammad H. Amin"
+    ],
+    "summary": "Quantum annealing processors typically control qubits in unison, attenuating quantum fluctuations uniformly until the applied system Hamiltonian is diagonal in the computational basis. This simplifies control requirements, allowing annealing QPUs to scale to much larger sizes than gate-based systems, but constraining the class of available operations. Here we expand the class by performing analog-digital quantum computing in a highly-multiplexed, superconducting quantum annealing processor. This involves evolution under a fixed many-body Hamiltonian that, in the weak-coupling regime, is well-described by an effective XY model, together with arbitrary-basis initialization and measurement via auxiliary qubits. Operationally, this is equivalent to implementing single-qubit gates at the beginning and end of an analog quantum evolution. We demonstrate this capability with several foundational applications: single-qubit and two-qubit coherent oscillations with varying initialization and measurement bases, a multi-qubit quantum walk with fermionic dispersion in line with theory, and Anderson localization in a disordered chain. These experiments open the door to a wide range of new possibilities in quantum computation and simulation, greatly expanding the applications of commercially available quantum annealing processors.",
+    "published": "2026-03-16T16:58:49+00:00",
+    "updated": "2026-03-16T16:58:49+00:00",
+    "link": "http://arxiv.org/abs/2603.15534v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.15534v1",
+    "categories": [
+      "quant-ph",
+      "cond-mat.dis-nn",
+      "cond-mat.stat-mech"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.10621v2",
+    "title": "QuantumX: an experience for the consolidation of Quantum Computing and Quantum Software Engineering as an emerging discipline",
+    "authors": [
+      "Juan M. Murillo",
+      "Ignacio García Rodríguez de Guzmán",
+      "Enrique Moguel",
+      "Javier Romero-Álvarez",
+      "Jaime Alvarado-Valiente",
+      "Álvaro M. Aparicio-Morales",
+      "Jose Garcia-Alonso",
+      "Ana Díaz Muñoz",
+      "Eduardo Fernández-Medina",
+      "Francisco Chicano",
+      "Carlos Canal",
+      "José Daniel Viqueira",
+      "Sebastián Villarroya",
+      "Eduardo Gutiérrez",
+      "Adrián Romero-Flores",
+      "Alfonso E. Márquez-Chamorro",
+      "Antonio Ruiz-Cortes",
+      "Cyrille YetuYetu Kesiku",
+      "Pedro Sánchez",
+      "Diego Alonso Cáceres",
+      "Lidia Sánchez-González",
+      "Fernando Plou"
+    ],
+    "summary": "The first edition of the QuantumX track, held within the XXIX Jornadas de Ingeniería del Software y Bases de Datos (JISBD 2025), brought together leading Spanish research groups working at the intersection of Quantum Computing and Software Engineering. The event served as a pioneering forum to explore how principles of software quality, governance, testing, orchestration, and abstraction can be adapted to the quantum paradigm. The presented works spanned diverse areas (from quantum service engineering and hybrid architectures to quality models, circuit optimization, and quantum machine learning), reflecting the interdisciplinary nature and growing maturity of Quantum Computing and Quantum Software Engineering. The track also fostered community building and collaboration through the presentation of national and Ibero-American research networks such as RIPAISC and QSpain, and through dedicated networking sessions that encouraged joint initiatives. Beyond reporting on the event, this article provides a structured synthesis of the contributions presented at QuantumX, identifies common research themes and engineering concerns, and outlines a set of open challenges and future directions for the advancement of Quantum Software Engineering. This first QuantumX track established the foundation for a sustained research community and positioned Spain as an emerging contributor to the European and global quantum software ecosystem.",
+    "published": "2026-03-11T10:33:14+00:00",
+    "updated": "2026-03-16T09:40:45+00:00",
+    "link": "http://arxiv.org/abs/2603.10621v2",
+    "pdf_link": "https://arxiv.org/pdf/2603.10621v2",
+    "categories": [
+      "cs.SE"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.14854v1",
+    "title": "Cavity-Free Distributed Quantum Computing with Rydberg Ensembles via Collective Enhancement",
+    "authors": [
+      "Aman Ullah"
+    ],
+    "summary": "A complete architecture for cavity-free quantum networking based on collective enhancement in Rydberg atom ensembles is presented. The protocol exploits Rydberg blockade and phase-matched directional emission to eliminate optical cavities without sacrificing performance. The architecture comprises three steps: (i) local control-ensemble entanglement via Rydberg blockade with fidelity $F_{\\mathrm{gate}} \\approx 99.93\\%$; (ii) atom-photon conversion via Raman transitions, achieving directional emission ($η_{\\mathrm{dir}} \\approx 35\\%$) and single-node efficiency $η_{\\mathrm{node}} \\approx 19\\%$; and (iii) remote atom-atom entanglement via Hong-Ou-Mandel interference, producing Bell states with fidelity $F > 97.5\\%$. With quantum memories enabling retry protocols, entanglement generation rates exceed $600$ Hz at 20 km separation. This cavity-free approach provides a practical and scalable pathway for distributed quantum computing and secure quantum communication.",
+    "published": "2026-03-16T05:53:21+00:00",
+    "updated": "2026-03-16T05:53:21+00:00",
+    "link": "http://arxiv.org/abs/2603.14854v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.14854v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.14687v1",
+    "title": "Adaptive Control of Stochastic Error Accumulation in Fault-Tolerant Quantum Computation",
+    "authors": [
+      "Tirtha Haque"
+    ],
+    "summary": "In realistic hardware for quantum computation that possesses fault-tolerance, non-stationary noise and stochastic drift lead to logical failure from the temporal accumulation of errors, not from independent events. Static decoding and fixed calibration techniques are structurally incompatible with this situation because they do not take into account temporal correlations between errors or control-induced back-action of errors. These effects motivate control policies that must track noise evolution across correction cycles, rather than respond to individual syndromes in isolation.\n  We treat fault-tolerant quantum computation as a stochastic control problem, modelled using reduced quantum dynamics in which Pauli error processes are governed by latent noise parameters that vary temporally. From this perspective, logical failure arises through the accumulation of a hazard variable, and the corresponding control objective depends on the full history of observations.\n  Operating under these conditions, a Chronological Deep Q-Network (Ch-DQN) maintains an internal belief state that tracks both noise evolution and accumulated hazard. During training, backward refinement of trajectories is used to sample slowly drifting modes of operation, while runtime inference remains strictly causal. A fractional meta-update stabilizes learning in the presence of non-stationary, control-coupled dynamics.\n  Through multi-distance simulations that incorporate stochastic drift and feedback from decision-making, Ch-DQN suppresses hazard accumulation and extends logical survival time relative to static and recurrent baselines. Error correction in this regime is therefore no longer a static decoding task, but a control process whose success is determined over time by the underlying noise dynamics.",
+    "published": "2026-03-16T00:46:00+00:00",
+    "updated": "2026-03-16T00:46:00+00:00",
+    "link": "http://arxiv.org/abs/2603.14687v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.14687v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.14670v1",
+    "title": "Computing logical error thresholds with the Pauli Frame Sparse Representation",
+    "authors": [
+      "Thomas Tuloup",
+      "Thomas Ayral"
+    ],
+    "summary": "We introduce a sparse classical representation, a truncation strategy and a shot-efficient sampling method to push the classical prediction of quantum error correction thresholds beyond Clifford operations and Pauli errors. As two illustrations of the potential of our method, we first show that coherent noise error thresholds, when computed at the circuit level (i.e taking into account full syndrome circuits) for distances up to d=9, are systematically overestimated (by a factor of about 4) by a Pauli-twirling approximation of the noise. We then apply our method to the recently introduced magic-state cultivation protocol. We show, through shot-efficient importance sampling, that, at distance d=5, the multiplicative factor between the T-gate and the S-gate injection error rate is not the one conjectured from low-d computations: it can be as large as 7.",
+    "published": "2026-03-15T23:54:37+00:00",
+    "updated": "2026-03-15T23:54:37+00:00",
+    "link": "http://arxiv.org/abs/2603.14670v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.14670v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.13753v1",
+    "title": "Directly estimating the fidelity of measurement-based quantum computation",
+    "authors": [
+      "David T. Stephen",
+      "Michael Foss-Feig"
+    ],
+    "summary": "In measurement-based quantum computation (MBQC), quantum circuits are implemented using adaptive measurements on an entangled resource state. In practice, the resource state will always be prepared with some noise, and it is crucial to understand the effect of this noise on the operation of MBQC. Typically, one measures the fidelity of the noisy resource state with the assumption that a high fidelity state means a high fidelity computation. However, the precise relationship between these two fidelities is not known. Here, we derive an expression that equates the average fidelity of the MBQC output state to a certain correlation function evaluated on the noisy resource state. Using this expression, we show that state fidelity provides a tight lower bound on average MBQC fidelity. Conversely, we also find that state fidelity can greatly underestimate average MBQC fidelity, implying that state fidelity is not a good indicator of MBQC performance in general. In response, we formulate an efficient method to directly estimate average MBQC fidelity by measuring the aforementioned correlation function. These results therefore improve our ability to characterize noisy resource states in quantum computers and benchmark MBQC performance.",
+    "published": "2026-03-14T04:59:05+00:00",
+    "updated": "2026-03-14T04:59:05+00:00",
+    "link": "http://arxiv.org/abs/2603.13753v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.13753v1",
+    "categories": [
+      "quant-ph"
+    ]
   }
 ]
