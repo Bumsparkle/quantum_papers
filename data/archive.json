@@ -6198,5 +6198,53 @@
     "categories": [
       "quant-ph"
     ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.12127v2",
+    "title": "The Geometry of Clifford Algorithms: Bernstein-Vazirani as Classical Computation in a Rotated Basis",
+    "authors": [
+      "Bartosz Chmura"
+    ],
+    "summary": "The Bernstein-Vazirani (BV) algorithm is frequently taught as a canonical example of quantum parallelism, yet the standard interference-based explanation often obscures its underlying simplicity. We present a geometric reframing in which the Hadamard gate \"wrapping\" acts as a global basis rotation rather than a generator of computational complexity. This perspective reveals that the algorithm is effectively a classical linear computation over GF(2) performed in the conjugate Fourier basis, with the apparent parallelism arising from coordinate transformation. Building on Mermin's earlier pedagogical shortcut, which presented a 'classical' circuit equivalent but stopped short of explicitly labeling it as such, we elevate this to a formal geometric framework. In the extension, we distinguish between globally rotated circuits -- which we reveal as classical linear computations -- and topologically twisted circuits that generate quantum entanglement. We introduce a pedagogical taxonomy distinguishing (1) pure computational-basis circuits, (2) globally rotated circuits (exemplified by Bernstein-Vazirani), and (3) topologically twisted circuits involving non-aligned subsystem bases. This framework allows viewing the Gottesman-Knill theorem from a new angle, extends students' understanding of phase kickback and the 'Ricochet Property'. Furthermore, it provides a more intuitive starting point for explaining Bell-pair extensions through concrete circuit derivations and Qiskit simulations suitable for undergraduate quantum information courses. The outlook explores how this geometric view paves the way for understanding entanglement as topological twists.",
+    "published": "2026-03-12T16:29:39+00:00",
+    "updated": "2026-03-17T06:16:16+00:00",
+    "link": "http://arxiv.org/abs/2603.12127v2",
+    "pdf_link": "https://arxiv.org/pdf/2603.12127v2",
+    "categories": [
+      "quant-ph",
+      "physics.ed-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.16020v1",
+    "title": "IRAM-Omega-Q: A Computational Architecture for Uncertainty Regulation in Artificial Agents",
+    "authors": [
+      "Veronique Ziegler"
+    ],
+    "summary": "Artificial agents can achieve strong task performance while remaining opaque with respect to internal regulation, uncertainty management, and stability under stochastic perturbation. We present IRAM-Omega-Q, a computational architecture that models internal regulation as closed-loop control over a quantum-like state representation. The framework uses density matrices instrumentally as abstract state descriptors, enabling direct computation of entropy, purity, and coherence-related metrics without invoking physical quantum processes. A central adaptive gain is updated continuously to maintain a target uncertainty regime under noise. Using systematic parameter sweeps, fixed-seed publication-mode simulations, and susceptibility-based phase-diagram analysis, we identify reproducible critical boundaries in regulation-noise space. We further show that alternative control update orderings, interpreted as perception-first and action-first architectures, induce distinct stability regimes under identical external conditions. These results support uncertainty regulation as a concrete architectural principle for artificial agents and provide a formal setting for studying stability, control, and order effects in cognitively inspired AI systems. The framework is presented as a technical model of adaptive regulation dynamics in artificial agents. It makes no claims regarding phenomenological consciousness, and the quantum-like formalism is used strictly as a mathematical representation for structured uncertainty and state evolution.",
+    "published": "2026-03-16T23:58:11+00:00",
+    "updated": "2026-03-16T23:58:11+00:00",
+    "link": "http://arxiv.org/abs/2603.16020v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.16020v1",
+    "categories": [
+      "cs.AI"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.15886v1",
+    "title": "PhasorFlow: A Python Library for Unit Circle Based Computing",
+    "authors": [
+      "Dibakar Sigdel",
+      "Namuna Panday"
+    ],
+    "summary": "We present PhasorFlow, an open-source Python library introducing a computational paradigm operating on the $S^1$ unit circle. Inputs are encoded as complex phasors $z = e^{iθ}$ on the $N$-Torus ($\\mathbb{T}^N$). As computation proceeds via unitary wave interference gates, global norm is preserved while individual components drift into $\\mathbb{C}^N$, allowing algorithms to natively leverage continuous geometric gradients for predictive learning. PhasorFlow provides three core contributions. First, we formalize the Phasor Circuit model ($N$ unit circle threads, $M$ gates) and introduce a 22-gate library covering Standard Unitary, Non-Linear, Neuromorphic, and Encoding operations with full matrix algebra simulation. Second, we present the Variational Phasor Circuit (VPC), analogous to Variational Quantum Circuits (VQC), enabling optimization of continuous phase parameters for classical machine learning tasks. Third, we introduce the Phasor Transformer, replacing expensive $QK^TV$ attention with a parameter-free, DFT-based token mixing layer inspired by FNet. We validate PhasorFlow on non-linear spatial classification, time-series prediction, financial volatility detection, and neuromorphic tasks including neural binding and oscillatory associative memory. Our results establish unit circle computing as a deterministic, lightweight, and mathematically principled alternative to classical neural networks and quantum circuits. It operates on classical hardware while sharing quantum mechanics' unitary foundations. PhasorFlow is available at https://github.com/mindverse-computing/phasorflow.",
+    "published": "2026-03-16T20:28:53+00:00",
+    "updated": "2026-03-16T20:28:53+00:00",
+    "link": "http://arxiv.org/abs/2603.15886v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.15886v1",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ]
   }
 ]
