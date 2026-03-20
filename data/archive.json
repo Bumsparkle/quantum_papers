@@ -6405,5 +6405,149 @@
       "quant-ph",
       "physics.optics"
     ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.17790v2",
+    "title": "The Convergence Frontier: Integrating Machine Learning and High Performance Quantum Computing for Next-Generation Drug Discovery",
+    "authors": [
+      "Narjes Ansari",
+      "César Feniou",
+      "Nicolaï Gouraud",
+      "Daniele Loco",
+      "Siwar Badreddine",
+      "Baptiste Claudon",
+      "Félix Aviat",
+      "Marharyta Blazhynska",
+      "Kevin Gasperich",
+      "Guillaume Michel",
+      "Diata Traore",
+      "Corentin Villot",
+      "Thomas Plé",
+      "Olivier Adjoua",
+      "Louis Lagardère",
+      "Jean-Philip Piquemal"
+    ],
+    "summary": "Integrating quantum mechanics into drug discovery marks a decisive shift from empirical trial-and-error toward quantitative precision. However, the prohibitive cost of ab initio molecular dynamics has historically forced a compromise between chemical accuracy and computational scalability. This paper identifies the convergence of High-Performance Computing (HPC), Machine Learning (ML), and Quantum Computing (QC) as the definitive solution to this bottleneck. While ML foundation models, such as FeNNix-Bio1, enable quantum-accurate simulations, they remain tethered to the inherent limits of classical data generation. We detail how High-Performance Quantum Computing (HPQC), utilizing hybrid QPU-GPU architectures, will serve as the ultimate accelerator for quantum chemistry data. By leveraging Hilbert space mapping, these systems can achieve true chemical accuracy while bypassing the heuristics of classical approximations. We show how this tripartite convergence optimizes the drug discovery pipeline, spanning from initial system preparation to ML-driven, high-fidelity simulations. Finally, we position quantum-enhanced sampling as the beyond GPU frontier for modeling reactive cellular systems and pioneering next-generation materials.",
+    "published": "2026-03-18T14:51:15+00:00",
+    "updated": "2026-03-19T17:44:57+00:00",
+    "link": "http://arxiv.org/abs/2603.17790v2",
+    "pdf_link": "https://arxiv.org/pdf/2603.17790v2",
+    "categories": [
+      "quant-ph",
+      "cs.LG",
+      "physics.chem-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.19081v1",
+    "title": "Utility-scale quantum computational chemistry",
+    "authors": [
+      "Davide Castaldo",
+      "Markus Reiher"
+    ],
+    "summary": "Chemistry and materials science are widely regarded as potential killer application fields for quantum hardware. While the dream of unlocking unprecedented simulation capabilities remains compelling, quantum algorithm development must adapt to the evolving constraints of the emerging quantum hardware in order to accomplish any advantage for the computational chemistry practice. At the same time, the continuous advancement of classical wavefunction-theory methods narrows the window for a broad quantum advantage. Here, we explore potential benefits of quantum computation from the broader perspective of utility-scale applications. We argue that quantum algorithms need not only enable accurate calculations for a few challenging, that is strongly correlated, molecular structures, that might be hard to describe with traditional methods. Instead, they must also support the practical integration of quantum-accelerated computations into high-throughput pipelines for routine calculations on arbitrary molecules, ultimately delivering a tangible value to society.",
+    "published": "2026-03-19T16:08:35+00:00",
+    "updated": "2026-03-19T16:08:35+00:00",
+    "link": "http://arxiv.org/abs/2603.19081v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.19081v1",
+    "categories": [
+      "quant-ph",
+      "cond-mat.str-el",
+      "physics.chem-ph",
+      "physics.comp-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.19007v1",
+    "title": "End-to-End Simulation of Chemical Dynamics on a Quantum Computer",
+    "authors": [
+      "Elliot C. Eklund",
+      "Arkin Tikku",
+      "Patrick Sinnott",
+      "William J. Huggins",
+      "Guang Hao Low",
+      "Dominic W. Berry",
+      "Ivan Kassal"
+    ],
+    "summary": "Simulations of chemical dynamics are a powerful means for understanding chemistry. However, classical computers struggle to simulate many chemical processes, especially non-adiabatic ones, where the Born-Oppenheimer approximation breaks down. Quantum computers could simulate quantum-chemical dynamics more efficiently than classical computers, but there is currently no complete quantum algorithm for calculating dynamical observables to within a known error. Here, we develop an efficient, end-to-end quantum algorithm for simulating chemical dynamics that avoids all uncontrolled approximations (including the Born-Oppenheimer approximation) and whose error is bounded subject to mild assumptions. To do so, we treat the nuclei and the electrons on an equal footing and simulate the full molecular wavefunction on a momentum-space grid in first quantization, including all algorithmic steps: initial-state preparation, time evolution using qubitization, and measurement of chemical observables such as reaction yields and rates. Our work gives the first algorithm for quantum simulation of chemistry whose end-to-end complexity achieves sublinear scaling in the size of the grid. We achieve this by developing an exponentially faster method for initial-state-preparation. Photochemistry is a likely early application of our algorithm and we estimate resources required for end-to-end simulations of non-adiabatic dynamics of atmospherically important molecules. Classically intractable photochemical computations could be performed using resources comparable to those required for other chemical applications of quantum computing.",
+    "published": "2026-03-19T15:13:13+00:00",
+    "updated": "2026-03-19T15:13:13+00:00",
+    "link": "http://arxiv.org/abs/2603.19007v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.19007v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.18998v1",
+    "title": "Computation of thermal entropy for the doped Hubbard Model",
+    "authors": [
+      "Yu-Feng Song",
+      "Youjin Deng",
+      "Yuan-Yao He"
+    ],
+    "summary": "We develop a highly efficient framework for computing the thermal entropy in the doped Fermi-Hubbard model within the grand-canonical ensemble. The framework comprises four calculation schemes that express the entropy as path integrals in the parameter space of temperature, interaction strength, and chemical potential. The integrands involve only fundamental observables, including the total energy, fermion density, and double occupancy, which are readily accessible in a wide range of theoretical and numerical methods. We further derive useful Maxwell relations connecting the entropy to other quantities, and present practical formulas for directly evaluating the grand potential. As an application, we compute the entropy of the doped Hubbard model in two and three dimensions, using the numerically unbiased auxiliary-field quantum Monte Carlo method. The test results show excellent agreement across the different schemes and quantitatively verify the Maxwell relations, confirming the reliability of the framework. In two dimensions, we further benchmark our entropy results in physically relevant parameter regimes against diagrammatic Monte Carlo calculations and observe excellent quantitative consistency between the two approaches. By providing an efficient and broadly applicable route for entropy evaluation, our work facilitates the thermodynamic characterization of complex correlated states in the doped Hubbard model.",
+    "published": "2026-03-19T15:03:22+00:00",
+    "updated": "2026-03-19T15:03:22+00:00",
+    "link": "http://arxiv.org/abs/2603.18998v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.18998v1",
+    "categories": [
+      "cond-mat.str-el"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.18778v1",
+    "title": "A Flexible GKP-State-Embedded Fault-Tolerant Quantum Computation Configuration Based on a Three-Dimensional Cluster State",
+    "authors": [
+      "Peilin Du",
+      "Jing Zhang",
+      "Tiancai Zhang",
+      "Rongguo Yang",
+      "Kui Liu",
+      "Jiangrui Gao"
+    ],
+    "summary": "The integration of diverse quantum resources and the exploitation of more degrees of freedom provide key operational flexibility for universal fault-tolerant quantum computation. In this work, we propose a flexible Gottesman-Kitaev-Preskill-state-embedded fault-tolerant quantum computation architecture based on a three-dimensional cluster state constructed in polarization, frequency, and orbital angular momentum domains. Specifically, we design optical entanglement generators to produce three diverse entangled pairs, and subsequently construct a three-dimensional cluster state via a beam-splitter network with several time delays. Furthermore, we present a partially squeezed surface-GKP code to achieve fault-tolerant quantum computation and ultimately find the optimal choice of implementing the squeezing gate to give the best fault-tolerant performance (the fault-tolerant squeezing threshold is 11.5 dB). Our scheme is flexible, scalable, and experimentally feasible, providing versatile options for future optical fault-tolerant quantum computation architecture.",
+    "published": "2026-03-19T11:30:50+00:00",
+    "updated": "2026-03-19T11:30:50+00:00",
+    "link": "http://arxiv.org/abs/2603.18778v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.18778v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.18126v1",
+    "title": "A Survey of Neural Network Variational Monte Carlo from a Computing Workload Characterization Perspective",
+    "authors": [
+      "Zhengze Xiao",
+      "Xuanzhe Ding",
+      "Yuyang Lou",
+      "Lixue Cheng",
+      "Chaojian Li"
+    ],
+    "summary": "Neural Network Variational Monte Carlo (NNVMC) has emerged as a promising paradigm for solving quantum many-body problems by combining variational Monte Carlo with expressive neural-network wave-function ansätze. Although NNVMC can achieve competitive accuracy with favorable asymptotic scaling, practical deployment remains limited by high runtime and memory cost on modern graphics processing units (GPUs). Compared with language and vision workloads, NNVMC execution is shaped by physics-specific stages, including Markov-Chain Monte Carlo sampling, wave-function construction, and derivative/Laplacian evaluation, which produce heterogeneous kernel behavior and nontrivial bottlenecks. This paper provides a workload-oriented survey and empirical GPU characterization of four representative ansätze: PauliNet, FermiNet, Psiformer, and Orbformer. Using a unified profiling protocol, we analyze model-level runtime and memory trends and kernel-level behavior through family breakdown, arithmetic intensity, roofline positioning, and hardware utilization counters. The results show that end-to-end performance is often constrained by low-intensity elementwise and data-movement kernels, while the compute/memory balance varies substantially across ansätze and stages. Based on these findings, we discuss algorithm--hardware co-design implications for scalable NNVMC systems, including phase-aware scheduling, memory-centric optimization, and heterogeneous acceleration.",
+    "published": "2026-03-18T17:22:37+00:00",
+    "updated": "2026-03-18T17:22:37+00:00",
+    "link": "http://arxiv.org/abs/2603.18126v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.18126v1",
+    "categories": [
+      "cs.AR",
+      "physics.chem-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.18078v1",
+    "title": "Variational Phasor Circuits for Phase-Native Brain-Computer Interface Classification",
+    "authors": [
+      "Dibakar Sigdel"
+    ],
+    "summary": "We present the \\textbf{Variational Phasor Circuit (VPC)}, a deterministic classical learning architecture operating on the continuous $S^1$ unit circle manifold. Inspired by variational quantum circuits, VPC replaces dense real-valued weight matrices with trainable phase shifts, local unitary mixing, and structured interference in the ambient complex space. This phase-native design provides a unified method for both binary and multi-class classification of spatially distributed signals. A single VPC block supports compact phase-based decision boundaries, while stacked VPC compositions extend the model to deeper circuits through inter-block pull-back normalization. Using synthetic brain-computer interface benchmarks, we show that VPC can decode difficult mental-state classification tasks with competitive accuracy and substantially fewer trainable parameters than standard Euclidean baselines. These results position unit-circle phase interference as a practical and mathematically principled alternative to dense neural computation, and motivate VPC as both a standalone classifier and a front-end encoding layer for future hybrid phasor-quantum systems.",
+    "published": "2026-03-18T07:12:02+00:00",
+    "updated": "2026-03-18T07:12:02+00:00",
+    "link": "http://arxiv.org/abs/2603.18078v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.18078v1",
+    "categories": [
+      "cs.LG"
+    ]
   }
 ]
