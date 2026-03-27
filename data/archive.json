@@ -6740,5 +6740,101 @@
       "quant-ph",
       "cond-mat.mtrl-sci"
     ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.25582v1",
+    "title": "A unified quantum computing quantum Monte Carlo framework through structured state preparation",
+    "authors": [
+      "Giuseppe Buonaiuto",
+      "Antonio Marquez Romero",
+      "Brian Coyle",
+      "Annie E. Paine",
+      "Vicente P. Soloviev",
+      "Stefano Scali",
+      "Michal Krompiec"
+    ],
+    "summary": "We extend Quantum Computing Quantum Monte Carlo (QCQMC) beyond ground-state energy estimation by systematically constructing the quantum circuits used for state preparation. Replacing the original Variational Quantum Eigensolver (VQE) prescription with task-adapted unitaries, we show that QCQMC can address excited-state spectra via Variational Fast Forwarding and the Variational Unitary Matrix Product Operator (VUMPO), combinatorial optimization via a symmetry-preserving VQE ansatz, and finite-temperature observables via Haar-random unitaries. Benchmarks on molecular, condensed-matter, nuclear-structure, and graph-optimization problems demostrate that the QMC diffusion step consistently improves the energy accuracy of the underlying state-preparation method across all tested domains. For weakly correlated systems, VUMPO achieves near-exact energies with significantly shallower circuits by offloading optimization to a classical tensor-network pre-training step, while for strongly correlated systems, the QMC correction becomes essential. We further provide a proof-of-concept demonstration that Haar-random basis state preparation within QCQMC yields finite-temperature estimates from pure-state dynamics.",
+    "published": "2026-03-26T15:59:54+00:00",
+    "updated": "2026-03-26T15:59:54+00:00",
+    "link": "http://arxiv.org/abs/2603.25582v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.25582v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.25519v1",
+    "title": "Kardashev scale Quantum Computing for Bitcoin Mining",
+    "authors": [
+      "Pierre-Luc Dallaire-Demers"
+    ],
+    "summary": "Bitcoin already faces a quantum threat through Shor attacks on elliptic-curve signatures. This paper isolates the other component that public discussion often conflates with it: mining. Grover's algorithm halves the exponent of brute-force search, promising a quadratic edge to any quantum miner of Bitcoin. Exactly how large that edge grows depends on fault-tolerant hardware. No prior study has costed that hardware end to end. We build an open-source estimator that sweeps the full attack surface: reversible oracles for double-SHA-256 mining and RIPEMD-based address preimages, surface-code factory sizing, fleet logistics under Nakamoto-consensus timing, and Kardashev-scale energy accounting. A parametric sweep over difficulty bits b, runtime caps, and target success probabilities reveals a sharp transition. At the most favourable partial-preimage setting (b = 32, 2^224 marked states), a superconducting surface-code fleet still requires about 10^8 physical qubits and about 10^4 MW. That load is comparable to a large national grid. Tightening to Bitcoin's January 2025 mainnet difficulty (b about 79) explodes the bill to about 10^23 qubits and about 10^25 W, approaching the Kardashev Type II threshold. These numbers settle a narrower question than \"Is Bitcoin quantum-secure?\" Once Grover mining is lifted from asymptotic query counts to fault-tolerant physical cost, practical quantum mining collapses under oracle, distillation, and fleet overhead. To push mining into non-trivial consensus effects, one must invoke astronomical quantum fleets operating at energy scales that lie far above present-day civilization.",
+    "published": "2026-03-26T14:53:46+00:00",
+    "updated": "2026-03-26T14:53:46+00:00",
+    "link": "http://arxiv.org/abs/2603.25519v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.25519v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.25282v1",
+    "title": "An efficient compact splitting Fourier spectral methods for computing the dynamics of rotating spin-orbit coupled spin-2 Bose-Einstein condenstates",
+    "authors": [
+      "Xin Liu",
+      "Ziqing Xie",
+      "Yongjun Yuan",
+      "Yong Zhang",
+      "Xinyi Zhao"
+    ],
+    "summary": "This paper investigates the dynamics of spin-2 Bose-Einstein condensates (BECs) with rotation and spin-orbit coupling (SOC). In order to better simulate the dynamics, we present an efficient high-order compact splitting Fourier spectral method. This method splits the Hamiltonian into a linear part, which consists of the Laplace, rotation and SOC terms, and a nonlinear part that includes all the remaining terms. The wave function is well approximated by the Fourier spectral method and is numerically accessed with discrete Fast Fourier transform (FFT). For linear subproblem, the handling of rotation term and SOC term poses a major challenge. Using a function mapping based on rotation, we can integrate the linear subproblem exactly and explicitly. This mapping we propose not only helps eliminate the rotation term, but also prevents the SOC term from evolving into a time-dependent form. The nonlinear subproblem is integrated analytically in physical space. Such \"compact\" splitting involves only two operators and facilitates the design of high-order splitting schemes. Our method is spectrally accurate in space and high order in time. It is efficient, explicit, unconditionally stable and simple to implement. In addition, we derive some dynamical properties and carry out a systematic study, including accuracy and efficiency tests, dynamical property verification, the SOC effects and dynamics of vortex lattice.",
+    "published": "2026-03-26T10:19:03+00:00",
+    "updated": "2026-03-26T10:19:03+00:00",
+    "link": "http://arxiv.org/abs/2603.25282v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.25282v1",
+    "categories": [
+      "math.NA",
+      "cond-mat.quant-gas"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.25039v1",
+    "title": "Uncertainty Quantification for Quantum Computing",
+    "authors": [
+      "Ryan Bennink",
+      "Olena Burkovska",
+      "Konstantin Pieper",
+      "Jorge Ramirez",
+      "Elaine Wong"
+    ],
+    "summary": "This review is designed to introduce mathematicians and computational scientists to quantum computing (QC) through the lens of uncertainty quantification (UQ) by presenting a mathematically rigorous and accessible narrative for understanding how noise and intrinsic randomness shape quantum computational outcomes in the language of mathematics. By grounding quantum computation in statistical inference, we highlight how mathematical tools such as probabilistic modeling, stochastic analysis, Bayesian inference, and sensitivity analysis, can directly address error propagation and reliability challenges in today's quantum devices. We also connect these methods to key scientific priorities in the field, including scalable uncertainty-aware algorithms and characterization of correlated errors. The purpose is to narrow the conceptual divide between applied mathematics, scientific computing and quantum information sciences, demonstrating how mathematically rooted UQ methodologies can guide validation, error mitigation, and principled algorithm design for emerging quantum technologies, in order to address challenges and opportunities present in modern-day quantum high performance and fault-tolerant quantum computing paradigms.",
+    "published": "2026-03-26T05:21:39+00:00",
+    "updated": "2026-03-26T05:21:39+00:00",
+    "link": "http://arxiv.org/abs/2603.25039v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.25039v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.24654v1",
+    "title": "Spectral methods: crucial for machine learning, natural for quantum computers?",
+    "authors": [
+      "Vasilis Belis",
+      "Joseph Bowles",
+      "Rishabh Gupta",
+      "Evan Peters",
+      "Maria Schuld"
+    ],
+    "summary": "This article presents an argument for why quantum computers could unlock new methods for machine learning. We argue that spectral methods, in particular those that learn, regularise, or otherwise manipulate the Fourier spectrum of a machine learning model, are often natural for quantum computers. For example, if a generative machine learning model is represented by a quantum state, the Quantum Fourier Transform allows us to manipulate the Fourier spectrum of the state using the entire toolbox of quantum routines, an operation that is usually prohibitive for classical models. At the same time, spectral methods are surprisingly fundamental to machine learning: A spectral bias has recently been hypothesised to be the core principle behind the success of deep learning; support vector machines have been known for decades to regularise in Fourier space, and convolutional neural nets build filters in the Fourier space of images. Could, then, quantum computing open fundamentally different, much more direct and resource-efficient ways to design the spectral properties of a model? We discuss this potential in detail here, hoping to stimulate a direction in quantum machine learning research that puts the question of ``why quantum?'' first.",
+    "published": "2026-03-25T18:00:00+00:00",
+    "updated": "2026-03-25T18:00:00+00:00",
+    "link": "http://arxiv.org/abs/2603.24654v1",
+    "pdf_link": "https://arxiv.org/pdf/2603.24654v1",
+    "categories": [
+      "quant-ph",
+      "cs.LG",
+      "stat.ML"
+    ]
   }
 ]

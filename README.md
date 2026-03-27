@@ -1,50 +1,78 @@
 
 
-# Papers Found on: 2026-03-26
+# Papers Found on: 2026-03-27
 
-### Digitally Optimized Initializations for Fast Thermodynamic Computing
-* **Authors:** Mattia Moroder et al.
+### A unified quantum computing quantum Monte Carlo framework through structured state preparation
+* **Authors:** Giuseppe Buonaiuto et al.
+* **Published (v1):** 2026-03-26
+* **Updated:** 2026-03-26
+* **Link:** http://arxiv.org/abs/2603.25582v1
+* **Abstract:** We extend Quantum Computing Quantum Monte Carlo (QCQMC) beyond ground-state energy estimation by systematically constructing the quantum circuits used for state preparation. Replacing the original Variational Quantum Eigensolver (VQE) prescription with task-adapted unitaries, we show that QCQMC can address excited-state spectra via Variational Fast Forwarding and the Variational Unitary Matrix Product Operator (VUMPO), combinatorial optimization via a symmetry-preserving VQE ansatz, and finite-temperature observables via Haar-random unitaries. Benchmarks on molecular, condensed-matter, nuclear-structure, and graph-optimization problems demostrate that the QMC diffusion step consistently improves the energy accuracy of the underlying state-preparation method across all tested domains. For weakly correlated systems, VUMPO achieves near-exact energies with significantly shallower circuits by offloading optimization to a classical tensor-network pre-training step, while for strongly correlated systems, the QMC correction becomes essential. We further provide a proof-of-concept demonstration that Haar-random basis state preparation within QCQMC yields finite-temperature estimates from pure-state dynamics.
+
+### Kardashev scale Quantum Computing for Bitcoin Mining
+* **Authors:** Pierre-Luc Dallaire-Demers et al.
+* **Published (v1):** 2026-03-26
+* **Updated:** 2026-03-26
+* **Link:** http://arxiv.org/abs/2603.25519v1
+* **Abstract:** Bitcoin already faces a quantum threat through Shor attacks on elliptic-curve signatures. This paper isolates the other component that public discussion often conflates with it: mining. Grover's algorithm halves the exponent of brute-force search, promising a quadratic edge to any quantum miner of Bitcoin. Exactly how large that edge grows depends on fault-tolerant hardware. No prior study has costed that hardware end to end. We build an open-source estimator that sweeps the full attack surface: reversible oracles for double-SHA-256 mining and RIPEMD-based address preimages, surface-code factory sizing, fleet logistics under Nakamoto-consensus timing, and Kardashev-scale energy accounting. A parametric sweep over difficulty bits b, runtime caps, and target success probabilities reveals a sharp transition. At the most favourable partial-preimage setting (b = 32, 2^224 marked states), a superconducting surface-code fleet still requires about 10^8 physical qubits and about 10^4 MW. That load is comparable to a large national grid. Tightening to Bitcoin's January 2025 mainnet difficulty (b about 79) explodes the bill to about 10^23 qubits and about 10^25 W, approaching the Kardashev Type II threshold. These numbers settle a narrower question than "Is Bitcoin quantum-secure?" Once Grover mining is lifted from asymptotic query counts to fault-tolerant physical cost, practical quantum mining collapses under oracle, distillation, and fleet overhead. To push mining into non-trivial consensus effects, one must invoke astronomical quantum fleets operating at energy scales that lie far above present-day civilization.
+
+### An efficient compact splitting Fourier spectral methods for computing the dynamics of rotating spin-orbit coupled spin-2 Bose-Einstein condenstates
+* **Authors:** Xin Liu et al.
+* **Published (v1):** 2026-03-26
+* **Updated:** 2026-03-26
+* **Link:** http://arxiv.org/abs/2603.25282v1
+* **Abstract:** This paper investigates the dynamics of spin-2 Bose-Einstein condensates (BECs) with rotation and spin-orbit coupling (SOC). In order to better simulate the dynamics, we present an efficient high-order compact splitting Fourier spectral method. This method splits the Hamiltonian into a linear part, which consists of the Laplace, rotation and SOC terms, and a nonlinear part that includes all the remaining terms. The wave function is well approximated by the Fourier spectral method and is numerically accessed with discrete Fast Fourier transform (FFT). For linear subproblem, the handling of rotation term and SOC term poses a major challenge. Using a function mapping based on rotation, we can integrate the linear subproblem exactly and explicitly. This mapping we propose not only helps eliminate the rotation term, but also prevents the SOC term from evolving into a time-dependent form. The nonlinear subproblem is integrated analytically in physical space. Such "compact" splitting involves only two operators and facilitates the design of high-order splitting schemes. Our method is spectrally accurate in space and high order in time. It is efficient, explicit, unconditionally stable and simple to implement. In addition, we derive some dynamical properties and carry out a systematic study, including accuracy and efficiency tests, dynamical property verification, the SOC effects and dynamics of vortex lattice.
+
+### Uncertainty Quantification for Quantum Computing
+* **Authors:** Ryan Bennink et al.
+* **Published (v1):** 2026-03-26
+* **Updated:** 2026-03-26
+* **Link:** http://arxiv.org/abs/2603.25039v1
+* **Abstract:** This review is designed to introduce mathematicians and computational scientists to quantum computing (QC) through the lens of uncertainty quantification (UQ) by presenting a mathematically rigorous and accessible narrative for understanding how noise and intrinsic randomness shape quantum computational outcomes in the language of mathematics. By grounding quantum computation in statistical inference, we highlight how mathematical tools such as probabilistic modeling, stochastic analysis, Bayesian inference, and sensitivity analysis, can directly address error propagation and reliability challenges in today's quantum devices. We also connect these methods to key scientific priorities in the field, including scalable uncertainty-aware algorithms and characterization of correlated errors. The purpose is to narrow the conceptual divide between applied mathematics, scientific computing and quantum information sciences, demonstrating how mathematically rooted UQ methodologies can guide validation, error mitigation, and principled algorithm design for emerging quantum technologies, in order to address challenges and opportunities present in modern-day quantum high performance and fault-tolerant quantum computing paradigms.
+
+### Spectral methods: crucial for machine learning, natural for quantum computers?
+* **Authors:** Vasilis Belis et al.
 * **Published (v1):** 2026-03-25
 * **Updated:** 2026-03-25
-* **Link:** http://arxiv.org/abs/2603.24183v1
-* **Abstract:** Thermodynamic computing harnesses the relaxation dynamics of physical systems to perform matrix operations. A key limitation of such approaches is the often long thermalization time required for the system to approach equilibrium with sufficient accuracy. Here, we introduce a hybrid digital-thermodynamic algorithm that substantially accelerates relaxation through optimized initializations inspired by the Mpemba effect. In the proposed scheme, a classical digital processor efficiently computes an initialization that suppresses slow relaxation modes, after which the physical system performs the remaining computation through its intrinsic relaxation dynamics. We focus on overdamped Langevin dynamics for quadratic energy landscapes, analyzing the spectral structure of the associated Fokker-Planck operator and identifying the corresponding optimal initial covariances. This yields a predictable reduction in thermalization time, determined by the spectrum of the encoded matrix. We derive analytic expressions for the resulting speedups and numerically analyze thermodynamic implementations of matrix inversion and determinant computation as concrete examples. Our results show that optimized initialization protocols provide a simple and broadly applicable route to accelerating thermodynamic computations.
+* **Link:** http://arxiv.org/abs/2603.24654v1
+* **Abstract:** This article presents an argument for why quantum computers could unlock new methods for machine learning. We argue that spectral methods, in particular those that learn, regularise, or otherwise manipulate the Fourier spectrum of a machine learning model, are often natural for quantum computers. For example, if a generative machine learning model is represented by a quantum state, the Quantum Fourier Transform allows us to manipulate the Fourier spectrum of the state using the entire toolbox of quantum routines, an operation that is usually prohibitive for classical models. At the same time, spectral methods are surprisingly fundamental to machine learning: A spectral bias has recently been hypothesised to be the core principle behind the success of deep learning; support vector machines have been known for decades to regularise in Fourier space, and convolutional neural nets build filters in the Fourier space of images. Could, then, quantum computing open fundamentally different, much more direct and resource-efficient ways to design the spectral properties of a model? We discuss this potential in detail here, hoping to stimulate a direction in quantum machine learning research that puts the question of ``why quantum?'' first.
 
-### Thermalization of SU(2) Lattice Gauge Fields on Quantum Computers
-* **Authors:** Jiunn-Wei Chen et al.
+
+
+# Papers Found on: 2026-03-27
+
+### A unified quantum computing quantum Monte Carlo framework through structured state preparation
+* **Authors:** Giuseppe Buonaiuto et al.
+* **Published (v1):** 2026-03-26
+* **Updated:** 2026-03-26
+* **Link:** http://arxiv.org/abs/2603.25582v1
+* **Abstract:** We extend Quantum Computing Quantum Monte Carlo (QCQMC) beyond ground-state energy estimation by systematically constructing the quantum circuits used for state preparation. Replacing the original Variational Quantum Eigensolver (VQE) prescription with task-adapted unitaries, we show that QCQMC can address excited-state spectra via Variational Fast Forwarding and the Variational Unitary Matrix Product Operator (VUMPO), combinatorial optimization via a symmetry-preserving VQE ansatz, and finite-temperature observables via Haar-random unitaries. Benchmarks on molecular, condensed-matter, nuclear-structure, and graph-optimization problems demostrate that the QMC diffusion step consistently improves the energy accuracy of the underlying state-preparation method across all tested domains. For weakly correlated systems, VUMPO achieves near-exact energies with significantly shallower circuits by offloading optimization to a classical tensor-network pre-training step, while for strongly correlated systems, the QMC correction becomes essential. We further provide a proof-of-concept demonstration that Haar-random basis state preparation within QCQMC yields finite-temperature estimates from pure-state dynamics.
+
+### Kardashev scale Quantum Computing for Bitcoin Mining
+* **Authors:** Pierre-Luc Dallaire-Demers et al.
+* **Published (v1):** 2026-03-26
+* **Updated:** 2026-03-26
+* **Link:** http://arxiv.org/abs/2603.25519v1
+* **Abstract:** Bitcoin already faces a quantum threat through Shor attacks on elliptic-curve signatures. This paper isolates the other component that public discussion often conflates with it: mining. Grover's algorithm halves the exponent of brute-force search, promising a quadratic edge to any quantum miner of Bitcoin. Exactly how large that edge grows depends on fault-tolerant hardware. No prior study has costed that hardware end to end. We build an open-source estimator that sweeps the full attack surface: reversible oracles for double-SHA-256 mining and RIPEMD-based address preimages, surface-code factory sizing, fleet logistics under Nakamoto-consensus timing, and Kardashev-scale energy accounting. A parametric sweep over difficulty bits b, runtime caps, and target success probabilities reveals a sharp transition. At the most favourable partial-preimage setting (b = 32, 2^224 marked states), a superconducting surface-code fleet still requires about 10^8 physical qubits and about 10^4 MW. That load is comparable to a large national grid. Tightening to Bitcoin's January 2025 mainnet difficulty (b about 79) explodes the bill to about 10^23 qubits and about 10^25 W, approaching the Kardashev Type II threshold. These numbers settle a narrower question than "Is Bitcoin quantum-secure?" Once Grover mining is lifted from asymptotic query counts to fault-tolerant physical cost, practical quantum mining collapses under oracle, distillation, and fleet overhead. To push mining into non-trivial consensus effects, one must invoke astronomical quantum fleets operating at energy scales that lie far above present-day civilization.
+
+### An efficient compact splitting Fourier spectral methods for computing the dynamics of rotating spin-orbit coupled spin-2 Bose-Einstein condenstates
+* **Authors:** Xin Liu et al.
+* **Published (v1):** 2026-03-26
+* **Updated:** 2026-03-26
+* **Link:** http://arxiv.org/abs/2603.25282v1
+* **Abstract:** This paper investigates the dynamics of spin-2 Bose-Einstein condensates (BECs) with rotation and spin-orbit coupling (SOC). In order to better simulate the dynamics, we present an efficient high-order compact splitting Fourier spectral method. This method splits the Hamiltonian into a linear part, which consists of the Laplace, rotation and SOC terms, and a nonlinear part that includes all the remaining terms. The wave function is well approximated by the Fourier spectral method and is numerically accessed with discrete Fast Fourier transform (FFT). For linear subproblem, the handling of rotation term and SOC term poses a major challenge. Using a function mapping based on rotation, we can integrate the linear subproblem exactly and explicitly. This mapping we propose not only helps eliminate the rotation term, but also prevents the SOC term from evolving into a time-dependent form. The nonlinear subproblem is integrated analytically in physical space. Such "compact" splitting involves only two operators and facilitates the design of high-order splitting schemes. Our method is spectrally accurate in space and high order in time. It is efficient, explicit, unconditionally stable and simple to implement. In addition, we derive some dynamical properties and carry out a systematic study, including accuracy and efficiency tests, dynamical property verification, the SOC effects and dynamics of vortex lattice.
+
+### Uncertainty Quantification for Quantum Computing
+* **Authors:** Ryan Bennink et al.
+* **Published (v1):** 2026-03-26
+* **Updated:** 2026-03-26
+* **Link:** http://arxiv.org/abs/2603.25039v1
+* **Abstract:** This review is designed to introduce mathematicians and computational scientists to quantum computing (QC) through the lens of uncertainty quantification (UQ) by presenting a mathematically rigorous and accessible narrative for understanding how noise and intrinsic randomness shape quantum computational outcomes in the language of mathematics. By grounding quantum computation in statistical inference, we highlight how mathematical tools such as probabilistic modeling, stochastic analysis, Bayesian inference, and sensitivity analysis, can directly address error propagation and reliability challenges in today's quantum devices. We also connect these methods to key scientific priorities in the field, including scalable uncertainty-aware algorithms and characterization of correlated errors. The purpose is to narrow the conceptual divide between applied mathematics, scientific computing and quantum information sciences, demonstrating how mathematically rooted UQ methodologies can guide validation, error mitigation, and principled algorithm design for emerging quantum technologies, in order to address challenges and opportunities present in modern-day quantum high performance and fault-tolerant quantum computing paradigms.
+
+### Spectral methods: crucial for machine learning, natural for quantum computers?
+* **Authors:** Vasilis Belis et al.
 * **Published (v1):** 2026-03-25
 * **Updated:** 2026-03-25
-* **Link:** http://arxiv.org/abs/2603.23948v1
-* **Abstract:** We simulate the thermalization dynamics for minimally truncated SU(2) pure gauge theory on linear plaquette chains with up to 151 plaquettes using IBM quantum computers. We study the time dependence of the entanglement spectrum, Rényi-2 entropy and anti-flatness on small subsystems. The quantum hardware results obtained after error mitigation agree with extrapolated classical simulator results for chains consisting of up to 101 plaquettes. Our results demonstrate the feasibility of local thermalization studies for chaotic quantum systems, such as nonabelian lattice gauge theories, on current noisy quantum computing platforms.
-
-### Quantum Computing and Error Mitigation with Deep Learning for Frenkel Excitons
-* **Authors:** Yi-Ting Lee et al.
-* **Published (v1):** 2026-03-25
-* **Updated:** 2026-03-25
-* **Link:** http://arxiv.org/abs/2603.23936v1
-* **Abstract:** Quantum computers, currently in the noisy intermediate-scale quantum (NISQ) era, have started to provide scientists with a novel tool to explore quantum physics and chemistry. While several electronic systems have been extensively studied, Frenkel excitons, as prototypical optical excitations, remain among the less-explored applications. Here, we first use variational quantum deflation to calculate the eigenstates of the Frenkel Hamiltonian and evaluate the observables based on the oscillator strength for each eigenstate. Furthermore, using NISQ quantum computers requires performing error mitigation techniques alongside simulations. To deal with noisy qubits, we developed a deep-learning-based framework combined with a post-selection technique to learn the noise pattern and mitigate the error. Our mitigation methods work well and outperform the conventional post-selection and remain valid on real hardware.
-
-
-
-# Papers Found on: 2026-03-26
-
-### Digitally Optimized Initializations for Fast Thermodynamic Computing
-* **Authors:** Mattia Moroder et al.
-* **Published (v1):** 2026-03-25
-* **Updated:** 2026-03-25
-* **Link:** http://arxiv.org/abs/2603.24183v1
-* **Abstract:** Thermodynamic computing harnesses the relaxation dynamics of physical systems to perform matrix operations. A key limitation of such approaches is the often long thermalization time required for the system to approach equilibrium with sufficient accuracy. Here, we introduce a hybrid digital-thermodynamic algorithm that substantially accelerates relaxation through optimized initializations inspired by the Mpemba effect. In the proposed scheme, a classical digital processor efficiently computes an initialization that suppresses slow relaxation modes, after which the physical system performs the remaining computation through its intrinsic relaxation dynamics. We focus on overdamped Langevin dynamics for quadratic energy landscapes, analyzing the spectral structure of the associated Fokker-Planck operator and identifying the corresponding optimal initial covariances. This yields a predictable reduction in thermalization time, determined by the spectrum of the encoded matrix. We derive analytic expressions for the resulting speedups and numerically analyze thermodynamic implementations of matrix inversion and determinant computation as concrete examples. Our results show that optimized initialization protocols provide a simple and broadly applicable route to accelerating thermodynamic computations.
-
-### Thermalization of SU(2) Lattice Gauge Fields on Quantum Computers
-* **Authors:** Jiunn-Wei Chen et al.
-* **Published (v1):** 2026-03-25
-* **Updated:** 2026-03-25
-* **Link:** http://arxiv.org/abs/2603.23948v1
-* **Abstract:** We simulate the thermalization dynamics for minimally truncated SU(2) pure gauge theory on linear plaquette chains with up to 151 plaquettes using IBM quantum computers. We study the time dependence of the entanglement spectrum, Rényi-2 entropy and anti-flatness on small subsystems. The quantum hardware results obtained after error mitigation agree with extrapolated classical simulator results for chains consisting of up to 101 plaquettes. Our results demonstrate the feasibility of local thermalization studies for chaotic quantum systems, such as nonabelian lattice gauge theories, on current noisy quantum computing platforms.
-
-### Quantum Computing and Error Mitigation with Deep Learning for Frenkel Excitons
-* **Authors:** Yi-Ting Lee et al.
-* **Published (v1):** 2026-03-25
-* **Updated:** 2026-03-25
-* **Link:** http://arxiv.org/abs/2603.23936v1
-* **Abstract:** Quantum computers, currently in the noisy intermediate-scale quantum (NISQ) era, have started to provide scientists with a novel tool to explore quantum physics and chemistry. While several electronic systems have been extensively studied, Frenkel excitons, as prototypical optical excitations, remain among the less-explored applications. Here, we first use variational quantum deflation to calculate the eigenstates of the Frenkel Hamiltonian and evaluate the observables based on the oscillator strength for each eigenstate. Furthermore, using NISQ quantum computers requires performing error mitigation techniques alongside simulations. To deal with noisy qubits, we developed a deep-learning-based framework combined with a post-selection technique to learn the noise pattern and mitigate the error. Our mitigation methods work well and outperform the conventional post-selection and remain valid on real hardware.
+* **Link:** http://arxiv.org/abs/2603.24654v1
+* **Abstract:** This article presents an argument for why quantum computers could unlock new methods for machine learning. We argue that spectral methods, in particular those that learn, regularise, or otherwise manipulate the Fourier spectrum of a machine learning model, are often natural for quantum computers. For example, if a generative machine learning model is represented by a quantum state, the Quantum Fourier Transform allows us to manipulate the Fourier spectrum of the state using the entire toolbox of quantum routines, an operation that is usually prohibitive for classical models. At the same time, spectral methods are surprisingly fundamental to machine learning: A spectral bias has recently been hypothesised to be the core principle behind the success of deep learning; support vector machines have been known for decades to regularise in Fourier space, and convolutional neural nets build filters in the Fourier space of images. Could, then, quantum computing open fundamentally different, much more direct and resource-efficient ways to design the spectral properties of a model? We discuss this potential in detail here, hoping to stimulate a direction in quantum machine learning research that puts the question of ``why quantum?'' first.
 
