@@ -7058,5 +7058,193 @@
     "categories": [
       "quant-ph"
     ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.00958v1",
+    "title": "Properties of multiqubit variational quantum states representing weighted graphs and their computing with quantum programming",
+    "authors": [
+      "Kh. P. Gnatenko",
+      "A. Kaczmarek"
+    ],
+    "summary": "We study multiqubit variational quantum states that can be considered as weighted quantum graph states. These states are constructed as single-layer variational circuits with $RX$ rotations and $RZZ$ entangling gates, corresponding to graphs of arbitrary structure. In general case of quantum graph states of arbitrary structure we derive the geometric measure of entanglement and evaluate quantum correlators. It is shown that these quantities are directly related to the degrees of the corresponding vertices in graph. As an example, we analyze the state associated with the star graph $K_{1,4}$ using noisy quantum computing on the AerSimulator. The results are in good agreement with theoretical predictions. These findings demonstrate a connection between graph structure and quantum properties, enabling the study of classical graphs via quantum computing.",
+    "published": "2026-04-01T14:33:09+00:00",
+    "updated": "2026-04-01T14:33:09+00:00",
+    "link": "http://arxiv.org/abs/2604.00958v1",
+    "pdf_link": "https://arxiv.org/pdf/2604.00958v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.00929v1",
+    "title": "Two Problems on Quantum Computing in Finite Abelian Groups",
+    "authors": [
+      "Ulises Pastor-Díaz",
+      "José M. Tornero"
+    ],
+    "summary": "In the context of finite Abelian groups two problems are presented and solved using quantum computing techniques. The first is the well--known Hidden Subgroup Problem, originally solved by Simon in a landmark work. The second is the Fully Balanced Image Problem, originally introduced by the authors (joint with J. Ossorio--Castillo), which is related to a certain class of mappings (which contains strictly, for instance, the family of group morphisms).\n  Both problems are tackled using a combination of two techniques: first, a conversion into Boolean objects, better suited for quantum computing arguments, and subsequently a custom--tailored algorithm which takes advantage of the Generalised Phase--Kick Back technique.",
+    "published": "2026-04-01T14:07:38+00:00",
+    "updated": "2026-04-01T14:07:38+00:00",
+    "link": "http://arxiv.org/abs/2604.00929v1",
+    "pdf_link": "https://arxiv.org/pdf/2604.00929v1",
+    "categories": [
+      "quant-ph",
+      "math.GR"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.00816v1",
+    "title": "Highly-Parallel Atom-Detection Accelerator for Tweezer-Based Neutral Atom Quantum Computers",
+    "authors": [
+      "Jonas Winklmann",
+      "Yian Yu",
+      "Xiaorang Guo",
+      "Korbinian Staudacher",
+      "Martin Schulz"
+    ],
+    "summary": "Neutral atom quantum computers (NAQCs) are among the most promising computational platforms for quantum computing. Controlling and measuring individual atoms and their states, which often requires multiple imaging and image-analysis procedures, is typically the most time-consuming task during computation and contributes significantly to overall cycle times. To resolve this challenge, we propose a highly-parallel atom-detection accelerator for tweezer-based NAQCs. Our design builds on an existing state-reconstruction method and combines an algorithm-level optimization with a Field Programmable Gate Array (FPGA) implementation to maximize parallelism and reduce the run time of the image-analysis process. We identify and overcome several challenges for an FPGA implementation, such as introducing a prefetching mechanism to improve scalability and customizing bus transfers to support large bandwidths. Tested on a Xilinx UltraScale+ FPGA, our design can analyze a 256x256-pixel fluorescence image in just 115mus, achieving 34.9x and 6.3x speedups over the original and optimized CPU baseline, respectively. Moreover, our accelerator can maintain consistent resource utilization across various atom array sizes, contributing to the ongoing efforts toward scalable and fully integrated FPGA-based control systems for NAQCs.",
+    "published": "2026-04-01T12:24:43+00:00",
+    "updated": "2026-04-01T12:24:43+00:00",
+    "link": "http://arxiv.org/abs/2604.00816v1",
+    "pdf_link": "https://arxiv.org/pdf/2604.00816v1",
+    "categories": [
+      "quant-ph",
+      "cs.AR"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.00802v1",
+    "title": "Unitary Encoding of Thermal States via Thermofield Dynamics on Quantum Computers",
+    "authors": [
+      "G. X. A. Petronilo",
+      "M. R. Araújo",
+      "A. B. M. Souza",
+      "Clebson Cruz"
+    ],
+    "summary": "Quantum computing has attracted the attention of the scientific community in the past few decades. However, despite some relevant advantages, near-term quantum devices remain severely limited by thermal effects, which induce decoherence and restrict coherent control at finite temperature. In this regard, this work reports a gate-based quantum algorithm that prepares the finite-temperature vacuum of Thermofield Dynamics (TFD) and tracks its real-time evolution. The circuit depth scales linearly with system size and requires only single-qubit rotations and nearest-neighbor CNOT gates, making it NISQ-friendly. We benchmark the protocol on the PennyLane simulator: magnetization of a spin-$1/2$ particle in a magnetic field agrees with the exact result $M(β)=\\tanh(βω/2)$ to machine precision, and the coherent precession acquires a temperature-dependent damping that quantitatively matches the analytical TFD prediction. Our work provides a ready-to-deploy toolbox for thermal quantum simulations and opens a route to study dissipative phase transitions, quantum thermodynamics and thermal machine-learning models on near-term devices.",
+    "published": "2026-04-01T12:07:30+00:00",
+    "updated": "2026-04-01T12:07:30+00:00",
+    "link": "http://arxiv.org/abs/2604.00802v1",
+    "pdf_link": "https://arxiv.org/pdf/2604.00802v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.00600v1",
+    "title": "MPI-Q: A Message Communication Library for Large-Scale Classical-Quantum Heterogeneous Hybrid Distributed Computing",
+    "authors": [
+      "Feng Wang",
+      "Junchao Wang",
+      "Zeyuan Wang",
+      "Lei Li",
+      "Yangyang Fei",
+      "Jinyang Yao",
+      "Xuyan Qi",
+      "Fudong Liu",
+      "Yifan Hou",
+      "Shibo Liang",
+      "Zheng Shan"
+    ],
+    "summary": "The classical-quantum system heterogeneity (different data characteristics, execution paradigms and synchronization mechanism etc.) renders existing distributed communication mechanisms (e.g. MPI, NCCL etc.) inadequate. This bottleneck severely impairs operational synergy and programming efficiency. Thus, the performance of hybrid applications on classical-quantum heterogeneous infrastructures is directly limited.\n  To address these challenges, this paper proposes a message-passing library tailored for large-scale classical-quantum heterogeneous distributed computing, referred to as MPI-Q. The design centers on three mechanisms. First, it defines a heterogeneous hybrid communication domain that achieves unified management of classical and quantum processes in heterogeneous hybrid systems. Second, it uses a lightweight communication path that allows classical control nodes to send device-ready waveform data directly to quantum MonitorProcesses, avoiding unnecessary relay stages. Third, it establishes a heterogeneous hybrid synchronization mechanism to tackle the problem of timing control for multi-node quantum operations. While retaining the traditional MPI programming model, MPI-Q achieves extension toward quantum subsystems. Experiments on distributed GHZ state preparation demonstrate that this model exhibits near-linear scalability, achieving a maximum speedup of 18.76 times on 24 quantum nodes. This proves that the library can effectively support large-scale heterogeneous hybrid distributed computing applications, filling the technical gap in this field.",
+    "published": "2026-04-01T08:06:35+00:00",
+    "updated": "2026-04-01T08:06:35+00:00",
+    "link": "http://arxiv.org/abs/2604.00600v1",
+    "pdf_link": "https://arxiv.org/pdf/2604.00600v1",
+    "categories": [
+      "cs.DC"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.00389v1",
+    "title": "Pricing Lookback Options on a Quantum Computer",
+    "authors": [
+      "Florence Paquette",
+      "Tania Belabbas",
+      "Emmanuel Hamel",
+      "Anne MacKay"
+    ],
+    "summary": "We develop a quantum algorithm to price discretely monitored lookback options in the Black-Scholes framework using imaginary time evolution. By rewriting the pricing PDE as a Schrodinger-type equation, the problem becomes the imaginary time evolution of a quantum state under a non-Hermitian Hamiltonian. This evolution is approximated with the Variational Quantum imaginary time evolution (VarQITE) method, which replaces the exact non-unitary dynamics with a parameterized, hardware-efficient quantum circuit. A central challenge arises from jump conditions caused by the discrete updating of the running maximum. This feature is not present in standard quantum treatments of European or Asian options. To address this, we propose two quantum-compatible formulations: (i) a sequential approach that models jumps via dedicated jump Hamiltonians applied at monitoring dates, and (ii) a simultaneous multi-function evolution that removes explicit jumps at the expense of an increased number of dimensions. We compare both approaches in terms of qubit resources, circuit complexity and numerical accuracy, and benchmark them against Monte Carlo simulations. Our results show that discretely monitored, path-dependent options with jump conditions can be handled within a variational quantum framework, paving the way toward the quantum pricing of more complex derivatives with non-smooth dynamics.",
+    "published": "2026-04-01T02:18:58+00:00",
+    "updated": "2026-04-01T02:18:58+00:00",
+    "link": "http://arxiv.org/abs/2604.00389v1",
+    "pdf_link": "https://arxiv.org/pdf/2604.00389v1",
+    "categories": [
+      "q-fin.CP"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.00212v1",
+    "title": "Building Block For Universal Continuous Variables Computation In Superconducting Devices",
+    "authors": [
+      "Bruno A. Veloso",
+      "Ciro M. Diniz",
+      "Luiz O. R. Solak",
+      "Antonio S. M. de Castro",
+      "Daniel Z. Rossatto",
+      "Celso J. Villas-Bôas"
+    ],
+    "summary": "Continuous variable (CV) quantum computation offers an alternative to qubit-based computing by exploiting the infinite-dimensional Hilbert space of bosonic modes. Despite recent progress, superconducting platforms have yet to demonstrate a scalable architecture capable of universal computation.Here, we design and numerically simulate a two-layer superconducting architecture that implements all five interactions of the universal CV gate set (rotation, displacement, squeezing, Kerr, and beam splitter) within experimentally accessible regimes. To this end, we employ a DC-SQUID as the bosonic mode, a fluxonium qubit to mediate nonlinear interactions, and two ancillary qubits that enable Gaussian and multi-mode operations. By tuning fluxes and frequencies, we achieve high fidelities ($\\geq 98\\%$) across all gates within state-of-the-art parameter ranges. The modular nature of the design allows straightforward scaling, establishing a feasible pathway toward high-fidelity, universal CV quantum computation based on superconducting circuits.",
+    "published": "2026-03-31T20:28:26+00:00",
+    "updated": "2026-03-31T20:28:26+00:00",
+    "link": "http://arxiv.org/abs/2604.00212v1",
+    "pdf_link": "https://arxiv.org/pdf/2604.00212v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.00182v1",
+    "title": "Limits to Computational Acceleration Imposed by Quantum Field Theory and Quantum Gravity",
+    "authors": [
+      "Leron Borsten",
+      "Hyungrok Kim"
+    ],
+    "summary": "A computer, in order to perform a given computation, requires a certain amount of space (memory) and a certain amount of time (runtime). This leaves certain computations beyond reach due to technological limits on processing speed and memory density. Some computations, such as the halting problem, are not possible even in principle. However, curved spacetimes and exotic fields appear to provide avenues to accelerate computation, for instance by exploiting time dilation. Impossible computations seemingly become tractable, butting up against intuition. However, we show that such schemes are consistently thwarted by physical effects from quantum gravity (including swampland conjectures) and quantum field theory in curved space. More precisely, we show that an observer and a computer able to withstand energy scales up to order $E$ can, by using relativistic effects, accelerate computation at a rate of at most $\\mathcal O(1)E$ e-folds per unit time in natural units: $(\\lnα)/τ\\lesssim E$. The Bekenstein bound for entropy can then be understood as the space (memory) analogue to (run)time: if a computer of length scale $D$, operating at energies up to order $E$, has access to $N$ different memory states, then $(\\ln N)/D\\lesssim E$.",
+    "published": "2026-03-31T19:33:32+00:00",
+    "updated": "2026-03-31T19:33:32+00:00",
+    "link": "http://arxiv.org/abs/2604.00182v1",
+    "pdf_link": "https://arxiv.org/pdf/2604.00182v1",
+    "categories": [
+      "hep-th",
+      "gr-qc"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.00127v1",
+    "title": "Scattering phase shift in quantum mechanics on quantum computers: non-Hermitian systems and imaginary-time simulations",
+    "authors": [
+      "Peng Guo",
+      "Paul LeVan",
+      "Frank X. Lee",
+      "Yong Zhao"
+    ],
+    "summary": "To overcome the fast oscillatory behavior of correlation functions for extracting scattering phase shift in real-time quantum simulations encountered in Ref.\\cite{Guo:2026qkx}, we propose and test two solutions in the present work. One is to simulate Hermitian systems in imaginary time, the other is to simulate non-Hermitian systems in real time. We demonstrate that both approaches lead to the problem of non-unitary quantum evolution which can be solved by combining two quantum algorithms: block encoding and Hadamard test. The combined quantum algorithm does not require mid-circuit measurements or adjustment of the input parameters of the Hamiltonian, and can be easily implemented on quantum computers. Both the size and length of quantum circuits grow linearly with evolution time. Numerical tests on quantum simulators show that both approaches agree with exact solutions for a sufficiently long time before the signal is lost in statistical fluctuations. The results bode well for using non-Hermitian and imaginary-time simulations to circumvent oscillations inherent in real-time simulation of other quantum systems.",
+    "published": "2026-03-31T18:31:53+00:00",
+    "updated": "2026-03-31T18:31:53+00:00",
+    "link": "http://arxiv.org/abs/2604.00127v1",
+    "pdf_link": "https://arxiv.org/pdf/2604.00127v1",
+    "categories": [
+      "quant-ph",
+      "cond-mat.other",
+      "hep-lat",
+      "hep-ph",
+      "nucl-th"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.00030v1",
+    "title": "Building an analog simulator of a photonic quantum computer with transparent tape, maple syrup, and cat lasers, and implementing first quantum algorithms in the classroom",
+    "authors": [
+      "Ghislain Lefebvre"
+    ],
+    "summary": "This work presents the implementation of single-qubit gates, including $R_x$ and $R_z$ gates realized using transparent adhesive tape, and $R_y$ gates obtained with optically active maple and agave solutions. These gates form the native gate set of a simple photonic system and are subsequently used to construct a Hadamard gate. Two forms of two-qubit gates are introduced using a combination of a calcite crystal and transparent tape. The setups employ both the polarization and the path degree of freedom of a photon as qubits, illustrating how readily accessible materials can be used to manipulate and transform the quantum information they convey.\n  Calculations are performed to determine the birefringence of two different types of tape and to quantify the specific rotations introduced by multiple layers of transparent tape. Finally, simple algorithms and exercises are proposed for students.\n  These experimental setups are designed to facilitate hands-on manipulation of quantum effects while lowering the barrier to accessing quantum systems, with total costs kept below \\$50 CAD for the single-qubit gates and below \\$100 CAD for all experiments combined. The configurations presented serve as an analog simulator of a photonic quantum computer: although the laser beams used can be described classically, all theoretical considerations and experimental procedures remain valid for quantized systems employing single-photon emitters and single-photon detectors.",
+    "published": "2026-03-20T13:32:12+00:00",
+    "updated": "2026-03-20T13:32:12+00:00",
+    "link": "http://arxiv.org/abs/2604.00030v1",
+    "pdf_link": "https://arxiv.org/pdf/2604.00030v1",
+    "categories": [
+      "physics.gen-ph"
+    ]
   }
 ]
