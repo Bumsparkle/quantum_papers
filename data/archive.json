@@ -7246,5 +7246,82 @@
     "categories": [
       "physics.gen-ph"
     ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.17790v3",
+    "title": "The Convergence Frontier: Integrating Machine Learning and High Performance Quantum Computing for Next-Generation Drug Discovery",
+    "authors": [
+      "Narjes Ansari",
+      "César Feniou",
+      "Nicolaï Gouraud",
+      "Daniele Loco",
+      "Siwar Badreddine",
+      "Baptiste Claudon",
+      "Félix Aviat",
+      "Marharyta Blazhynska",
+      "Kevin Gasperich",
+      "Guillaume Michel",
+      "Diata Traore",
+      "Corentin Villot",
+      "Thomas Plé",
+      "Olivier Adjoua",
+      "Louis Lagardère",
+      "Jean-Philip Piquemal"
+    ],
+    "summary": "Integrating quantum mechanics into drug discovery marks a decisive shift from empirical trial-and-error toward quantitative precision. However, the prohibitive cost of ab initio molecular dynamics has historically forced a compromise between chemical accuracy and computational scalability. This paper identifies the convergence of High-Performance Computing (HPC), Machine Learning (ML), and Quantum Computing (QC) as the definitive solution to this bottleneck. While ML foundation models, such as FeNNix-Bio1, enable quantum-accurate simulations, they remain tethered to the inherent limits of classical data generation. We detail how High-Performance Quantum Computing (HPQC), utilizing hybrid QPU-GPU architectures, will serve as the ultimate accelerator for quantum chemistry data. By leveraging Hilbert space mapping, these systems can achieve true chemical accuracy while bypassing the heuristics of classical approximations. We show how this tripartite convergence optimizes the drug discovery pipeline, spanning from initial system preparation to ML-driven, high-fidelity simulations. Finally, we position quantum-enhanced sampling as the beyond GPU frontier for modeling reactive cellular systems and pioneering next-generation materials.",
+    "published": "2026-03-18T14:51:15+00:00",
+    "updated": "2026-04-02T16:15:36+00:00",
+    "link": "http://arxiv.org/abs/2603.17790v3",
+    "pdf_link": "https://arxiv.org/pdf/2603.17790v3",
+    "categories": [
+      "quant-ph",
+      "cs.LG",
+      "physics.chem-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.00600v2",
+    "title": "MPI-Q: A Message Communication Library for Large-Scale Classical-Quantum Heterogeneous Hybrid Distributed Computing",
+    "authors": [
+      "Feng Wang",
+      "Junchao Wang",
+      "Zeyuan Wang",
+      "Lei Li",
+      "Hang Lian",
+      "Yangyang Fei",
+      "Jinyang Yao",
+      "Xuyan Qi",
+      "Fudong Liu",
+      "Yifan Hou",
+      "Shibo Liang",
+      "Zheng Shan"
+    ],
+    "summary": "The classical-quantum system heterogeneity (different data characteristics, execution paradigms and synchronization mechanism etc.) renders existing distributed communication mechanisms (e.g. MPI, NCCL etc.) inadequate. This bottleneck severely impairs operational synergy and programming efficiency. Thus, the performance of hybrid applications on classical-quantum heterogeneous infrastructures is directly limited.\n  To address these challenges, this paper proposes a message-passing library tailored for large-scale classical-quantum heterogeneous distributed computing, referred to as MPI-Q. The design centers on three mechanisms. First, it defines a heterogeneous hybrid communication domain that achieves unified management of classical and quantum processes in heterogeneous hybrid systems. Second, it uses a lightweight communication path that allows classical control nodes to send device-ready waveform data directly to quantum MonitorProcesses, avoiding unnecessary relay stages. Third, it establishes a heterogeneous hybrid synchronization mechanism to tackle the problem of timing control for multi-node quantum operations. While retaining the traditional MPI programming model, MPI-Q achieves extension toward quantum subsystems. Experiments on distributed GHZ state preparation demonstrate that this model exhibits near-linear scalability, achieving a maximum speedup of 18.76 times on 24 quantum nodes. This proves that the library can effectively support large-scale heterogeneous hybrid distributed computing applications, filling the technical gap in this field.",
+    "published": "2026-04-01T08:06:35+00:00",
+    "updated": "2026-04-02T13:41:14+00:00",
+    "link": "http://arxiv.org/abs/2604.00600v2",
+    "pdf_link": "https://arxiv.org/pdf/2604.00600v2",
+    "categories": [
+      "cs.DC"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.01360v1",
+    "title": "A New Paradigm for Computational Chemistry",
+    "authors": [
+      "Raphael T. Husistein",
+      "Markus Reiher"
+    ],
+    "summary": "Computational chemistry has become an indispensable tool for generating data and insights, pervading all branches of experimental chemistry. Its most central concept is the potential energy hypersurface, key to all chemistry and materials science, as it assigns an energy to a molecular structure, the necessary ingredient for reaction mechanism elucidation and reaction rate calculation. Density functional theory (DFT) has been the most important method in practice for obtaining such energies, which is mirrored in the use of high-performance computing hardware. In the last two decades, a new class of surrogate potential energy functions has been evolving with remarkable properties: quantum accuracy combined with force-field speed. Until very recently, their application was hampered by the fact that they needed to be trained on truly large system-specific data sets, generated before a computational chemistry study could be started (in sharp contrast to DFT, which, as a first-principles method, works out of the box, but at a far higher price of computational cost). Very recently, this roadblock has been overcome by so-called foundation machine learning interatomic potentials, which are poised to completely change the way we do computational chemistry, likely prompting us to abandon DFT as the prime method of choice for this purpose in less than a decade.",
+    "published": "2026-04-01T20:16:55+00:00",
+    "updated": "2026-04-01T20:16:55+00:00",
+    "link": "http://arxiv.org/abs/2604.01360v1",
+    "pdf_link": "https://arxiv.org/pdf/2604.01360v1",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.dis-nn",
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ]
   }
 ]
