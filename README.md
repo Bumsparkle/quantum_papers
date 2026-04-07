@@ -1,50 +1,10 @@
 
 
-# Papers Found on: 2026-04-06
+# Papers Found on: 2026-04-07
 
-### Novel permanent magnet array geometries for scalable trapped-ion quantum computing in a laser-free entanglement architecture
-* **Authors:** Mitchell G. Peaks et al.
-* **Published (v1):** 2026-04-03
-* **Updated:** 2026-04-03
-* **Link:** http://arxiv.org/abs/2604.03116v1
-* **Abstract:** A novel design is presented for a permanent magnet array to address specific challenges with scalable trapped-ion quantum computing systems. Design and optimization of this magnet geometry is motivated by concepts for large-scale Quantum Charge-Coupled Device (QCCD) architectures. This proposal is relevant to magnetic field gradient schemes for laser-free entanglement using long-wavelength radiation, and individual addressing based on spatially dependent, magnetic field sensitive qubits. This configuration generates a localized, asymmetric magnetic field, yielding a region for ion transport into and out of a strong magnetic field gradient, while minimizing the absolute field experienced by the ion. This is a distinct improvement for scalability over dipolar magnet geometries where a strong magnetic field surrounds a magnetic field nil in three dimensions, which is problematic for ion transport applications. The design also relaxes the alignment constraints for experimental setup by allowing greater tolerance to misalignment in two dimensions. Additionally, the potential to scale a permanent magnet scheme in QCCD systems circumvents engineering challenges associated with using large electrical currents to generate the field gradient. Finally, a conceptual discussion is given for incorporating the design into a scalable QCCD type architecture.
-
-### Computational framework for non-Markovian multi-emitter dynamics beyond the single-excitation limit
-* **Authors:** Hyunwoo Choi et al.
-* **Published (v1):** 2026-04-03
-* **Updated:** 2026-04-03
-* **Link:** http://arxiv.org/abs/2604.02741v1
-* **Abstract:** While non-Markovian dynamics have been extensively studied in the single-excitation limit to predict non-trivial phenomena, this regime remains an idealization. Moving beyond it is essential, as optical nonlinearities and phase-error accumulation in multi-photon processes render the Markovian approximation fragile. In this work, we present a Green's function-based framework for modeling non-Markovian multi-emitter quantum electrodynamics within the two-excitation manifold. The modified Langevin noise (M-LN) formalism is employed for first-principles treatment of dissipative environments, while the emitter-centered mode (ECM) framework ensures computational tractability. Unlike conventional approaches that integrate out the reservoir, we construct a non-Markovian hierarchy of coupled differential equations by explicitly retaining photonic amplitudes. Within the two-excitation hierarchy, the formulation preserves total probability and retains phase information necessary to capture multi-photon interference. As numerical demonstrations, we investigate non-Markovian atom-field interactions in structured semi-infinite waveguide environments. We first consider a homogeneous waveguide as a baseline, observing enhanced Bell-state fidelity in selected configurations. Next, we examine collective decay of symmetric Dicke states in a waveguide with an embedded lossy dielectric slab, revealing selective stabilization and delayed excitation transfer induced by the structured reservoir. Finally, we analyze entanglement dynamics in the same setting, highlighting entanglement sudden birth and oscillatory revivals. In principle, the framework applies to arbitrary electromagnetic environments for which the dyadic Green's function can be obtained numerically, providing a versatile tool for investigating complex non-Markovian multi-photon phenomena beyond the single-excitation limit.
-
-### Building Block For Universal Continuous Variables Computation In Superconducting Devices
-* **Authors:** Bruno A. Veloso et al.
-* **Published (v1):** 2026-03-31
-* **Updated:** 2026-04-02
-* **Link:** http://arxiv.org/abs/2604.00212v2
-* **Abstract:** Continuous variable (CV) quantum computation offers an alternative to qubit-based computing by exploiting the infinite-dimensional Hilbert space of bosonic modes. Despite recent progress, superconducting platforms have yet to demonstrate a scalable architecture capable of universal computation. Here, we design and numerically simulate a two-layer superconducting architecture that implements all five interactions of the universal CV gate set (rotation, displacement, squeezing, Kerr, and beam splitter) within experimentally accessible regimes. To this end, we employ a DC-SQUID as the bosonic mode, a fluxonium qubit to mediate nonlinear interactions, and two ancillary qubits that enable Gaussian and multi-mode operations. By tuning fluxes and frequencies, we achieve high fidelities ($\geq 98\%$) across all gates within state-of-the-art parameter ranges. The modular nature of the design allows straightforward scaling, establishing a feasible pathway toward high-fidelity, universal CV quantum computation based on superconducting circuits.
+No new papers matching your keywords were found in the last 7 days.
 
 
+# Papers Found on: 2026-04-07
 
-# Papers Found on: 2026-04-06
-
-### Novel permanent magnet array geometries for scalable trapped-ion quantum computing in a laser-free entanglement architecture
-* **Authors:** Mitchell G. Peaks et al.
-* **Published (v1):** 2026-04-03
-* **Updated:** 2026-04-03
-* **Link:** http://arxiv.org/abs/2604.03116v1
-* **Abstract:** A novel design is presented for a permanent magnet array to address specific challenges with scalable trapped-ion quantum computing systems. Design and optimization of this magnet geometry is motivated by concepts for large-scale Quantum Charge-Coupled Device (QCCD) architectures. This proposal is relevant to magnetic field gradient schemes for laser-free entanglement using long-wavelength radiation, and individual addressing based on spatially dependent, magnetic field sensitive qubits. This configuration generates a localized, asymmetric magnetic field, yielding a region for ion transport into and out of a strong magnetic field gradient, while minimizing the absolute field experienced by the ion. This is a distinct improvement for scalability over dipolar magnet geometries where a strong magnetic field surrounds a magnetic field nil in three dimensions, which is problematic for ion transport applications. The design also relaxes the alignment constraints for experimental setup by allowing greater tolerance to misalignment in two dimensions. Additionally, the potential to scale a permanent magnet scheme in QCCD systems circumvents engineering challenges associated with using large electrical currents to generate the field gradient. Finally, a conceptual discussion is given for incorporating the design into a scalable QCCD type architecture.
-
-### Computational framework for non-Markovian multi-emitter dynamics beyond the single-excitation limit
-* **Authors:** Hyunwoo Choi et al.
-* **Published (v1):** 2026-04-03
-* **Updated:** 2026-04-03
-* **Link:** http://arxiv.org/abs/2604.02741v1
-* **Abstract:** While non-Markovian dynamics have been extensively studied in the single-excitation limit to predict non-trivial phenomena, this regime remains an idealization. Moving beyond it is essential, as optical nonlinearities and phase-error accumulation in multi-photon processes render the Markovian approximation fragile. In this work, we present a Green's function-based framework for modeling non-Markovian multi-emitter quantum electrodynamics within the two-excitation manifold. The modified Langevin noise (M-LN) formalism is employed for first-principles treatment of dissipative environments, while the emitter-centered mode (ECM) framework ensures computational tractability. Unlike conventional approaches that integrate out the reservoir, we construct a non-Markovian hierarchy of coupled differential equations by explicitly retaining photonic amplitudes. Within the two-excitation hierarchy, the formulation preserves total probability and retains phase information necessary to capture multi-photon interference. As numerical demonstrations, we investigate non-Markovian atom-field interactions in structured semi-infinite waveguide environments. We first consider a homogeneous waveguide as a baseline, observing enhanced Bell-state fidelity in selected configurations. Next, we examine collective decay of symmetric Dicke states in a waveguide with an embedded lossy dielectric slab, revealing selective stabilization and delayed excitation transfer induced by the structured reservoir. Finally, we analyze entanglement dynamics in the same setting, highlighting entanglement sudden birth and oscillatory revivals. In principle, the framework applies to arbitrary electromagnetic environments for which the dyadic Green's function can be obtained numerically, providing a versatile tool for investigating complex non-Markovian multi-photon phenomena beyond the single-excitation limit.
-
-### Building Block For Universal Continuous Variables Computation In Superconducting Devices
-* **Authors:** Bruno A. Veloso et al.
-* **Published (v1):** 2026-03-31
-* **Updated:** 2026-04-02
-* **Link:** http://arxiv.org/abs/2604.00212v2
-* **Abstract:** Continuous variable (CV) quantum computation offers an alternative to qubit-based computing by exploiting the infinite-dimensional Hilbert space of bosonic modes. Despite recent progress, superconducting platforms have yet to demonstrate a scalable architecture capable of universal computation. Here, we design and numerically simulate a two-layer superconducting architecture that implements all five interactions of the universal CV gate set (rotation, displacement, squeezing, Kerr, and beam splitter) within experimentally accessible regimes. To this end, we employ a DC-SQUID as the bosonic mode, a fluxonium qubit to mediate nonlinear interactions, and two ancillary qubits that enable Gaussian and multi-mode operations. By tuning fluxes and frequencies, we achieve high fidelities ($\geq 98\%$) across all gates within state-of-the-art parameter ranges. The modular nature of the design allows straightforward scaling, establishing a feasible pathway toward high-fidelity, universal CV quantum computation based on superconducting circuits.
-
+No new papers matching your keywords were found in the last 7 days.
