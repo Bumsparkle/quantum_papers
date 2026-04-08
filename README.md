@@ -1,10 +1,134 @@
 
 
-# Papers Found on: 2026-04-07
+# Papers Found on: 2026-04-08
 
-No new papers matching your keywords were found in the last 7 days.
+### Simulating Thermal Properties of Bose-Hubbard Models on a Quantum Computer
+* **Authors:** Simon Becker et al.
+* **Published (v1):** 2026-04-07
+* **Updated:** 2026-04-07
+* **Link:** http://arxiv.org/abs/2604.06077v1
+* **Abstract:** While recent advances have established efficient quantum algorithms for preparing Gibbs states of finite-dimensional systems, comparable complexity results for bosonic and other infinite-dimensional models remain unexplored. We introduce the first general rigorous Gibbs sampling framework for bosonic many-body systems, showing that physically relevant bosonic models admit gapped dissipative generators, enabling efficient preparation of thermal states. Although our results hold for broad classes of models, we illustrate them using Bose-Hubbard Hamiltonians, both within and beyond the mean-field regime. In both cases, we show that the associated dissipative generators maintain a positive spectral gap, thereby implying exponential convergence to the thermal state. Our argument in the multi-mode case is based on a finite-rank reduction of the dissipative dynamics, which allows us to control the generator via compact perturbations and deduce the discreteness of the spectrum and the stability of the gap. We apply our results to provide efficient preparation of the corresponding Gibbs state on qubit hardware, and by that a quantum algorithm to compute thermal properties of the associated model. This provides the first mathematically controlled route to Gibbs sampling in infinite-dimensional systems, with implications for quantum simulation, thermalization, and many-body complexity, where quantum advantages may arise.
+
+### Late Breaking Results: Hardware-Efficient Quantum Reservoir Computing via Quantized Readout
+* **Authors:** Param Pathak et al.
+* **Published (v1):** 2026-04-07
+* **Updated:** 2026-04-07
+* **Link:** http://arxiv.org/abs/2604.06075v1
+* **Abstract:** Due to rising electricity demand, accurate short-term load forecasting is increasingly important for grid stability and efficient energy management, particularly in resource-constrained edge settings. We present a hardware-efficient Quantum Reservoir Computing (QRC) framework based on a fixed, untrained quantum circuit with Chebyshev feature encoding, brickwork entanglement, and single- and two-qubit Pauli measurements, avoiding quantum backpropagation entirely. Using the Tetouan City Power Consumption dataset, we examine the effect of post-training fixed-point quantization on the classical readout layer, with the reservoir architecture selected through a genetic search over 18 candidate configurations. Under finite-shot evaluation, 8-bit and 6-bit quantization maintain forecasting accuracy within 1% of the FP32 baseline while reducing readout memory by 75% and 81%, respectively. These results suggest that quantized readout can improve the hardware efficiency and deployment practicality of QRC for memory-constrained energy forecasting.
+
+### Resource Implications of Different Encodings for Quantum Computational Fluid Dynamics
+* **Authors:** Hans A. Kösel et al.
+* **Published (v1):** 2026-04-07
+* **Updated:** 2026-04-07
+* **Link:** http://arxiv.org/abs/2604.05577v1
+* **Abstract:** For quantum algorithms for problems in which the task is to compute an entire field of values, like e.g. computational fluid dynamics (CFD), it is often proposed amplitude encoding w.r.t. multiple qubits; however, the efforts implied by it for initialization and read-out are not addressed. This work is devoted specifically to this issue: It reviews different encoding schemes in quantum computing, discussing their computational costs for initialization and read-out as well as resulting aspects for their usage via minimal examples. The considerations in previous literature on the required computational resources for amplitude encoding w.r.t. multiple qubits are extended in the presented quantification by explicitly deducing the circuit depth that results for the decomposed initialization procedure of V. V. Shende et al. [1, 2] and deriving an upper bound for the necessary number of executions of a quantum algorithm to extract the encoded values with a specific accuracy. For these two results, an empirical verification via the means provided by IBM's quantum computing simulation framework $\textit{Qiskit}$ [3] is given. In the framework of the study on the required number of runs to achieve a desired accuracy, it is however found that the derived upper bound, scaling like $ {\tilde{n}^2} ~ {\ln( {\tilde{n}} )} $ with the number of encoded values $ {\tilde{n}} $, is too conservative to be used for precise estimations. Therefore, a corresponding study of the required runs for the reference distribution of equal probabilities for all basis states is done in particular, which suggests $ {\tilde{n}} ~ { \ln( {\tilde{n}} ) } $ as an empirical scaling law. Since the view regarding CFD applications is taken here, it is presented in particular that the insights from this work lead to a new encoding approach, which is proposed specifically for a quantum algorithm for the lattice Boltzmann method.
+
+### A Digital Spreading Framework for Quantum Expectation Computation Without Rotation Gates or Arithmetic Circuits
+* **Authors:** Yu-Ting Kao et al.
+* **Published (v1):** 2026-04-07
+* **Updated:** 2026-04-07
+* **Link:** http://arxiv.org/abs/2604.05452v1
+* **Abstract:** In the pursuit of quantum advantage for financial engineering, researchers face a critical dilemma: analog rotation gates suffer from inherent 'sine-to-square' biases and error magnification, while digital arithmetic circuits (e.g., WeightedAdder) incur prohibitive quadratic complexity that exceeds NISQ capabilities. This study introduces Digital Spreading (DS), a fully digital quantum computing framework designed to resolve this trade-off. DS overcomes these limitations by utilizing a pruned Cuccaro ripple-carry architecture that avoids costly multiplication and eliminates rotation gates entirely. The proposed circuit employs integer comparison operations on superposed quantum states, mapping multi-qubit outcomes onto the probability of a single target qubit. Experiments based on a random walk model for option pricing demonstrate that DS achieves floating-point precision with a relative error as low as 0.0001%, outperforming JP Morgan's rotation-based method (1.43%), as well as ITRI's analog calibration (1.43%) and digital calibration approaches (19.14%). Overall, DS provides a compact, robust, and accurate framework for quantum weighted-average computation.
+
+### QCommute: a tool for symbolic computation of nested commutators in quantum many-body spin-1/2 systems
+* **Authors:** Oleg Lychkovskiy et al.
+* **Published (v1):** 2026-04-06
+* **Updated:** 2026-04-06
+* **Link:** http://arxiv.org/abs/2604.04778v1
+* **Abstract:** We present QCommute, a software tool implemented in C++ for symbolic computation of nested commutators between a Hamiltonian and local observables in quantum many-body spin-1/2 systems on one-, two-, and three-dimensional hypercubic lattices. The computation is performed algebraically directly in the thermodynamic limit, and the Hamiltonian parameters are kept symbolic. Importantly, this way the entire parameter space is covered in a single run. The implementation supports extensive parallelization to achieve high computational performance. QCommute enables the investigation of quantum dynamics in strongly correlated regimes that are inaccessible to perturbative approaches, either through direct Taylor expansion in time or via advanced techniques such as the recursion method.
+
+### What quantum computer to buy?
+* **Authors:** Alex Krasnok et al.
+* **Published (v1):** 2026-04-06
+* **Updated:** 2026-04-06
+* **Link:** http://arxiv.org/abs/2604.04761v1
+* **Abstract:** The phrase ``buy a quantum computer'' hides several different procurement problems. An institution may be seeking cloud access for teaching, reserved capacity for research, a local instrument for hardware training, an optimization appliance, or a strategic installation that reshapes facilities, staffing, and budgets. Because these choices differ in purpose, operating burden, and useful lifetime, the decision should be framed as acquisition of \emph{quantum capability} rather than selection of a presumed hardware winner. This manuscript develops a practical procurement framework that distinguishes five capability layers, separates peer-reviewed results from commercial offerings, pricing anchors, and public roadmaps, and compares the main commercial platform families -- superconducting circuits, trapped ions, neutral atoms, quantum annealing, and photonics -- through the lens of institutional fit, access model, and refresh pressure. The main conclusion is that most institutions should begin with the smallest layer of capability that produces repeatable near-term value, builds internal expertise, and preserves strategic flexibility. Large on-premises systems are justified only when mission requirements, site readiness, staffing, governance, and upgrade paths are already clear.
+
+### Digital-Analog Quantum Simulation and Computing: A Perspective on Past and Future Developments
+* **Authors:** Lucas Lamata et al.
+* **Published (v1):** 2026-04-06
+* **Updated:** 2026-04-06
+* **Link:** http://arxiv.org/abs/2604.04438v1
+* **Abstract:** Quantum simulation and computing traditionally has been based on two main paradigms, namely, digital and analog. In the digital paradigm, usually single and two-qubit gates (where qubit is an acronym for quantum bit) are employed as building blocks for scalable, universal quantum computing, although errors add up fast and error correction will be ultimately needed for scaling up. In the analog paradigm, large analog blocks are normally employed for a unitary dynamics that carries out the computation, enabling quantum operations on many qubits with reduced errors, but with the drawback of a limited choice of evolutions and lack of universality. In the past decade, a new paradigm has emerged, showing interesting possibilities for quantum simulation and computing in the near and mid term. This is the paradigm of digital-analog quantum technologies, which proposes to combine the best of both paradigms: large analog blocks, provided by native interactions of the employed quantum platform, enabling scalability, combined with digital gates, allowing for more versatility and, ultimately, universality. In this Perspective, I give an overview of the evolution of the field along the past decade, and an outlook for its future possibilities.
+
+### Quantum-Tunnelling Oscillators for Cognitive Modelling and Neural Computation: Foundations, Machine-Vision Realisation and Applications
+* **Authors:** Ivan S. Maksymov et al.
+* **Published (v1):** 2026-04-05
+* **Updated:** 2026-04-05
+* **Link:** http://arxiv.org/abs/2604.03940v1
+* **Abstract:** I present a quantum-tunnelling oscillator model as a universal dynamical engine for two paradigmatic problems in quantum cognition theory -- optical illusion perception and group decision making -- where individuals are treated as quantum-mechanical agents whose choices shift through context-dependent transitions rather than simple probabilities. I show that, when networked together, these units form a quantum-cognitive neural system that reproduces familiar collective and perceptual phenomena while naturally accommodating counterintuitive processes that challenge classical models. Bridging ideas from quantum cognition theory and neural networks, this approach offers a compact, physically grounded way to describe how real individuals and groups think, perceive and decide.
+
+### Recurrent Quantum Feature Maps for Reservoir Computing
+* **Authors:** Utkarsh Singh et al.
+* **Published (v1):** 2026-04-03
+* **Updated:** 2026-04-03
+* **Link:** http://arxiv.org/abs/2604.03469v1
+* **Abstract:** Reservoir computing promises a fast method for handling large amounts of temporal data. This hinges on constructing a good reservoir--a dynamical system capable of transforming inputs into a high-dimensional representation while remembering properties of earlier data. In this work, we introduce a reservoir based on recurrent quantum feature maps where a fixed quantum circuit is reused to encode both current inputs and a classical feedback signal derived from previous outputs. We evaluate the model on the Mackey-Glass time-series prediction task using our recently introduced CP feature map, and find that it achieves lower mean squared error than standard classical baselines, including echo state networks and multilayer perceptrons, while maintaining compact circuit depth and qubit requirements. We further analyze memory capacity and show that the model effectively retains temporal information, consistent with its forecasting accuracy. Finally, we study the impact of realistic noise and find that performance is robust to several noise channels but remains sensitive to two-qubit gate errors, identifying a key limitation for near-term implementations.
 
 
-# Papers Found on: 2026-04-07
 
-No new papers matching your keywords were found in the last 7 days.
+# Papers Found on: 2026-04-08
+
+### Simulating Thermal Properties of Bose-Hubbard Models on a Quantum Computer
+* **Authors:** Simon Becker et al.
+* **Published (v1):** 2026-04-07
+* **Updated:** 2026-04-07
+* **Link:** http://arxiv.org/abs/2604.06077v1
+* **Abstract:** While recent advances have established efficient quantum algorithms for preparing Gibbs states of finite-dimensional systems, comparable complexity results for bosonic and other infinite-dimensional models remain unexplored. We introduce the first general rigorous Gibbs sampling framework for bosonic many-body systems, showing that physically relevant bosonic models admit gapped dissipative generators, enabling efficient preparation of thermal states. Although our results hold for broad classes of models, we illustrate them using Bose-Hubbard Hamiltonians, both within and beyond the mean-field regime. In both cases, we show that the associated dissipative generators maintain a positive spectral gap, thereby implying exponential convergence to the thermal state. Our argument in the multi-mode case is based on a finite-rank reduction of the dissipative dynamics, which allows us to control the generator via compact perturbations and deduce the discreteness of the spectrum and the stability of the gap. We apply our results to provide efficient preparation of the corresponding Gibbs state on qubit hardware, and by that a quantum algorithm to compute thermal properties of the associated model. This provides the first mathematically controlled route to Gibbs sampling in infinite-dimensional systems, with implications for quantum simulation, thermalization, and many-body complexity, where quantum advantages may arise.
+
+### Late Breaking Results: Hardware-Efficient Quantum Reservoir Computing via Quantized Readout
+* **Authors:** Param Pathak et al.
+* **Published (v1):** 2026-04-07
+* **Updated:** 2026-04-07
+* **Link:** http://arxiv.org/abs/2604.06075v1
+* **Abstract:** Due to rising electricity demand, accurate short-term load forecasting is increasingly important for grid stability and efficient energy management, particularly in resource-constrained edge settings. We present a hardware-efficient Quantum Reservoir Computing (QRC) framework based on a fixed, untrained quantum circuit with Chebyshev feature encoding, brickwork entanglement, and single- and two-qubit Pauli measurements, avoiding quantum backpropagation entirely. Using the Tetouan City Power Consumption dataset, we examine the effect of post-training fixed-point quantization on the classical readout layer, with the reservoir architecture selected through a genetic search over 18 candidate configurations. Under finite-shot evaluation, 8-bit and 6-bit quantization maintain forecasting accuracy within 1% of the FP32 baseline while reducing readout memory by 75% and 81%, respectively. These results suggest that quantized readout can improve the hardware efficiency and deployment practicality of QRC for memory-constrained energy forecasting.
+
+### Resource Implications of Different Encodings for Quantum Computational Fluid Dynamics
+* **Authors:** Hans A. Kösel et al.
+* **Published (v1):** 2026-04-07
+* **Updated:** 2026-04-07
+* **Link:** http://arxiv.org/abs/2604.05577v1
+* **Abstract:** For quantum algorithms for problems in which the task is to compute an entire field of values, like e.g. computational fluid dynamics (CFD), it is often proposed amplitude encoding w.r.t. multiple qubits; however, the efforts implied by it for initialization and read-out are not addressed. This work is devoted specifically to this issue: It reviews different encoding schemes in quantum computing, discussing their computational costs for initialization and read-out as well as resulting aspects for their usage via minimal examples. The considerations in previous literature on the required computational resources for amplitude encoding w.r.t. multiple qubits are extended in the presented quantification by explicitly deducing the circuit depth that results for the decomposed initialization procedure of V. V. Shende et al. [1, 2] and deriving an upper bound for the necessary number of executions of a quantum algorithm to extract the encoded values with a specific accuracy. For these two results, an empirical verification via the means provided by IBM's quantum computing simulation framework $\textit{Qiskit}$ [3] is given. In the framework of the study on the required number of runs to achieve a desired accuracy, it is however found that the derived upper bound, scaling like $ {\tilde{n}^2} ~ {\ln( {\tilde{n}} )} $ with the number of encoded values $ {\tilde{n}} $, is too conservative to be used for precise estimations. Therefore, a corresponding study of the required runs for the reference distribution of equal probabilities for all basis states is done in particular, which suggests $ {\tilde{n}} ~ { \ln( {\tilde{n}} ) } $ as an empirical scaling law. Since the view regarding CFD applications is taken here, it is presented in particular that the insights from this work lead to a new encoding approach, which is proposed specifically for a quantum algorithm for the lattice Boltzmann method.
+
+### A Digital Spreading Framework for Quantum Expectation Computation Without Rotation Gates or Arithmetic Circuits
+* **Authors:** Yu-Ting Kao et al.
+* **Published (v1):** 2026-04-07
+* **Updated:** 2026-04-07
+* **Link:** http://arxiv.org/abs/2604.05452v1
+* **Abstract:** In the pursuit of quantum advantage for financial engineering, researchers face a critical dilemma: analog rotation gates suffer from inherent 'sine-to-square' biases and error magnification, while digital arithmetic circuits (e.g., WeightedAdder) incur prohibitive quadratic complexity that exceeds NISQ capabilities. This study introduces Digital Spreading (DS), a fully digital quantum computing framework designed to resolve this trade-off. DS overcomes these limitations by utilizing a pruned Cuccaro ripple-carry architecture that avoids costly multiplication and eliminates rotation gates entirely. The proposed circuit employs integer comparison operations on superposed quantum states, mapping multi-qubit outcomes onto the probability of a single target qubit. Experiments based on a random walk model for option pricing demonstrate that DS achieves floating-point precision with a relative error as low as 0.0001%, outperforming JP Morgan's rotation-based method (1.43%), as well as ITRI's analog calibration (1.43%) and digital calibration approaches (19.14%). Overall, DS provides a compact, robust, and accurate framework for quantum weighted-average computation.
+
+### QCommute: a tool for symbolic computation of nested commutators in quantum many-body spin-1/2 systems
+* **Authors:** Oleg Lychkovskiy et al.
+* **Published (v1):** 2026-04-06
+* **Updated:** 2026-04-06
+* **Link:** http://arxiv.org/abs/2604.04778v1
+* **Abstract:** We present QCommute, a software tool implemented in C++ for symbolic computation of nested commutators between a Hamiltonian and local observables in quantum many-body spin-1/2 systems on one-, two-, and three-dimensional hypercubic lattices. The computation is performed algebraically directly in the thermodynamic limit, and the Hamiltonian parameters are kept symbolic. Importantly, this way the entire parameter space is covered in a single run. The implementation supports extensive parallelization to achieve high computational performance. QCommute enables the investigation of quantum dynamics in strongly correlated regimes that are inaccessible to perturbative approaches, either through direct Taylor expansion in time or via advanced techniques such as the recursion method.
+
+### What quantum computer to buy?
+* **Authors:** Alex Krasnok et al.
+* **Published (v1):** 2026-04-06
+* **Updated:** 2026-04-06
+* **Link:** http://arxiv.org/abs/2604.04761v1
+* **Abstract:** The phrase ``buy a quantum computer'' hides several different procurement problems. An institution may be seeking cloud access for teaching, reserved capacity for research, a local instrument for hardware training, an optimization appliance, or a strategic installation that reshapes facilities, staffing, and budgets. Because these choices differ in purpose, operating burden, and useful lifetime, the decision should be framed as acquisition of \emph{quantum capability} rather than selection of a presumed hardware winner. This manuscript develops a practical procurement framework that distinguishes five capability layers, separates peer-reviewed results from commercial offerings, pricing anchors, and public roadmaps, and compares the main commercial platform families -- superconducting circuits, trapped ions, neutral atoms, quantum annealing, and photonics -- through the lens of institutional fit, access model, and refresh pressure. The main conclusion is that most institutions should begin with the smallest layer of capability that produces repeatable near-term value, builds internal expertise, and preserves strategic flexibility. Large on-premises systems are justified only when mission requirements, site readiness, staffing, governance, and upgrade paths are already clear.
+
+### Digital-Analog Quantum Simulation and Computing: A Perspective on Past and Future Developments
+* **Authors:** Lucas Lamata et al.
+* **Published (v1):** 2026-04-06
+* **Updated:** 2026-04-06
+* **Link:** http://arxiv.org/abs/2604.04438v1
+* **Abstract:** Quantum simulation and computing traditionally has been based on two main paradigms, namely, digital and analog. In the digital paradigm, usually single and two-qubit gates (where qubit is an acronym for quantum bit) are employed as building blocks for scalable, universal quantum computing, although errors add up fast and error correction will be ultimately needed for scaling up. In the analog paradigm, large analog blocks are normally employed for a unitary dynamics that carries out the computation, enabling quantum operations on many qubits with reduced errors, but with the drawback of a limited choice of evolutions and lack of universality. In the past decade, a new paradigm has emerged, showing interesting possibilities for quantum simulation and computing in the near and mid term. This is the paradigm of digital-analog quantum technologies, which proposes to combine the best of both paradigms: large analog blocks, provided by native interactions of the employed quantum platform, enabling scalability, combined with digital gates, allowing for more versatility and, ultimately, universality. In this Perspective, I give an overview of the evolution of the field along the past decade, and an outlook for its future possibilities.
+
+### Quantum-Tunnelling Oscillators for Cognitive Modelling and Neural Computation: Foundations, Machine-Vision Realisation and Applications
+* **Authors:** Ivan S. Maksymov et al.
+* **Published (v1):** 2026-04-05
+* **Updated:** 2026-04-05
+* **Link:** http://arxiv.org/abs/2604.03940v1
+* **Abstract:** I present a quantum-tunnelling oscillator model as a universal dynamical engine for two paradigmatic problems in quantum cognition theory -- optical illusion perception and group decision making -- where individuals are treated as quantum-mechanical agents whose choices shift through context-dependent transitions rather than simple probabilities. I show that, when networked together, these units form a quantum-cognitive neural system that reproduces familiar collective and perceptual phenomena while naturally accommodating counterintuitive processes that challenge classical models. Bridging ideas from quantum cognition theory and neural networks, this approach offers a compact, physically grounded way to describe how real individuals and groups think, perceive and decide.
+
+### Recurrent Quantum Feature Maps for Reservoir Computing
+* **Authors:** Utkarsh Singh et al.
+* **Published (v1):** 2026-04-03
+* **Updated:** 2026-04-03
+* **Link:** http://arxiv.org/abs/2604.03469v1
+* **Abstract:** Reservoir computing promises a fast method for handling large amounts of temporal data. This hinges on constructing a good reservoir--a dynamical system capable of transforming inputs into a high-dimensional representation while remembering properties of earlier data. In this work, we introduce a reservoir based on recurrent quantum feature maps where a fixed quantum circuit is reused to encode both current inputs and a classical feedback signal derived from previous outputs. We evaluate the model on the Mackey-Glass time-series prediction task using our recently introduced CP feature map, and find that it achieves lower mean squared error than standard classical baselines, including echo state networks and multilayer perceptrons, while maintaining compact circuit depth and qubit requirements. We further analyze memory capacity and show that the model effectively retains temporal information, consistent with its forecasting accuracy. Finally, we study the impact of realistic noise and find that performance is robust to several noise channels but remains sensitive to two-qubit gate errors, identifying a key limitation for near-term implementations.
+
