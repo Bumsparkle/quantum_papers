@@ -8773,5 +8773,136 @@
     "categories": [
       "quant-ph"
     ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.24634v1",
+    "title": "Computational Design and Experimental Validation of Photoactive PARP1 Inhibitors",
+    "authors": [
+      "Simon Axelrod",
+      "Miroslav Kašpar",
+      "Kristýna Jelínková",
+      "Markéta Šmídková",
+      "Erika Bartůňková",
+      "Sille Štěpánová",
+      "Eugene Shakhnovich",
+      "Václav Kašička",
+      "Martin Dračínský",
+      "Zlatko Janeba",
+      "Rafael Gómez-Bombarelli"
+    ],
+    "summary": "Light-activated drugs are a promising way to treat localized diseases for which existing treatments have severe side effects. However, their development is complicated by the set of photophysical and biological properties that must be simultaneously optimized. Here we used computational techniques to find a set of promising candidates for the photoactive inhibition of the poly(ADP-ribose) polymerase 1 (PARP1) cancer target. Using our recently developed methods based on atomistic simulation and machine learning (ML), we screened a set of 5 million hypothetical photoactive ligands. Our workflow used protein-ligand docking to identify candidates with differential PARP1 binding under light and dark conditions; ML force fields and quantum chemistry calculations to predict p$K_\\mathrm{a}$, absorption spectra, and thermal half-lives; graph-based surrogate models to screen additional compounds; excited-state nonadiabatic dynamics with ML force fields to estimate quantum yields; and free energy perturbation (FEP) to refine binding predictions. From these predictions, we prioritized a small set of synthetically feasible candidates expected to have red-shifted absorption spectra, thermal half-lives on the order of seconds to minutes, and isomer-dependent PARP1 binding under visible-light control. We synthesized 10 candidates and experimentally characterized their photobehavior and PARP1 inhibition constants. Among the validated compounds, \\textbf{1} showed a 15-fold increase in inhibition of PARP1 upon green-light irradiation at 519 nm (208.8 $\\pm$ 28.3 $μ$M vs 14.4 $\\pm$ 1.9 $μ$M). These results validate the computation-guided screening strategy for identifying red-shifted PARP1 photoinhibitors, while also underscoring current limitations such as rapid thermal relaxation in aqueous media.",
+    "published": "2026-04-27T16:03:45+00:00",
+    "updated": "2026-04-27T16:03:45+00:00",
+    "link": "http://arxiv.org/abs/2604.24634v1",
+    "pdf_link": "https://arxiv.org/pdf/2604.24634v1",
+    "categories": [
+      "physics.chem-ph",
+      "cs.LG"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.24059v1",
+    "title": "Beyond Monolithic Scaling: Modularity and Heterogeneity as an Architectural Imperative for Utility-Scale Quantum Computing",
+    "authors": [
+      "Bo Fan",
+      "Renzhou Fang",
+      "Yuntao Zhang",
+      "Xiaolong Yuan",
+      "Dafa Zhao"
+    ],
+    "summary": "Scalable quantum computing is fundamentally bottlenecked not by qubit count or fabrication yield, but by a rigid temporal mismatch: macroscopic classical coordination latency ($τ_c$) inevitably grows with system diameter, while microscopic quantum coherence ($τ_q$) remains strictly bounded. Beyond a critical scale, this mismatch breaches the classical control light cone, triggering a superlinear geometric penalty ($ε> 0$) that renders monolithic synchronization physically impossible. We formalize the resulting structural phase transition through a governing scaling law, $1+ε> γ$, which mandates modular decomposition and a shift from global unitaries to Local Operations and Classical Communication (LOCC). To manage the resulting resource contention under strict coherence budgets, we introduce a layered semantic architecture and a time-aware Reserve--Commit protocol. By embedding predictive temporal pre-validation, the protocol acts as an architectural semantic classifier: it preemptively aborts transactions that exceed the causal horizon and explicitly converts scheduling-induced failures into location-known erasure metadata, directly relaxing hardware fidelity thresholds for downstream QEC decoders. Under near-term transduction targets ($η_{\\mathrm{trans}} \\sim 0.1$), we project a crossover scale at $N_c \\sim 10^5$--$10^6$ physical qubits. This threshold marks a profound architectural convergence: the footprint required for modularity aligns precisely with early fault-tolerant utility, establishing time-aware distributed orchestration, rather than monolithic expansion or centralized classical control, as the physical imperative for utility-scale quantum computing.",
+    "published": "2026-04-27T05:31:39+00:00",
+    "updated": "2026-04-27T05:31:39+00:00",
+    "link": "http://arxiv.org/abs/2604.24059v1",
+    "pdf_link": "https://arxiv.org/pdf/2604.24059v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.24015v1",
+    "title": "QubitQuest: Learning Quantum Computing through Mini-Games",
+    "authors": [
+      "Bella Hill",
+      "Miguel Morales-Trujillo"
+    ],
+    "summary": "Quantum Computing (QC) is often challenging for beginners due to its abstract concepts and mathematical foundations. This paper explores the use of gamification to support the learning of introductory QC concepts. To investigate this, QubitQuest was developed as a set of three educational mini-games designed to teach key QC topics: the Bloch sphere, entanglement, and quantum circuits. The mini-games aim to balance engagement, motivation, and learning while introducing concepts in small and focused units of progressive difficulty. A two-phase user study was conducted to evaluate the mini-games. In the first phase, a preliminary survey was conducted to gather information on learners' preferences and inform the design of the mini-games. In the second phase, participants played the mini-games and completed pre- and post-game questionnaires to assess their learning. The results show that participants improved their understanding of introductory QC concepts after playing the mini-games, with post-game scores higher than pre-game scores. Those who completed more levels achieved higher post-game scores, indicating that motivation and engagement influenced the learning outcomes. These findings suggest that mini-games may improve students' learning experience and outcomes when exposed to introductory QC concepts.",
+    "published": "2026-04-27T03:52:48+00:00",
+    "updated": "2026-04-27T03:52:48+00:00",
+    "link": "http://arxiv.org/abs/2604.24015v1",
+    "pdf_link": "https://arxiv.org/pdf/2604.24015v1",
+    "categories": [
+      "cs.CY"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.23819v1",
+    "title": "Playing Dice with the Universe: Programming Quantum Computers to Play Traditional Games",
+    "authors": [
+      "Tristan Zaborniak",
+      "Vikram Khipple Mulligan"
+    ],
+    "summary": "The challenge of programming classical computers to play traditional, competitive games against human players has helped to advance classical hardware and software. Quantum computers have the potential to play games in a unique way: programmed only with the rules of a game, they should be able to implicitly represent all future paths of a game leading to wins, losses, or draws, and sample from this path set to identify moves that maximize the likelihood of a win. This permits skilled play without hard-coded or machine-learned strategy. As a proof of principle, we present early results obtained after programming the D-Wave quantum annealer with the rules of tic-tac-toe, enabling it to play against a human opponent. We anticipate that, as it has for classical computers, game-playing will serve as an important real-world benchmark for quantum computers.",
+    "published": "2026-04-26T17:41:17+00:00",
+    "updated": "2026-04-26T17:41:17+00:00",
+    "link": "http://arxiv.org/abs/2604.23819v1",
+    "pdf_link": "https://arxiv.org/pdf/2604.23819v1",
+    "categories": [
+      "cs.ET",
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.23715v1",
+    "title": "Modeling the Zero-Phonon Line of Strained SnV Centers in Diamond; Including Reflections on Computational Cost and Accuracy",
+    "authors": [
+      "Danny E. P. Vanpoucke"
+    ],
+    "summary": "Among the group-IV vacancy color centers in diamond, the SnV holds promise for photonics based quantum applications. In this work, the Tin-Vacancy (SnV) zero-phonon line (ZPL) and its pressure coefficient are calculated using first principles approaches. The predicted absolute ZPL position is shown to be strongly influenced by the method and supercell size used. The results are therefore extrapolated to the dilute limit allowing for direct comparison with experiments. The importance of identifying the color-center related Kohn--Sham states is highlighted, as well as the shifting of these states due to electron excitations as well as supercell size and k-point position. In contrast to the absolute ZPL positions, the relative position of the SnV$^0$ ZPL is consistently redshifted about $43$ nm compared to the SnV$^-$ ZPL. In addition, the pressure coefficient is shown to be very robust over different methods, always resulting in a value of about $1.4$ nm/GPa, for both SnV$^0$ and SnV$^-$. Finally, the computational accuracy and cost are put into perspective.",
+    "published": "2026-04-26T13:59:51+00:00",
+    "updated": "2026-04-26T13:59:51+00:00",
+    "link": "http://arxiv.org/abs/2604.23715v1",
+    "pdf_link": "https://arxiv.org/pdf/2604.23715v1",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.10794v2",
+    "title": "Symplectic perspective to quantum computing for Hamiltonian systems",
+    "authors": [
+      "Efstratios Koukoutsis",
+      "Kyriakos Hizanidis",
+      "Lucas I Inigo Gamiz",
+      "Oscar Amaro",
+      "Christos Tsironis",
+      "Abhay K. Ram",
+      "George Vahala"
+    ],
+    "summary": "This work develops a symplectic framework for quantum computing to be applied to classical Hamiltonian systems, exploiting the intrinsic geometric compatibility between unitary quantum evolution and symplectic phase-space dynamics in a two-fold way. The first part is devoted in establishing an exact correspondence between quantum evolution and classical Hamiltonian flow on a Kahler manifold. This correspondence enables a geometric quantization scheme that identifies a family of classical Hamiltonian systems admitting exponentially compressed quantum representations-appropriate for quantum simulation. In the second part we demonstrate that Liouville-integrable Hamiltonian dynamics induce finite-dimensional unitary evolution through action-angle variables and Koopman-von Neumann encoding. This allows efficient quantum representation and parallel evolution of large phase-space ensembles, where entangled encodings provide exponential compression in ensemble size and enable quantum speed-ups in observable estimation via amplitude estimation techniques. For non-integrable systems, Lie canonical perturbation theory is incorporated to construct near-symplectic transformations that map dynamics to approximately integrable forms, preserving unitary evolution up to a controlled error. We derive the resulting quantum computational complexity of the proposed quantum-symplectic scheme, revealing both an exponential compression in memory requirements and a potential polynomial speed-up with respect to the system size. Finally, the transport evolution equation governing the quantum phase-space observables is obtained.",
+    "published": "2026-04-12T19:55:05+00:00",
+    "updated": "2026-04-26T13:50:14+00:00",
+    "link": "http://arxiv.org/abs/2604.10794v2",
+    "pdf_link": "https://arxiv.org/pdf/2604.10794v2",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.23516v1",
+    "title": "Time-Delayed Publicly Verifiable Quantum Computation for Classical Verifiers",
+    "authors": [
+      "Ameer Mohammed",
+      "Aydin Abadi",
+      "Jaffer Mahdi"
+    ],
+    "summary": "Publicly verifiable delegation is a well-known problem involving a user who wishes to outsource a resource-intensive computational task to a more powerful but potentially untrusted server such that any other party is able to efficiently check the veracity of the computation's result. This problem has been extensively studied in the classical domain where the user and server are both non-quantum machines. However, the problem becomes more challenging when the classical user wants to delegate a quantum circuit to a single prover with quantum-computing capabilities. Previous solutions have resorted to using impractical or non-standard cryptographic solutions (e.g. indistinguishability obfuscation) to achieve this requirement. In this work, we relax the requirement to have time-delayed publicly verifiable proofs, where the verification key is made known to the public only when the computation (and its proof) are guaranteed to have been completed. We propose a practical non-interactive scheme leveraging commitment schemes and time-lock puzzles, which can be efficiently realized through well-established and standard post-quantum assumptions. The main idea of our technique lies in using time-lock puzzles to compile a 2-round privately verifiable scheme into a non-interactive publicly verifiable scheme with timestamped proofs, outsourcing not only the quantum computation but the puzzle solving as well. Security is proven in the quantum random oracle model with a common reference string (CRS).",
+    "published": "2026-04-26T03:42:54+00:00",
+    "updated": "2026-04-26T03:42:54+00:00",
+    "link": "http://arxiv.org/abs/2604.23516v1",
+    "pdf_link": "https://arxiv.org/pdf/2604.23516v1",
+    "categories": [
+      "cs.CR"
+    ]
   }
 ]
