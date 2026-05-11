@@ -9606,5 +9606,98 @@
     "categories": [
       "eess.IV"
     ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.07983v1",
+    "title": "Price and Payoff: Non-Determinism in Fault Tolerant Quantum Computation",
+    "authors": [
+      "Aditi Awasthi",
+      "Sayam Sethi",
+      "Sahil Khan",
+      "Gokul Subramanian Ravi",
+      "Jonathan Mark Baker"
+    ],
+    "summary": "A promising approach to achieving scalable fault-tolerant quantum computation is the use of quantum error correction (QEC) codes augmented with magic states i.e. resource states produced via distillation, cultivation, or $R_z$ synthesis and teleported into the circuit as needed. Because magic-state production dominates the space-time volume of fault-tolerant programs, system architects must decide how many production units to allocate. Current approaches rely on deterministic analysis that either provisions for worst-case peak demand (wasting valuable qubit resources on factories that are never simultaneously utilized) or assumes average demand, which increases execution time. In this work, we build a simulation framework that couples circuit scheduling with different stochastic magic state production models, and use it to quantify the impact of non-determinism on circuit execution. We show that non-determinism has a dual effect that deterministic models cannot capture: it inflates total execution time (the price), while deflating peak per-cycle resource demand (the payoff). For distillation-based architectures, this demand smoothing shifts the space-time-optimal provisioning point: fewer factories are needed to minimize space-time volume than deterministic analysis predicts. Across benchmarks, stochastic-aware provisioning reduces space-time volume by up to 27% compared to the deterministic optimum for distillation, while requiring up to 30% fewer factories. We characterize these effects across each preparation mechanism, map the resulting design-space tradeoffs, and demonstrate that static resource estimation systematically mis-characterizes the cost of fault-tolerant execution. Our results establish that stochastic-aware analysis is necessary for right-sizing the factory allocations and should replace deterministic heuristics as the standard methodology for FTQC resource planning.",
+    "published": "2026-05-08T16:44:12+00:00",
+    "updated": "2026-05-08T16:44:12+00:00",
+    "link": "http://arxiv.org/abs/2605.07983v1",
+    "pdf_link": "https://arxiv.org/pdf/2605.07983v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.07775v1",
+    "title": "POETS: Uncertainty-Aware LLM Optimization via Compute-Efficient Policy Ensembles",
+    "authors": [
+      "Nicolas Menet",
+      "Andreas Krause",
+      "Abbas Rahimi"
+    ],
+    "summary": "Balancing exploration and exploitation is a core challenge in sequential decision-making and black-box optimization. We introduce POETS ($\\textbf{Po}$licy $\\textbf{E}$nsembles for $\\textbf{T}$hompson $\\textbf{S}$ampling), a novel framework that bridges uncertainty quantification and policy optimization. Our approach is grounded in the insight that policies trained with Kullback-Leibler (KL) regularization implicitly encode an underlying reward function. Building on this, POETS bypasses the complex, nested process of training an uncertainty-aware reward model and separately fitting a policy to this model. Instead, we directly train a policy ensemble to capture epistemic uncertainty by matching implicitly encoded reward functions to online, bootstrapped data. To overcome the prohibitive compute and memory constraints of ensembling Large Language Models (LLMs), POETS utilizes an efficient architecture: the ensemble shares a pre-trained backbone while maintaining diversity through independent Low-Rank Adaptation (LoRA) branches. Theoretically, we prove that POETS implicitly conducts KL-regularized Thompson sampling and thus inherits strong cumulative regret bounds of ${\\mathcal O}(\\sqrt{T γ_T})$. Empirically, we demonstrate that POETS achieves state-of-the-art sample efficiency across diverse scientific discovery domains, including protein search and quantum circuit design. Furthermore, it improves the optimization trajectories of reinforcement learning, proving particularly robust in off-policy settings with experience replay or in small dataset regimes.",
+    "published": "2026-05-08T14:16:32+00:00",
+    "updated": "2026-05-08T14:16:32+00:00",
+    "link": "http://arxiv.org/abs/2605.07775v1",
+    "pdf_link": "https://arxiv.org/pdf/2605.07775v1",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "stat.ML"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.07374v1",
+    "title": "Computational and physical complexity of synthesizing random multi-qudit quantum states and unitary operators",
+    "authors": [
+      "Sahel Ashhab",
+      "Bora Basyildiz"
+    ],
+    "summary": "We analyze the complexity of synthesizing random states and unitary operators in a multi-qudit system in two paradigms. In one case, we consider the situation in which we manipulate the system by applying a sequence of one- and two-qudit quantum gates that constitute the elementary, and universal, gate set. The minimum number of gates required to perform the desired operation represents the computational complexity. In the other case, we consider the situation in which we manipulate the physical system using physical fields with optimized control pulses. The minimum time required to perform the desired operation represents the physical complexity. In both cases, we use analytical arguments in combination with optimal-control-theory numerical calculations to determine the complexity of random operations. We show that the computational complexity of random states or unitary operators scales exponentially with the number of qudits. Our numerical results suggest that the physical complexity of preparing random quantum states and unitary operators scales more slowly than the computational complexity. We discuss various implications of our results, especially concerning the relationship between random and pseudorandom states and unitary operators.",
+    "published": "2026-05-08T07:30:21+00:00",
+    "updated": "2026-05-08T07:30:21+00:00",
+    "link": "http://arxiv.org/abs/2605.07374v1",
+    "pdf_link": "https://arxiv.org/pdf/2605.07374v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.06907v1",
+    "title": "A collider as a quantum computer",
+    "authors": [
+      "Wei Xie",
+      "Ji-Chong Yang"
+    ],
+    "summary": "Scattering processes in high-energy physics are inherently quantum mechanical, yet are typically analyzed at the level of final states, where entanglement appears as a property of the outcome rather than a consequence of the underlying dynamics. We reformulate scattering at the level of the process itself by representing helicity transition matrices as quantum circuits. Once the kinematic configuration and scattering channel are fixed, the problem reduces to a finite-dimensional quantum map, making a circuit description natural. Within this framework, an example of the process $e^+e^-\\to μ^+μ^-$ is shown, which decomposes into unitary and non-unitary components, corresponding to coherent mixing and postselection effects. This representation reorganizes the amplitude into distinct operational elements, providing a perspective in which collider processes can be viewed as constrained quantum circuits and their entanglement structure can be understood in terms of the underlying circuit dynamics, opening the door to analyzing their properties using the language of quantum information.",
+    "published": "2026-05-07T20:15:42+00:00",
+    "updated": "2026-05-07T20:15:42+00:00",
+    "link": "http://arxiv.org/abs/2605.06907v1",
+    "pdf_link": "https://arxiv.org/pdf/2605.06907v1",
+    "categories": [
+      "hep-ph",
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.06727v1",
+    "title": "Medical Imaging Classification with Cold-Atom Reservoir Computing using Auto-Encoders and Surrogate-Driven Training",
+    "authors": [
+      "Nuno Batista",
+      "Ana Morgado",
+      "Oscar Ferraz",
+      "Sagar Silva Pratapsi",
+      "Jorge Lobo",
+      "Gabriel Falcao"
+    ],
+    "summary": "We introduce a hybrid quantum-classical pipeline, based on neutral-atom reservoir computing, for medical image classification, focusing on the binary classification task of polyp detection. To deal effectively with the high dimensionality, we integrate a guided auto-encoder. This pipeline learns compact and discriminative representations of image data that are also well-suited for quantum reservoir computing. A key challenge in such systems is the non-differentiable nature of quantum measurements, which creates a 'gradient barrier' for standard training. We overcome this barrier by incorporating a differentiable surrogate model that emulates the quantum layer, enabling end-to-end backpropagation through the entire system. This guided training process is jointly optimized for classification accuracy and for faithful image recovery from the auto-encoder. The learned latent representations are encoded as pulse detuning parameters within a Rydberg Hamiltonian, and quantum embeddings are subsequently obtained through expectation values. These embeddings are then passed to a linear classifier. Our simulations show that this method outperforms some traditional approaches that use PCA or unguided autoencoders. We also conduct ablation studies to assess the impact of various quantum and training parameters, demonstrating the robustness and flexibility of our proposed pipeline for real-world medical imaging applications, even in the current NISQ era.",
+    "published": "2026-05-07T11:26:09+00:00",
+    "updated": "2026-05-07T11:26:09+00:00",
+    "link": "http://arxiv.org/abs/2605.06727v1",
+    "pdf_link": "https://arxiv.org/pdf/2605.06727v1",
+    "categories": [
+      "cs.LG",
+      "cs.ET",
+      "eess.IV"
+    ]
   }
 ]
