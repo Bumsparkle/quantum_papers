@@ -9840,5 +9840,130 @@
       "hep-th",
       "quant-ph"
     ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.12385v1",
+    "title": "Lower overhead fault-tolerant building blocks for noisy quantum computers",
+    "authors": [
+      "Prithviraj Prabhu"
+    ],
+    "summary": "Quantum computation holds the promise of solving certain complex problems exponentially faster than classical computers. However, the high prevalent noise in current quantum devices impedes the accurate execution of even basic algorithms. This can be remedied by protecting quantum information with a quantum error-correcting code, where the logical information of an algorithmic qubit is spread across multiple physical qubits. Individual quantum errors are then located and corrected by the fault-tolerant measurement of multi-qubit stabilizer operators (parity checks). Unfortunately, error correction and fault tolerance both impose large demands on the qubit overhead: hundreds to thousands of physical qubits per logical qubit.\n  We reduce the spacetime cost of fault tolerance by redesigning key building blocks of an error-corrected quantum computer. First, we develop a combinatorial proof with flag fault tolerance that exponentially reduces the extra qubits needed to measure a stabilizer of any size, while tolerating one fault. We leverage these proofs to then design state preparation circuits for the Steane and Golay codes with 100% yield. Next, we improve error correction on a planar layout by showing that a distance-four code encoding six logical qubits protects information as well as the distance-five surface code, using one-tenth as many physical qubits. Finally, we optimize the time overhead of logical gates in surface code quantum computers by protecting measurement results with a classical code, cutting computation time by a factor of two to six. Our hardware-agnostic optimizations of fault tolerance overheads thus suggest new routes to advance the timeline of error-free quantum computing.",
+    "published": "2026-05-12T16:47:51+00:00",
+    "updated": "2026-05-12T16:47:51+00:00",
+    "link": "http://arxiv.org/abs/2605.12385v1",
+    "pdf_link": "https://arxiv.org/pdf/2605.12385v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.09580v2",
+    "title": "Estimating The Energy Consumption of Quantum Computing from A Full System Aspect",
+    "authors": [
+      "Siyuan Niu",
+      "Di Wu",
+      "Ozgur Ozan Kilic",
+      "Kwangmin Yu"
+    ],
+    "summary": "Quantum computing promises disruptive capabilities, yet its energy footprint has received far less attention than its asymptotic speedups. We present a first-order, full-system energy model for quantum computing in an high performance computing (HPC) context. The model separates costs common to NISQ and FTQC, such as system maintenance and classical processing, from regime-specific ones such as error mitigation for NISQ and error correction for FTQC. We instantiate the model on 96- and 100-qubit Heisenberg time-evolution simulations on IBM Eagle r3 and a representative VQE workload, and sketch the FTQC energy pipeline. We find that NISQ energy is dominated by the QEM sampling multiplier, while FTQC cost shifts to physical-qubit overhead set by the code distance and magic states. Our model provides actionable insights into the energy consumption of both NISQ and FTQC workloads, and paves the way toward energy-efficient quantum advantage.",
+    "published": "2026-05-10T14:43:13+00:00",
+    "updated": "2026-05-12T14:37:16+00:00",
+    "link": "http://arxiv.org/abs/2605.09580v2",
+    "pdf_link": "https://arxiv.org/pdf/2605.09580v2",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.09250v2",
+    "title": "Efficient and Stable Computation of Gravitational-Wave Fluxes from Generic Kerr Orbits via a Unified HeunC Framework",
+    "authors": [
+      "Changkai Chen",
+      "Zhoujian Cao",
+      "Jiliang Jing"
+    ],
+    "summary": "Modeling extreme-mass-ratio inspirals hinges on the accurate and efficient computation of gravitational-wave fluxes from generic Kerr orbits. Conventional frequency-domain techniques are often limited by costly auxiliary parameter searches and numerical instabilities in the strong-field or high-frequency regimes. We address these challenges by reformulating both the angular and radial Teukolsky equations in terms of confluent Heun functions. Employing a hybrid analytic continuation algorithm to compute the connection coefficients eliminates the dependence on auxiliary parameters, directly yielding globally convergent solutions and scattering amplitudes. To resolve the highly oscillatory source integrands for generic orbits, we implement an adaptive bi-power mapping quadrature. Comprehensive benchmarks under standard double-precision arithmetic demonstrate that, for the total radiative flux summed over 168 low-order modes, our method achieves relative errors of order $10^{-11}$, with computational costs typically reduced by factors of 3--13 compared to the state-of-the-art GeneralizedSasakiNakamura. jl and pybhpt packages. Notably, for highly oscillatory high-order modes, our framework achieves a speedup of up to 60 times compared to specialized oscillatory integrators like GeneralizedSasakiNakamura. jl. These demonstrated gains in precision and efficiency establish the framework as a robust tool for strong-field perturbation theory, providing the numerical foundation for high-order self-force calculations and rapid, high-precision waveform generation.",
+    "published": "2026-05-10T01:28:01+00:00",
+    "updated": "2026-05-12T09:13:33+00:00",
+    "link": "http://arxiv.org/abs/2605.09250v2",
+    "pdf_link": "https://arxiv.org/pdf/2605.09250v2",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.11529v1",
+    "title": "QuBridge: Layer-wise Fidelity Decomposition in Quantum Computation Pipeline",
+    "authors": [
+      "Kisho Sotokawa",
+      "Hideaki Kawaguchi",
+      "Shin Nishio",
+      "Takahiko Satoh"
+    ],
+    "summary": "Running a quantum circuit on current hardware involves a sequence of engineering decisions, each with tunable parameters and distinct error characteristics. Existing tools optimize each decision in isolation, leaving practitioners unable to determine how much each decision contributes to final output quality. We present QuBridge, a pipeline analysis tool that decomposes quantum computation into three decision layers and measures each layer's fidelity contribution through progressive ablation and isolation experiments. Applied to quantum teleportation under IBM-calibrated noise models, the framework surfaces three phenomena that end-to-end measurement obscures. Qubit selection narrows the worst-case fidelity band from 11.8% to under 2% with downstream layers held fixed, without changing the peak. Per-gate pulse-shape assignment adds a +0.9% residual gain whose attributed magnitude depends on upstream layout. Error-detection encoding is not uniformly advantageous, and its conditional benefit emerges for input states whose dominant error channel is detectable by the chosen code. QuBridge operates on cached calibration data without requiring live hardware access.",
+    "published": "2026-05-12T04:53:56+00:00",
+    "updated": "2026-05-12T04:53:56+00:00",
+    "link": "http://arxiv.org/abs/2605.11529v1",
+    "pdf_link": "https://arxiv.org/pdf/2605.11529v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.11417v1",
+    "title": "String Diagrams for Quantum Foundations, Computing and Natural Language Processing",
+    "authors": [
+      "Muhammad Hamza Waseem"
+    ],
+    "summary": "Applied category theory provides powerful mathematical tools for modelling processes and their composition. Symmetric monoidal categories, which involve series and parallel composition, are particularly well-suited for describing the composition of processes in space and time. Also called process theories, they admit string diagrams, which constitute a visually intuitive, mathematically rigorous, expressive and flexible syntax that is applicable to wide-ranging scientific domains. In this thesis, we employ string diagrams to investigate a selection of topics in the areas of quantum foundations, computing, and natural language processing: (1) We formalise constructor theory as a process theory. In the context of quantum physics, we also demonstrate the conflict between constructor-theoretic principles of locality and composition. Moreover, we argue that if the principle of locality is rejected, categorical quantum mechanics (CQM) can be conceived as a constructor theory of quantum physics. (2) We develop a formalism for wave-based logic circuits with phase encoding. We motivate the formalism using the example of spin-wave circuits, and then demonstrate its utility in design, analysis and optimisation of Boolean logic circuits. (3) We investigate the elimination of inter-language grammatical bureaucracy in the distributional compositional circuits (DisCoCirc) framework. In particular, we develop a hybrid grammar for a restricted fragment of the Urdu language, and show that Urdu text endowed with this hybrid grammar maps surjectively to DisCoCirc text circuits. Furthermore, we show that for the same language fragment, Urdu and English text circuits become the same up to gate-level translation. The aforementioned work supports the view that a process-relational outlook in science is well-supported by applied category-theoretic tools, particularly string diagrams.",
+    "published": "2026-05-12T02:11:44+00:00",
+    "updated": "2026-05-12T02:11:44+00:00",
+    "link": "http://arxiv.org/abs/2605.11417v1",
+    "pdf_link": "https://arxiv.org/pdf/2605.11417v1",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.11162v1",
+    "title": "The Quantum Hamiltonian Analysis Toolkit: Lowering the Barrier to Quantum Computing with Hamiltonians",
+    "authors": [
+      "Brendan K. Krueger",
+      "Stephan Eidenbenz",
+      "Shamminuj Aktar",
+      "Rishabh Bhardwaj",
+      "John K. Golden",
+      "George Grattan",
+      "Abhijith Jayakumar",
+      "Anna Matsekh",
+      "Scott Pakin",
+      "Nandakishore Santhi",
+      "Reuben Tate"
+    ],
+    "summary": "We present the Quantum Hamiltonian Analysis Toolkit (QHAT), a newly developed application that provides a user-friendly interface for studying Hamiltonians and performing Hamiltonian simulation on fault-tolerant quantum computers. QHAT enables the generation and analysis of Hamiltonians through a powerful and feature-rich application, driven by simple inputs designed to reflect user needs rather than algorithmic details, so that productive research on your application of interest can be done without needing a deep understanding of quantum computing algorithms.\n  QHAT enables a streamlined workflow to analyze Hamiltonians and Hamiltonian simulation, supporting multiple choices of algorithms and analyses. It supports Hamiltonians from multiple sources but can also generate Hamiltonians based on a simple description of the system, saving intermediate data files for re-use when generating related Hamiltonians. Deriving the parameters for quantum computing algorithms can be a challenge, so QHAT is built around user-facing concepts such as maximum allowable error, rather than being built around algorithmic details such as steps counts or order parameters. An emphasis on user-friendly interfaces and efficient analysis means that the barrier to entry is low while rapidly providing results useful for a broad scope of studies.",
+    "published": "2026-05-11T19:10:07+00:00",
+    "updated": "2026-05-11T19:10:07+00:00",
+    "link": "http://arxiv.org/abs/2605.11162v1",
+    "pdf_link": "https://arxiv.org/pdf/2605.11162v1",
+    "categories": [
+      "quant-ph",
+      "physics.comp-ph"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.11088v1",
+    "title": "Tolerating Device Failure in Distributed Quantum Computing",
+    "authors": [
+      "Evan Sutcliffe",
+      "Coral M. Westoby"
+    ],
+    "summary": "It is desirable that a distributed quantum computer can operate despite the replacement or failure of its constituent components, allowing the reliability of the distributed system to exceed that of its subcomponents. We first show that when quantum error correction is performed over a modular quantum network, quantum devices can be swapped out or replaced, during operation, with minimal impact on logical error rates. We also investigate the ability of the toric and hyperbolic Floquet quantum error correcting codes to protect logical information under low rates of modular node failure. In particular, we show that under the proposed distributed quantum error scheme, the selected codes are able to maintain good logical error suppression during the failure of entire nodes. For catastrophic node failure of probability p/100, we suggest that a distributed toric code would outperform one implemented on a monolithic device below a physical error rate of 0.05%.",
+    "published": "2026-05-11T18:00:28+00:00",
+    "updated": "2026-05-11T18:00:28+00:00",
+    "link": "http://arxiv.org/abs/2605.11088v1",
+    "pdf_link": "https://arxiv.org/pdf/2605.11088v1",
+    "categories": [
+      "quant-ph"
+    ]
   }
 ]
